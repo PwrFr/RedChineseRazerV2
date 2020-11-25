@@ -1,124 +1,26 @@
 <template>
-  <div class="container-fluid techSpecsBox p-0 m-0 mb-5">
-    <div class="container techSpecs">
-      <!-- <h4 id="headerText">TECH SPECS</h4> -->
-      <table class="container-fluid">
-        <div class="row">
-          <h4 id="headerText">TECH SPECS</h4>
-        </div>
-        <tr class="dataRow trDisplay p-0">
-          <th class="col-lg-3 p-0">
-            <b>DISPLAY</b>
-          </th>
-          <td class="col-lg-9">
-            <ul class="data">
-              <li>{{ data1 }}</li>
-              <li>{{ data2 }}</li>
-            </ul>
-          </td>
-        </tr>
-        <!-- row 2-->
-        <tr class="dataRow trDisplay">
-          <th class="col-lg-3 p-0">
-            <b>REFRESH RATE</b>
-          </th>
-          <td class="col-lg-9 data dataSingle">
-            {{ data3 }}
-          </td>
-        </tr>
-        <!-- row 2 -->
-        <tr class="dataRow trDisplay">
-          <th class="col-lg-3 p-0">
-            <b>GRAPHICS</b>
-          </th>
-          <td class="col-lg-9">
-            <ul class="data dataBul">
-              <li>
-                {{ data4 }}
-              </li>
-              <li>
-                {{ data5 }}
-              </li>
-            </ul>
-          </td>
-        </tr>
-        <!-- row 3-->
-        <span id="more" ref="more">
-          <tr class="dataRow trDisplays">
-            <th class="col-lg-3 p-0">
-              <b>CONTRAST RATIO</b>
-            </th>
-            <td class="col-lg-9 data dataSingle">
-              {{ data6 }}
-            </td>
-          </tr>
-          <!-- row 4 -->
-          <tr class="dataRow trDisplays">
-            <th class="col-lg-3 p-0">
-              <b>BEZELS</b>
-            </th>
-            <td class="col-lg-9 data dataSingle">
-              {{ data7 }}
-            </td>
-          </tr>
-          <!-- row 5 -->
-          <tr class="dataRow trDisplays">
-            <th class="col-lg-3 p-0">
-              <b>SYNC</b>
-            </th>
-            <td class="col-lg-9">
-              <ul class="data dataBul">
-                <li>{{ data8 }}</li>
-                <li>{{ data9 }}</li>
-              </ul>
-            </td>
-          </tr>
-          <!-- row 6 -->
-          <tr class="dataRow trDisplays">
-            <th class="col-lg-3 p-0">
-              <b>ROTATION</b>
-            </th>
-            <td class="col-lg-9 data dataSingle">
-              {{ data10 }}
-            </td>
-          </tr>
-          <!-- row 7 -->
-          <tr class="dataRow trDisplays">
-            <th class="col-lg-3 p-0">
-              <b>CABLE MANAGEMENT</b>
-            </th>
-            <td class="col-lg-9 data dataSingle">
-              {{ data11 }}
-            </td>
-          </tr>
-          <!-- row 8 -->
-          <tr class="dataRow trDisplays">
-            <th class="col-lg-3 p-0">
-              <b>Lighting</b>
-            </th>
-            <td class="col-lg-9 data dataSingle">
-              {{ data12 }}
-            </td>
-          </tr>
-
-          <!-- row 9 -->
-          <tr class="dataRow trDisplays">
-            <th class="col-lg-3 p-0">
-              <b>Input & Output</b>
-            </th>
-            <td class="col-lg-9">
-              <ul class="data dataBul">
-                <li>{{ data13 }}</li>
-                <li>{{ data14 }}</li>
-                <li>{{ data15 }}</li>
-                <li>{{ data16 }}</li>
-              </ul>
-            </td>
-          </tr>
-        </span>
-      </table>
+  <div class="container techSpecsBox">
+    <!-- <h4 id="headerText">TECH SPECS</h4> -->
+    <div class="row">
+      <h4 id="headerText">TECH SPECS</h4>
     </div>
-    <div id="seeLess" ref="seeless" class="m-0">
+    <div class="row line-tech">
+      <div class="col-lg-3 text-center-tech">Display</div>
+      <div class="col-lg-5 text-center-tech">
+        <li>{{data1}}</li>
+        <li>{{data2}}</li>
+      </div>
+    </div>
+    <div class="row line-tech">
+      <div class="col-lg-3 text-center-tech">Refresh rate</div>
+      <div class="col-lg-5 text-center-tech">
+        {{data3}}
+      </div>
+    </div>
+    <!-- row 3-->
+    <span id="more" ref="more"> </span>
+  </div>
+  <!-- <div id="seeLess" ref="seeless" class="m-0">
       <p @click="test()" class="seeBox pt-2" ref="text">
         {{ text
         }}<svg
@@ -139,20 +41,40 @@
         </svg>
       </p>
     </div>
-  </div>
+  </div> -->
 </template>
 <style>
 @font-face {
   font-family: myFirstFont;
   src: url("../assets/font/razerf5-thin.otf");
 }
+
+
+
+
 .techSpecsBox {
-  margin: 10px;
+  background-color: #333;
+  color: white;
+}
+.line-tech {
+  border-bottom: solid 1px #999;
+  color: white;
+}
+.text-center-tech{
+    text-align: left;
+}
+
+
+
+
+
+
+
+.techSpecsBox {
   background-color: #252525;
   color: white;
 }
 .techSpecs {
-  padding: 10px;
   color: white;
 }
 .row-line {
