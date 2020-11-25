@@ -2,7 +2,7 @@
 <section>
   <div class="techSpecsBox justify-content-center data-golf">
     <!-- <h4 id="headerText">TECH SPECS</h4> -->
-    <div class="row mt-4">
+    <div class="row pt-4">
       <h4 id="headerText">TECH SPECS</h4>
     </div>
     <div class="row line-tech">
@@ -43,6 +43,40 @@
         <div class="col-lg-3 text-center-tech data-golf-data upHead">Bezels</div>
         <div class="col-lg-5 text-center-tech data-golf-data">
           {{ data7 }}
+        </div>
+      </div>
+       <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">Sync</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          <li>{{data8}}</li>
+          <li>{{data9}}</li>
+        </div>
+      </div>
+       <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">Rotation</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data10}}
+        </div>
+      </div>
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">Cable Management</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data11}}
+        </div>
+      </div>
+       <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">Lighting</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data12}}
+        </div>
+      </div>
+       <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">Input & Output</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          <li>{{data13}}</li>
+          <li>{{data14}}</li>
+          <li>{{data15}}</li>
+          <li>{{data16}}</li>
         </div>
       </div>
     </span>

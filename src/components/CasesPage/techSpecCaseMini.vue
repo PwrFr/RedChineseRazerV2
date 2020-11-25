@@ -1,159 +1,170 @@
 <template>
-  <section>
-    <!-- techSpecCase CaseMini -->
-    <div class="container-fluid techSpecsBox p-0">
-      <div class="container techSpecs">
-        <!-- <h4 id="headerText">TECH SPECS </h4> -->
-        <table class="container-fluid">
-          <tr>
-            <h4 id="headerText">TECH SPECS</h4>
-          </tr>
-          <tr class="dataRow trDisplay dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>MODEL</b>
-            </th>
-            <td class="col-lg-9 data">{{ data1 }}</td>
-          </tr>
-          <!-- row 2-->
-          <tr class="dataRow trDisplay dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>PRODUCT NUMBER</b>
-            </th>
-            <td class="col-lg-9 data">{{ data2 }}</td>
-          </tr>
-          <!-- row 2 -->
-          <tr class="dataRow trDisplay dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>CHASSIS FORM FACTOR</b>
-            </th>
-            <td class="col-lg-9 data">{{ data3 }}</td>
-          </tr>
-          <!-- row 3-->
-
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>Supported Motherboards</b>
-            </th>
-            <td class="col-lg-9 data">{{ data4 }}</td>
-          </tr>
-          <!-- row 4 -->
-          <span id="more" ref="more">
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b>Case Material</b>
-              </th>
-              <td class="col-lg-9 data">{{ data5 }}</td>
-            </tr>
-            <!-- row 5 -->
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b># of Expansion Slots</b>
-              </th>
-              <td class="col-lg-9 data">{{ data6 }}</td>
-            </tr>
-            <!-- row 6 -->
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b># of Supported Drives</b>
-              </th>
-              <td class="col-lg-9 data">{{ data7 }}</td>
-            </tr>
-            <!-- row 7 -->
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b>Radiator Compatibility</b>
-              </th>
-              <td class="col-lg-9 data">{{ data9 }}</td>
-            </tr>
-            <!-- row 8 -->
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b>Maximum CPU Cooler Height</b>
-              </th>
-              <td class="col-lg-9 data">{{ data10 }}</td>
-            </tr>
-
-            <!-- row 9 -->
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b>Maximum GPU Length</b>
-              </th>
-              <td class="col-lg-9 data">{{ data11 }}</td>
-            </tr>
-            <!-- row 10 -->
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b>Maximum PSU Length</b>
-              </th>
-              <td class="col-lg-9 data">{{ data12 }}</td>
-            </tr>
-            <!-- row 11 -->
-            <tr class="dataRow trDisplays dataBul">
-              <th class="col-lg-3 p-0">
-                <b>FRONT PANEL I/O</b>
-              </th>
-              <td class="col-lg-9">
-                <ul class="data p-2">
-                  <li v-for="item_two in data13" :key="item_two">{{ item_two }}</li>
-                </ul>
-              </td>
-            </tr>
-            <!-- row 12  -->
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b>RAZER Chroma™ Support</b>
-              </th>
-              <td class="col-lg-9 data">{{ data14 }}</td>
-            </tr>
-            <!-- row 13 -->
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b>Warranty</b>
-              </th>
-              <td class="col-lg-9 data">{{ data15 }}</td>
-            </tr>
-            <!-- row 14 -->
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b>Case Dimensions</b>
-              </th>
-              <td class="col-lg-9 data">{{ data16 }}</td>
-            </tr>
-            <!-- row 15 -->
-            <tr class="dataRow trDisplays dataSingle">
-              <th class="col-lg-3 p-0">
-                <b>Weight</b>
-              </th>
-              <td class="col-lg-9 data">{{ data17 }}</td>
-            </tr>
-          </span>
-        </table>
-      </div>
-      <div id="seeLess" ref="seeless" class="m-0">
-        <p @click="test()" class="seeBox pt-2" ref="text">
-          {{ text }}
-          <svg
-            ref="arrowGreen"
-            id="arrow"
-            width="2em"
-            height="1em"
-            border="20px"
-            viewBox="0 0 16 16"
-            class="bi bi-chevron-up arrow"
-            fill="#45D52C"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-            />
-          </svg>
-        </p>
+<section>
+  <div class="techSpecsBox justify-content-center data-golf">
+    <!-- <h4 id="headerText">TECH SPECS</h4> -->
+    <div class="row pt-4">
+      <h4 id="headerText">TECH SPECS</h4>
+    </div>
+    <div class="row line-tech">
+      <div class="col-lg-3 text-center-tech data-golf-data upHead">Model</div>
+      <div class="col-lg-5 text-center-tech data-golf-data">{{ data1 }}</div>
+    </div>
+    <div class="row line-tech">
+      <div class="col-lg-3 text-center-tech data-golf-data upHead">PRODUCT NUMBER</div>
+      <div class="col-lg-5 text-center-tech data-golf-data">
+        {{ data2 }}
       </div>
     </div>
-  </section>
+    <div class="row line-tech">
+      <div class="col-lg-3 text-center-tech data-golf-data upHead">CHASSIS FORM FACTOR</div>
+      <div class="col-lg-5 text-center-tech data-golf-data">
+        {{ data3 }}
+      </div>
+    </div>
+    <div class="row line-tech">
+      <div class="col-lg-3 text-center-tech data-golf-data upHead">SUPPORTED MOTHERBOARDS</div>
+      <div class="col-lg-5 text-center-tech data-golf-data">
+        {{ data4 }}
+      </div>
+    </div>
+    <!-- row 3-->
+    <span id="more" ref="more">
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">CASE MATERIAL</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{ data5 }}
+        </div>
+      </div>
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead"># OF EXPANSION SLOTS</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{ data6 }}
+        </div>
+      </div>
+       <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead"># OF SUPPORTED DRIVES</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          <li>{{data7}}</li>
+          <li>{{data8}}</li>
+        </div>
+      </div>
+       <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">RADIATOR COMPATIBILITY</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data9}}
+        </div>
+      </div>
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">MAXIMUM CPU COOLER HEIGHT</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data10}}
+        </div>
+      </div>
+       <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">MAXIMUM GPU LENGTH</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data11}}
+        </div>
+      </div>
+       <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">MAXIMUM PSU LENGTH</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data12}}
+        </div>
+      </div>
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">FRONT PANEL I/O</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          <li v-for="(i, index) in data13" :key="index">{{data13[index]}}</li>
+        </div>
+      </div>
+
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">RAZER CHROMA™ SUPPORT</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data14}}
+        </div>
+      </div>
+
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">WARRANTY</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data15}}
+        </div>
+      </div>
+      
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">CASE DIMENSIONS</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data16}}
+        </div>
+      </div>
+
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">WEIGHT</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{data17}}
+        </div>
+      </div>
+    </span>
+  </div>
+
+  <div id="seeLess" ref="seeless" class="m-0">
+      <p @click="test()" class="seeBox pt-2" ref="text">
+        {{ text }}
+        <svg
+          ref="arrowGreen"
+          id="arrow"
+          width="2em"
+          height="1em"
+          border="20px"
+          viewBox="0 0 16 16"
+          class="bi bi-chevron-up arrow"
+          fill="#45D52C"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+          />
+        </svg>
+      </p>
+    </div>
+    </section>
 </template>
+
 <style>
+/* @font-face {
+  font-family: myFirstFont;
+  src: url("../assets/font/razerf5-thin.otf");
+} */
+
+.techSpecsBox {
+  background-color:#252525;
+  color: white;
+}
+.line-tech {
+  border-bottom: solid 1px #999;
+  color: white;
+}
+.text-center-tech {
+  text-align: left;
+}
+.data-golf{
+  padding-left: 10rem;
+  padding-right:10rem ;
+}
+.data-golf-data{
+
+  padding: 1rem;
+  color: gray;
+}
+.upHead{
+ text-transform: uppercase;
+ font-weight: bold;
+ color: #fff;
+}
+
 .techSpecsBox {
   margin: 10px;
   background-color: #252525;
