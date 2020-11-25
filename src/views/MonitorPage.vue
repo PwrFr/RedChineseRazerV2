@@ -1,7 +1,7 @@
 <template>
   <section>
     <div>
-      <ProductSlot
+      <!-- <ProductSlot
         class="mt-5"
         imageAmount="5"
         imageTab1="@/assets/products/4Monitors/productImage/bar/1.jpg"
@@ -30,7 +30,7 @@
         :shippingDate="shipStatusJson"
         :buyingStatus="buttonJson"
         buyingAt="Also Available At"
-      />
+      /> -->
       <monitorRow1 />
       <headerAccessProduct
         class="pb-5"
@@ -76,35 +76,40 @@
 
 <script>
 const SideImgRowR = () => import("@/components/SideImgRowR.vue");
-import testingRow from "@/components/monitor/testingRow.vue";
+// import testingRow from "@/components/monitor/testingRow.vue";
 const ProductSlot = () => import("@/components/ProductSlot.vue");
 import datas from "@/models/data.js";
 
-import headerAccessProduct from "@/components/headerAccesssProduct.vue";
-import imgRowC from "@/components/monitor/imgRowC.vue";
-import monitorRow1 from "@/components/monitor/monitorRow1.vue";
-import imgRowCT from "@/components/monitor/imgRowCT.vue";
+// import headerAccessProduct from "@/components/headerAccesssProduct.vue";
+const headerAccessProduct = () => import("@/components/headerAccesssProduct.vue");
 
-import monitorRow3 from "@/components/monitor/monitorRow3.vue";
+// import imgRowC from "@/components/monitor/imgRowC.vue";
+const imgRowC = () => import("@/components/monitor/imgRowC.vue");
+
+// import monitorRow1 from "@/components/monitor/monitorRow1.vue";
+const monitorRow1  = () => import("@/components/monitor/monitorRow1.vue");
+
+// import imgRowCT from "@/components/monitor/imgRowCT.vue";
+const imgRowCT = () => import("@/components/monitor/imgRowCT.vue");
+
+// import monitorRow3 from "@/components/monitor/monitorRow3.vue";
+const monitorRow3 = () => import("@/components/monitor/monitorRow3.vue");
 
 //Row5 use same component with row3
-import techSpecMonitor from "@/components/techSpecMonitor.vue";
+// import techSpecMonitor from "@/components/techSpecMonitor.vue";
+const techSpecMonitor = () => import("@/components/techSpecMonitor.vue");
 
 export default {
   props: {},
   name: "MonitorPage",
   components: {
     headerAccessProduct,
-    ProductSlot,
-    MenuBar,
     techSpecMonitor,
     monitorRow1,
     monitorRow3,
-    SideImgRowR,
-    testingRow,
+    SideImgRowR, 
     imgRowC,
     imgRowCT,
-    Footer,
   },
   data() {
     return {
