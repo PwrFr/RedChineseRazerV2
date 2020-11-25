@@ -1,7 +1,9 @@
 <template>
   <div
     style="background-position-x: center"
-    v-bind:style="{ backgroundImage: 'url(' + bg + ')' }"
+    v-bind:style="{
+      backgroundImage: 'url(' + require('@/' + bg) + ')',
+    }"
   >
     <div class="text-center container razerf5 pt-4">
       <div>

@@ -14,14 +14,18 @@
         <div class="col-5 text-grey m-4">
           <div
             class="testingImg w-100"
-            v-bind:style="{ backgroundImage: 'url(' + testL + ')' }"
+            v-bind:style="{
+              backgroundImage: 'url(' + require('@/' + testL) + ')',
+            }"
           ></div>
           <p class="p-2 razerf5" style="font-size: 1.2rem">Screen tearing</p>
         </div>
         <div class="col-5 text-grey m-4">
           <div
             class="testingImg w-100"
-            v-bind:style="{ backgroundImage: 'url(' + testR + ')' }"
+            v-bind:style="{
+              backgroundImage: 'url(' + require('@/' + testR) + ')',
+            }"
           ></div>
           <p class="p-2 razerf5" style="font-size: 1.2rem">No tearing</p>
         </div>

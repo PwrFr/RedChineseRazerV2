@@ -1,7 +1,9 @@
 <template>
   <div
     class="bgrowc text-center"
-    v-bind:style="{ backgroundImage: 'url(' + bg + ')' }"
+    v-bind:style="{
+      backgroundImage: 'url(' + require('@/' + bg) + ')',
+    }"
   >
     <div class="container text-row-c">
       <h3 class="razerf5 text-black">TUNED TO YOUR COMFORT</h3>

@@ -35,6 +35,21 @@ const routes = [
     path: '/monitor',
     name: 'monitor',
     component: () => import('../views/MonitorPage.vue')
+  },
+  {
+    path: '/Razer Neoprene Sleeve V2 - For 13.3” Notebooks',
+    name: 'Razer Neoprene Sleeve V2 - For 13.3” Notebooks',
+    component: () => import('../views/access1.vue')
+  },
+  {
+    path: '/Razer Protective Sleeve V2 - For 13.3" Notebooks',
+    name: 'Razer Protective Sleeve V2 - For 13.3" Notebooks',
+    component: () => import('../views/access2.vue')
+  },
+  {
+    path: '/Razer Protective Sleeve V2 - For 17.3" Notebooks',
+    name: 'Razer Protective Sleeve V2 - For 17.3" Notebooks',
+    component: () => import('../views/access3.vue')
   }
 ]
 

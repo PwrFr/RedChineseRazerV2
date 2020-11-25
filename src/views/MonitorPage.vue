@@ -41,33 +41,33 @@
       <SideImgRowR
         style="height: 51rem"
         class="pr-5 pt-5"
-        bgimgRR="@/assets/monitor/raptor-update-dev_02-usp-light.jpg"
+        bgimgRR="assets/monitor/raptor-update-dev_02-usp-light.jpg"
         title="LIGHTNING FAST
 144HZ PRECISION"
         dis="While 60Hz monitors may cut it for some, the ultimate gaming experience requires a much higher rate. With a blistering 144Hz refresh rate, The Razer Raptor can display more than double the frames than the industry standard while the Ultra Low Motion Blur technology further enhances the sharpness of each individual frame. This produces an incredible image with stunning clarity and life-like fluid motion, so no matter how hectic the action gets, you can react faster with more precision"
       />
       <testingRow
-        testL="@/assets/monitor/raptor-update-dev_03-gameplay-1.jpg"
-        testR="@/assets/monitor/raptor-update-dev_05-gameplay-2.jpg"
+        testL="assets/monitor/raptor-update-dev_03-gameplay-1.jpg"
+        testR="assets/monitor/raptor-update-dev_05-gameplay-2.jpg"
       />
       <imgRowC
         style="height: 41rem"
-        bg="@/assets/monitor/raptor-update-dev_07-usp3.jpg"
+        bg="assets/monitor/raptor-update-dev_07-usp3.jpg"
       />
       <SideImgRowR
         style="height: 39rem"
         class="pr-5 pt-5"
-        bgimgRR="@/assets/monitor/raptor-update-dev_08-usp4.jpg"
+        bgimgRR="assets/monitor/raptor-update-dev_08-usp4.jpg"
         title="SYNAPSE CONTROL"
         dis="Whether you're gaming, streaming, creating, or working the built-in profiles within the Razer Raptor 27 are optimized for each and every task. Change profiles on the fly and set the mood directly through your PC. Adjusting brightness and contrast has never been easier with a click of a mouse or push of a keyboard."
-        probb="@/assets/monitor/raptor-update-logo-usp.png"
+        probb="assets/monitor/raptor-update-logo-usp.png"
       />
       <imgRowCT
         style="height: 61rem"
-        bg="@/assets/monitor/raptor-update-dev_09-usp5.jpg"
-        icon1="@/assets/monitor/raptor-update-dev_10-razer-chroma.png"
-        icon2="@/assets/monitor/razer-raptor-27-connect-icon.png"
-        icon3="@/assets/monitor/razer-raptor-27-screen-icon.png"
+        bg="assets/monitor/raptor-update-dev_09-usp5.jpg"
+        icon1="assets/monitor/raptor-update-dev_10-razer-chroma.png"
+        icon2="assets/monitor/razer-raptor-27-connect-icon.png"
+        icon3="assets/monitor/razer-raptor-27-screen-icon.png"
       />
       <techSpecMonitor />
     </div>
@@ -81,13 +81,14 @@ const ProductSlot = () => import("@/components/ProductSlot.vue");
 import datas from "@/models/data.js";
 
 // import headerAccessProduct from "@/components/headerAccesssProduct.vue";
-const headerAccessProduct = () => import("@/components/headerAccesssProduct.vue");
+const headerAccessProduct = () =>
+  import("@/components/headerAccesssProduct.vue");
 
 // import imgRowC from "@/components/monitor/imgRowC.vue";
 const imgRowC = () => import("@/components/monitor/imgRowC.vue");
 
 // import monitorRow1 from "@/components/monitor/monitorRow1.vue";
-const monitorRow1  = () => import("@/components/monitor/monitorRow1.vue");
+const monitorRow1 = () => import("@/components/monitor/monitorRow1.vue");
 
 // import imgRowCT from "@/components/monitor/imgRowCT.vue";
 const imgRowCT = () => import("@/components/monitor/imgRowCT.vue");
@@ -107,7 +108,7 @@ export default {
     techSpecMonitor,
     monitorRow1,
     monitorRow3,
-    SideImgRowR, 
+    SideImgRowR,
     imgRowC,
     imgRowCT,
   },
