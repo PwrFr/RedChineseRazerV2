@@ -20,7 +20,7 @@
     </div>
 
     <div class="card-product">
-      <router-link to="item.link || ''" class="img-crop cursor-point">
+      <router-link :to="'/' + item.link" class="img-crop cursor-point">
         <img
           class="w-100"
           :src="require('@/' + item.img)"
@@ -39,7 +39,7 @@
         </label>
       </div>
       <div class="card-body-access p-3 pr-4 pl-3">
-        <router-link to="item.link || ''" class="title-product">
+        <router-link :to="'/' + item.link" class="title-product">
           {{ item.name }}
         </router-link>
         <div class="detail-product">
@@ -49,7 +49,7 @@
             </li>
           </ul>
         </div>
-        <router-link to="item.link || ''" class="view-detail pl-1 pt-2"
+        <router-link :to="'/' + item.link" class="view-detail pl-1 pt-2"
           >View details ></router-link
         >
         <div class="setBottom">

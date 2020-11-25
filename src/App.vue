@@ -2,9 +2,10 @@
   <div id="app">
     <menu-bar />
     <router-view />
-    <Footer style="background-color: #222222" />
+    <Footer />
   </div>
 </template>
+
 <script>
 import Footer from "./components/Footer.vue";
 export default {

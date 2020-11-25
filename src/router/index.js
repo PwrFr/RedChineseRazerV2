@@ -37,18 +37,18 @@ const routes = [
     component: () => import('../views/MonitorPage.vue')
   },
   {
-    path: '/ac1',
-    name: 'Razer Neoprene Sleeve V2 - For 13.3” Notebooks',
+    path: '/access1',
+    name: 'access1',
     component: () => import('../views/access1.vue')
   },
   {
-    path: '/ac2',
-    name: 'Razer Protective Sleeve V2 - For 13.3" Notebooks',
+    path: '/access2',
+    name: 'access2',
     component: () => import('../views/access2.vue')
   },
   {
-    path: '/ac3',
-    name: 'Razer Protective Sleeve V2 - For 17.3" Notebooks',
+    path: '/access3',
+    name: 'access3',
     component: () => import('../views/access3.vue')
   }
 ]
