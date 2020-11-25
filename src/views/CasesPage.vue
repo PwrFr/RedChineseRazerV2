@@ -1,7 +1,7 @@
 <template>
   <section>
     <div>
-      <!-- <div
+      <div
         class="container-fluid mt-5"
         style="padding: 0px; background-color: black"
       >
@@ -108,6 +108,7 @@
             </div>
           </div>
 
+          <!--leftside -->
 
           <div class="col right-box w-100 pr-5">
             <p class="header">{{ headerJson }}</p>
@@ -129,6 +130,7 @@
               </ul>
             </div>
 
+            <!-- boos here --->
             <div v-if="modelBoxDisappear == 0">
               <div class="model-box-div">
                 <div id="box" class="model-box">
@@ -213,6 +215,7 @@
                 </div>
               </div>
             </div>
+            <!-- end --->
 
             <p class="shipping-date">{{ shippingDate }}</p>
             <button class="order-button">{{ buyingStatus }}</button>
@@ -220,7 +223,7 @@
             <p class="product-status">{{ buyingAt }}</p>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <VideoSession />
 
@@ -256,19 +259,21 @@
 </template>
 
 <script>
-import datas from "./assets/data.json";
-import VideoSession from "./components/CasesPage/casesVideo.vue";
-import Row1 from "./components/CasesPage/casesRow1.vue";
-import Row2 from "./components/CasesPage/casesRow2.vue";
-import Row3 from "./components/CasesPage/casesRow3.vue";
-import Row4 from "./components/CasesPage/casesRow4.vue";
-import Row6 from "./components/CasesPage/casesRow6.vue";
-import Row7 from "./components/CasesPage/casesRow7.vue";
-import Row8 from "./components/CasesPage/casesRow8.vue";
-import Row9 from "./components/CasesPage/casesRow9.vue";
+const Row1 = () => import("@/components/CasesPage/casesRow1");
+const Row2 = () => import("@/components/CasesPage/casesRow2");
+const VideoSession = () => import("@/components/CasesPage/VideoSession");
+import datas from "@/models/data.js";
+const Row3 = () => import("@/components/CasesPage/casesRow3");
+const Row4 = () => import("@/components/CasesPage/casesRow4");
+const Row6 = () => import("@/components/CasesPage/casesRow6");
+const Row7 = () => import("@/components/CasesPage/casesRow7");
+const Row8 = () => import("@/components/CasesPage/casesRow8");
+const Row9 = () => import("@/components/CasesPage/casesRow9");
+const techSpecCase = () => import("@/components/CasesPage/techSpecCase");
+const techSpecCaseMini = () =>
+  import("@/components/CasesPage/techSpecCaseMini");
+
 //Row5 use same component with row3
-import techSpecCase from "./components/CasesPage/techSpecCase.vue";
-import techSpecCaseMini from "./components/CasesPage/techSpecCaseMini.vue";
 
 export default {
   created() {},
@@ -515,6 +520,3 @@ export default {
   },
 };
 </script>
-<style>
-@import "./index.css";
-</style>
