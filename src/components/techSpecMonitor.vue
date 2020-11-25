@@ -18,21 +18,21 @@
           </td>
         </tr>
         <!-- row 2-->
-        <tr class="dataRow trDisplay dataSingle">
+        <tr class="dataRow trDisplay ">
           <th class="col-lg-3 p-0">
             <b>REFRESH RATE</b>
           </th>
-          <td class="col-lg-9 p-0 data py-1">
+          <td class="col-lg-9 p-0 data p-3">
             {{ data3 }}
           </td>
         </tr>
         <!-- row 2 -->
-        <tr class="dataRow trDisplay dataBul">
+        <tr class="dataRow trDisplay">
           <th class="col-lg-3 p-0">
             <b>GRAPHICS</b>
           </th>
           <td class="col-lg-9">
-            <ul class="data">
+            <ul class="data dataBul">
               <li>
                 {{ data4 }}
               </li>
@@ -44,70 +44,70 @@
         </tr>
         <!-- row 3-->
         <span id="more" ref="more">
-          <tr class="dataRow trDisplays dataSingle">
+          <tr class="dataRow trDisplays ">
             <th class="col-lg-3 p-0">
               <b>CONTRAST RATIO</b>
             </th>
-            <td class="col-lg-9 p-0 data">
+            <td class="col-lg-9 data dataSingle">
               {{ data6 }}
             </td>
           </tr>
           <!-- row 4 -->
-          <tr class="dataRow trDisplays dataSingle">
+          <tr class="dataRow trDisplays ">
             <th class="col-lg-3 p-0">
               <b>BEZELS</b>
             </th>
-            <td class="col-lg-9 p-0 data">
+            <td class="col-lg-9 data dataSingle">
               {{ data7 }}
             </td>
           </tr>
           <!-- row 5 -->
-          <tr class="dataRow trDisplays dataBul">
+          <tr class="dataRow trDisplays ">
             <th class="col-lg-3 p-0">
               <b>SYNC</b>
             </th>
             <td class="col-lg-9">
-              <ul class="data">
+              <ul class="data dataBul">
                 <li>{{ data8 }}</li>
                 <li>{{ data9 }}</li>
               </ul>
             </td>
           </tr>
           <!-- row 6 -->
-          <tr class="dataRow trDisplays dataSingle">
+          <tr class="dataRow trDisplays ">
             <th class="col-lg-3 p-0">
               <b>ROTATION</b>
             </th>
-            <td class="col-lg-9 p-0 data">
+            <td class="col-lg-9 data dataSingle">
               {{ data10 }}
             </td>
           </tr>
           <!-- row 7 -->
-          <tr class="dataRow trDisplays dataSingle">
+          <tr class="dataRow trDisplays ">
             <th class="col-lg-3 p-0">
               <b>CABLE MANAGEMENT</b>
             </th>
-            <td class="col-lg-9 p-0 data">
+            <td class="col-lg-9 data dataSingle">
               {{ data11 }}
             </td>
           </tr>
           <!-- row 8 -->
-          <tr class="dataRow trDisplays dataSingle">
+          <tr class="dataRow trDisplays ">
             <th class="col-lg-3 p-0">
               <b>Lighting</b>
             </th>
-            <td class="col-lg-9 p-0 data">
+            <td class="col-lg-9 data dataSingle">
               {{ data12 }}
             </td>
           </tr>
 
           <!-- row 9 -->
-          <tr class="dataRow trDisplays dataBul">
+          <tr class="dataRow trDisplays ">
             <th class="col-lg-3 p-0">
               <b>Input & Output</b>
             </th>
             <td class="col-lg-9">
-              <ul class="data">
+              <ul class="data dataBul">
                 <li>{{ data13 }}</li>
                 <li>{{ data14 }}</li>
                 <li>{{ data15 }}</li>
@@ -184,15 +184,16 @@ ul {
   border-bottom: solid 1px #999;
 }
 .tr-test-monitor{
-  display: inline;
+  padding: 3rem;
 }
 .dataBul {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 0;
 }
 .dataSingle {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 0rem;
 }
 #more {
   /* display: inline; */
