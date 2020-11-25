@@ -1,68 +1,65 @@
 <template>
   <section>
     <div>
-      <div class="container-fluid mt-5" style="padding: 0px; background-color: black">
+      <div class="container-fluid text-left" style="padding: 0px; background-color: black">
         <div class="row p-0 mt-0 row-product">
           <div
             class="col-xl-10 col-md-12 col-img-full"
-            v-bind:style="{ backgroundImage: 'url(' + bgComponent + ')' }"
+            v-bind:style="{
+              backgroundImage: 'url(' + require('@/' + bgComponent) + ')',
+            }"
           >
             <div class="image-tab">
               <lable>
                 <div class="image-tab-list">
                   <input type="radio" name="test" @click="changeImage(1)" class="rdo_style" checked />
-                  <img :src="imageTab1" class="image-tab-border" />
+                  <img :src="require('@/' + imageTab1)" class="image-tab-border" />
                 </div>
               </lable>
               <lable>
                 <div class="image-tab-list">
                   <input type="radio" name="test" @click="changeImage(2)" class="rdo_style" />
-                  <img :src="imageTab2" class="image-tab-border" />
+                  <img :src="require('@/' + imageTab2)" class="image-tab-border" />
                 </div>
               </lable>
               <lable>
                 <div class="image-tab-list">
                   <input type="radio" name="test" @click="changeImage(3)" class="rdo_style" />
-                  <img :src="imageTab3" class="image-tab-border" />
+                  <img :src="require('@/' + imageTab3)" class="image-tab-border" />
                 </div>
               </lable>
               <lable>
                 <div class="image-tab-list">
                   <div v-if="4 - imageAmount > 0">
-                    <img :src="imageTab4" class="image-tab-border" :style="hiddenBorder4" />
+                    <img
+                      :src="require('@/' + imageTab4)"
+                      class="image-tab-border"
+                      :style="hiddenBorder4"
+                    />
                   </div>
                   <div v-else>
                     <input type="radio" name="test" @click="changeImage(4)" class="rdo_style" />
-                    <img :src="imageTab4" class="image-tab-border" />
+                    <img :src="require('@/' + imageTab4)" class="image-tab-border" />
                   </div>
                 </div>
               </lable>
               <lable>
                 <div class="image-tab-list">
                   <div v-if="5 - imageAmount > 0">
-                    <img :src="imageTab5" class="image-tab-border" :style="hiddenBorder5" />
+                    <img
+                      :src="require('@/' + imageTab5)"
+                      class="image-tab-border"
+                      :style="hiddenBorder5"
+                    />
                   </div>
                   <div v-else>
                     <input type="radio" name="test" @click="changeImage(5)" class="rdo_style" />
-                    <img :src="imageTab5" class="image-tab-border" />
-                  </div>
-                </div>
-              </lable>
-              <lable>
-                <div class="image-tab-list">
-                  <div v-if="6 - imageAmount > 0">
-                    <img :src="imageTab6" class="image-tab-border" :style="hiddenBorder6" />
-                  </div>
-                  <div v-else>
-                    <input type="radio" name="test" @click="changeImage(6)" class="rdo_style" />
-                    <img :src="imageTab6" class="image-tab-border" />
+                    <img :src="require('@/' + imageTab5)" class="image-tab-border" />
                   </div>
                 </div>
               </lable>
             </div>
           </div>
-
-          <!--leftside -->
 
           <div class="col right-box w-100 pr-5">
             <p class="header">{{ headerJson }}</p>
@@ -84,7 +81,6 @@
               </ul>
             </div>
 
-            <!-- boos here --->
             <div v-if="modelBoxDisappear == 0">
               <div class="model-box-div">
                 <div id="box" class="model-box">
@@ -98,10 +94,18 @@
                           name="category"
                         />
                         <div v-if="whiteSelecterText == 0" style="color: white">
-                          <label id="1" for="Standard - Black">{{ modelItem1 }}</label>
+                          <label id="1" for="Standard - Black">
+                            {{
+                            modelItem1
+                            }}
+                          </label>
                         </div>
                         <div v-else>
-                          <label id="1" for="Standard - Black">{{ modelItem1 }}</label>
+                          <label id="1" for="Standard - Black">
+                            {{
+                            modelItem1
+                            }}
+                          </label>
                         </div>
                       </div>
 
@@ -113,10 +117,18 @@
                           name="category"
                         />
                         <div v-if="whiteSelecterText == 1" style="color: white">
-                          <label id="2" for="Standard - Black">{{ modelItem2 }}</label>
+                          <label id="2" for="Standard - Black">
+                            {{
+                            modelItem2
+                            }}
+                          </label>
                         </div>
                         <div v-else>
-                          <label id="2" for="Standard - Black">{{ modelItem2 }}</label>
+                          <label id="2" for="Standard - Black">
+                            {{
+                            modelItem2
+                            }}
+                          </label>
                         </div>
                       </div>
 
@@ -129,15 +141,31 @@
                           @click="thirdSelecter"
                         />
                         <div v-if="whiteSelecterText == 2" style="color: white">
-                          <label id="3" for="Standard - Black">{{ modelItem3 }}</label>
+                          <label id="3" for="Standard - Black">
+                            {{
+                            modelItem3
+                            }}
+                          </label>
                         </div>
                         <div v-else>
-                          <label id="3" for="Standard - Black">{{ modelItem3 }}</label>
+                          <label id="3" for="Standard - Black">
+                            {{
+                            modelItem3
+                            }}
+                          </label>
                         </div>
                       </div>
                     </div>
 
-                    <div class="selected">{{ modelFirstNameJson }}</div>
+                    <div
+                      class="selected"
+                      v-bind:style="{
+                        backgroundImage:
+                          'url(' +
+                          require('@/components/Custom-Select-Box-master/img/arrow-down.svg') +
+                          ')',
+                      }"
+                    >{{ modelFirstNameJson }}</div>
                   </div>
                 </div>
                 <div class="model-box-1" id="box1">
@@ -145,8 +173,6 @@
                 </div>
               </div>
             </div>
-            <!-- end --->
-
             <p class="shipping-date">{{ shippingDate }}</p>
             <button class="order-button">{{ buyingStatus }}</button>
 
@@ -155,7 +181,7 @@
         </div>
       </div>
       <productSize
-        proSize="@/assets/AC2/razer-protective-sleeves-v2-usp0-desktop.jpg"
+        proSize="assets/AC2/razer-protective-sleeves-v2-usp0-desktop.jpg"
         title="AVAILABLE IN"
         dis="13.3″ | 15.6″ | 17.3″"
       />
@@ -165,19 +191,19 @@
       />
 
       <SideImgRowL
-        bgimgRL="@/assets/AC2/razer-protective-sleeves-v2-usp2-desktop.jpg"
+        bgimgRL="assets/AC2/razer-protective-sleeves-v2-usp2-desktop.jpg"
         title="SMOOTH INTERIOR SURFACE WITH BUILT-IN MOUSE MAT"
         dis="Designed for dual usage, the sleeve’s interior features the same surface found on our mobile gaming mats, providing an ultra-slim layer of protection that transforms into a workstation."
       />
       <SideImgRowR
-        bgimgRR="@/assets/AC2/razer-protective-sleeves-v2-usp3-desktop.jpg"
+        bgimgRR="assets/AC2/razer-protective-sleeves-v2-usp3-desktop.jpg"
         title="CUSTOM FIT FOR OUR RAZER BLADE LAPTOPS"
         dis="Made to measure, the Razer Protective Sleeve V2 is designed to perfectly accommodate all variants of our Razer Blade laptop, so you can carry the winning edge wherever you go."
       />
       <ColAccessProduct
-        colimgProduct0="@/assets/AC2/chromatic-wordmark.jpg"
-        colimgProduct1="@/assets/AC2/snag-free-velcro.jpg"
-        colimgProduct2="@/assets/AC2/slim-design.jpg"
+        colimgProduct0="assets/AC2/chromatic-wordmark.jpg"
+        colimgProduct1="assets/AC2/snag-free-velcro.jpg"
+        colimgProduct2="assets/AC2/slim-design.jpg"
         titleL="CHROMATIC WORDMARK"
         titleC="SNAG-FREE VELCRO"
         titleR="SLIM PROFILE DESIGN"
@@ -227,12 +253,12 @@ export default {
       hiddenBorder6: {
         border: "0px"
       },
-      //imageTab1: "@/assets/products/cases/bar/1.jpg",
-      //imageTab2: "@/assets/products/cases/bar/2.jpg",
-      //imageTab3: "@/assets/products/cases/bar/3.jpg",
-      //imageTab4: "@/assets/products/cases/bar/4.jpg",
-      //imageTab5: "@/assets/products/cases/bar/5.jpg",
-      //wasd: "@/assets/products/cases/1.jpg"
+      //imageTab1: "assets/products/cases/bar/1.jpg",
+      //imageTab2: "assets/products/cases/bar/2.jpg",
+      //imageTab3: "assets/products/cases/bar/3.jpg",
+      //imageTab4: "assets/products/cases/bar/4.jpg",
+      //imageTab5: "assets/products/cases/bar/5.jpg",
+      //wasd: "assets/products/cases/1.jpg"
 
       headerJson: datas.PC_Acessories.ACCESSORIES.Product[1].name,
       desJson: datas.PC_Acessories.ACCESSORIES.Product[1].des,
@@ -251,19 +277,19 @@ export default {
 
       imageAmount: "5",
       imageTab1:
-        "@/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/1.jpg",
+        "assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/1.jpg",
       imageTab2:
-        "@/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/2.jpg",
+        "assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/2.jpg",
       imageTab3:
-        "@/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/3.jpg",
+        "assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/3.jpg",
       imageTab4:
-        "@/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/4.jpg",
+        "assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/4.jpg",
       imageTab5:
-        "@/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/5.jpg",
+        "assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/5.jpg",
       bgComponent:
-        "@/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/1.jpg",
+        "assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/1.jpg",
       imageLocateSrc:
-        "@/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/",
+        "assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/",
       modelBoxDisappear: "0",
       shippingDate: "Ships next business day",
       buyingStatus: "ADD TO CART",
@@ -275,7 +301,6 @@ export default {
     this.test();
   },
   components: {
-    MenuBar,
     SideImgRowL,
     SideImgRowR,
     headerAccessProduct,

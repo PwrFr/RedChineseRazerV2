@@ -1,15 +1,15 @@
 <template>
   <section>
     <div>
-      <!-- <div
-        class="container-fluid mt-5"
+      <div
+        class="container-fluid text-left"
         style="padding: 0px; background-color: black"
       >
         <div class="row p-0 mt-0 row-product">
           <div
             class="col-xl-10 col-md-12 col-img-full"
             v-bind:style="{
-              backgroundImage: 'url(' + require(bgComponent) + ')',
+              backgroundImage: 'url(' + require('@/' + bgComponent) + ')',
             }"
           >
             <div class="image-tab">
@@ -22,7 +22,10 @@
                     class="rdo_style"
                     checked
                   />
-                  <img :src="imageTab1" class="image-tab-border" />
+                  <img
+                    :src="require('@/' + imageTab1)"
+                    class="image-tab-border"
+                  />
                 </div>
               </lable>
               <lable>
@@ -33,7 +36,10 @@
                     @click="changeImage(2)"
                     class="rdo_style"
                   />
-                  <img :src="imageTab2" class="image-tab-border" />
+                  <img
+                    :src="require('@/' + imageTab2)"
+                    class="image-tab-border"
+                  />
                 </div>
               </lable>
               <lable>
@@ -44,14 +50,17 @@
                     @click="changeImage(3)"
                     class="rdo_style"
                   />
-                  <img :src="imageTab3" class="image-tab-border" />
+                  <img
+                    :src="require('@/' + imageTab3)"
+                    class="image-tab-border"
+                  />
                 </div>
               </lable>
               <lable>
                 <div class="image-tab-list">
                   <div v-if="4 - imageAmount > 0">
                     <img
-                      :src="imageTab4"
+                      :src="require('@/' + imageTab4)"
                       class="image-tab-border"
                       :style="hiddenBorder4"
                     />
@@ -63,7 +72,10 @@
                       @click="changeImage(4)"
                       class="rdo_style"
                     />
-                    <img :src="imageTab4" class="image-tab-border" />
+                    <img
+                      :src="require('@/' + imageTab4)"
+                      class="image-tab-border"
+                    />
                   </div>
                 </div>
               </lable>
@@ -71,7 +83,7 @@
                 <div class="image-tab-list">
                   <div v-if="5 - imageAmount > 0">
                     <img
-                      :src="imageTab5"
+                      :src="require('@/' + imageTab5)"
                       class="image-tab-border"
                       :style="hiddenBorder5"
                     />
@@ -83,7 +95,10 @@
                       @click="changeImage(5)"
                       class="rdo_style"
                     />
-                    <img :src="imageTab5" class="image-tab-border" />
+                    <img
+                      :src="require('@/' + imageTab5)"
+                      class="image-tab-border"
+                    />
                   </div>
                 </div>
               </lable>
@@ -91,7 +106,7 @@
                 <div class="image-tab-list">
                   <div v-if="6 - imageAmount > 0">
                     <img
-                      :src="imageTab6"
+                      :src="imageTab6 !== null ? require('@/' + imageTab6) : ''"
                       class="image-tab-border"
                       :style="hiddenBorder6"
                     />
@@ -103,13 +118,15 @@
                       @click="changeImage(6)"
                       class="rdo_style"
                     />
-                    <img :src="imageTab6" class="image-tab-border" />
+                    <img
+                      :src="imageTab6 !== null ? require('@/' + imageTab6) : ''"
+                      class="image-tab-border"
+                    />
                   </div>
                 </div>
               </lable>
             </div>
           </div>
-
 
           <div class="col right-box w-100 pr-5">
             <p class="header">{{ headerJson }}</p>
@@ -222,7 +239,7 @@
             <p class="product-status">{{ buyingAt }}</p>
           </div>
         </div>
-      </div>-->
+      </div>
 
       <VideoSession />
 
@@ -311,14 +328,14 @@ export default {
       modelItem3: datas.Cases[1].model[2],
 
       imageAmount: "6",
-      imageTab1: "@/assets/products/3Cases/ATX/bar/1.jpg",
-      imageTab2: "@/assets/products/3Cases/ATX/bar/2.jpg",
-      imageTab3: "@/assets/products/3Cases/ATX/bar/3.jpg",
-      imageTab4: "@/assets/products/3Cases/ATX/bar/4.jpg",
-      imageTab5: "@/assets/products/3Cases/ATX/bar/5.jpg",
-      imageTab6: "@/assets/products/3Cases/ATX/bar/6.jpg",
-      bgComponent: "@/assets/products/3Cases/ATX/1.jpg",
-      imageLocateSrc: "@/assets/products/3Cases/ATX/",
+      imageTab1: "assets/products/3Cases/ATX/bar/1.jpg",
+      imageTab2: "assets/products/3Cases/ATX/bar/2.jpg",
+      imageTab3: "assets/products/3Cases/ATX/bar/3.jpg",
+      imageTab4: "assets/products/3Cases/ATX/bar/4.jpg",
+      imageTab5: "assets/products/3Cases/ATX/bar/5.jpg",
+      imageTab6: "assets/products/3Cases/ATX/bar/6.jpg",
+      bgComponent: "assets/products/3Cases/ATX/1.jpg",
+      imageLocateSrc: "assets/products/3Cases/ATX/",
       modelBoxDisappear: "0",
       modelLink1: "https://fb.com",
       modelLink2: "https://www.youtube.com/watch?v=-m4ge-XdCiA",
@@ -360,14 +377,14 @@ export default {
       this.modelItem2 = datas.Cases[0].model[1];
       this.modelItem3 = datas.Cases[0].model[2];
       this.imageAmount = "5";
-      this.imageTab1 = "@/assets/products/3Cases/bar/1.jpg";
-      this.imageTab2 = "@/assets/products/3Cases/bar/2.jpg";
-      this.imageTab3 = "@/assets/products/3Cases/bar/3.jpg";
-      this.imageTab4 = "@/assets/products/3Cases/bar/4.jpg";
-      this.imageTab5 = "@/assets/products/3Cases/bar/5.jpg";
+      this.imageTab1 = "assets/products/3Cases/bar/1.jpg";
+      this.imageTab2 = "assets/products/3Cases/bar/2.jpg";
+      this.imageTab3 = "assets/products/3Cases/bar/3.jpg";
+      this.imageTab4 = "assets/products/3Cases/bar/4.jpg";
+      this.imageTab5 = "assets/products/3Cases/bar/5.jpg";
       this.imageTab6 = null;
-      this.bgComponent = "@/assets/products/3Cases/2.jpg";
-      this.imageLocateSrc = "@/assets/products/3Cases/";
+      this.bgComponent = "assets/products/3Cases/2.jpg";
+      this.imageLocateSrc = "assets/products/3Cases/";
       this.modelBoxDisappear = "0";
       this.shippingDate = "Ships on December 03, 2020";
       this.buyingStatus = "PRE-ORDER";
@@ -389,14 +406,14 @@ export default {
       this.modelItem2 = datas.Cases[1].model[1];
       this.modelItem3 = datas.Cases[1].model[2];
       this.imageAmount = "6";
-      this.imageTab1 = "@/assets/products/3Cases/ATX/bar/1.jpg";
-      this.imageTab2 = "@/assets/products/3Cases/ATX/bar/2.jpg";
-      this.imageTab3 = "@/assets/products/3Cases/ATX/bar/3.jpg";
-      this.imageTab4 = "@/assets/products/3Cases/ATX/bar/4.jpg";
-      this.imageTab5 = "@/assets/products/3Cases/ATX/bar/5.jpg";
-      this.imageTab6 = "@/assets/products/3Cases/ATX/bar/6.jpg";
-      this.bgComponent = "@/assets/products/3Cases/ATX/1.jpg";
-      this.imageLocateSrc = "@/assets/products/3Cases/";
+      this.imageTab1 = "assets/products/3Cases/ATX/bar/1.jpg";
+      this.imageTab2 = "assets/products/3Cases/ATX/bar/2.jpg";
+      this.imageTab3 = "assets/products/3Cases/ATX/bar/3.jpg";
+      this.imageTab4 = "assets/products/3Cases/ATX/bar/4.jpg";
+      this.imageTab5 = "assets/products/3Cases/ATX/bar/5.jpg";
+      this.imageTab6 = "assets/products/3Cases/ATX/bar/6.jpg";
+      this.bgComponent = "assets/products/3Cases/ATX/1.jpg";
+      this.imageLocateSrc = "assets/products/3Cases/";
       this.modelBoxDisappear = "0";
       this.shippingDate = "Ships on December 03, 2020";
       this.buyingStatus = "PRE-ORDER";
@@ -418,14 +435,14 @@ export default {
       this.modelItem2 = datas.Cases[1].model[1];
       this.modelItem3 = datas.Cases[1].model[2];
       this.imageAmount = "6";
-      this.imageTab1 = "@/assets/products/3Cases/ATX/bar/1.jpg";
-      this.imageTab2 = "@/assets/products/3Cases/ATX/bar/2.jpg";
-      this.imageTab3 = "@/assets/products/3Cases/ATX/bar/3.jpg";
-      this.imageTab4 = "@/assets/products/3Cases/ATX/bar/4.jpg";
-      this.imageTab5 = "@/assets/products/3Cases/ATX/bar/5.jpg";
-      this.imageTab6 = "@/assets/products/3Cases/ATX/bar/6.jpg";
-      this.bgComponent = "@/assets/products/3Cases/ATX/1.jpg";
-      this.imageLocateSrc = "@/assets/products/3Cases/";
+      this.imageTab1 = "assets/products/3Cases/ATX/bar/1.jpg";
+      this.imageTab2 = "assets/products/3Cases/ATX/bar/2.jpg";
+      this.imageTab3 = "assets/products/3Cases/ATX/bar/3.jpg";
+      this.imageTab4 = "assets/products/3Cases/ATX/bar/4.jpg";
+      this.imageTab5 = "assets/products/3Cases/ATX/bar/5.jpg";
+      this.imageTab6 = "assets/products/3Cases/ATX/bar/6.jpg";
+      this.bgComponent = "assets/products/3Cases/ATX/1.jpg";
+      this.imageLocateSrc = "assets/products/3Cases/";
       this.modelBoxDisappear = "0";
       this.shippingDate = "Ships on December 03, 2020";
       this.buyingStatus = "PRE-ORDER";

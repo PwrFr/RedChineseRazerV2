@@ -26,7 +26,9 @@
           <div
             class="mb-3"
             style="width: 3.3rem; height: 3.3rem"
-            v-bind:style="{ backgroundImage: 'url(' + icon1 + ')' }"
+            v-bind:style="{
+              backgroundImage: 'url(' + require('@/' + icon1) + ')',
+            }"
           ></div>
           <div class="row align-items-end justify-content-center">
             <h6 class="m-0">POWERED BY RAZER CHROMA</h6>
@@ -42,7 +44,9 @@
           <div
             class="mb-3"
             style="width: 3.3rem; height: 3.3rem"
-            v-bind:style="{ backgroundImage: 'url(' + icon2 + ')' }"
+            v-bind:style="{
+              backgroundImage: 'url(' + require('@/' + icon2) + ')',
+            }"
           ></div>
           <div class="row align-items-end justify-content-center">
             <h6 class="m-0">CONNECT IT ALL</h6>
@@ -58,7 +62,9 @@
           <div
             class="mb-3"
             style="width: 3.3rem; height: 3.3rem"
-            v-bind:style="{ backgroundImage: 'url(' + icon3 + ')' }"
+            v-bind:style="{
+              backgroundImage: 'url(' + require('@/' + icon3) + ')',
+            }"
           ></div>
           <div class="row justify-content-center">
             <h6 class="m-0">EDGE-TO-EDGE SCREEN</h6>

@@ -1,16 +1,16 @@
 <template>
   <section>
     <div>
-      <!-- <ProductSlot
-        class="mt-5"
+      <ProductSlot
+        class="text-left"
         imageAmount="5"
-        imageTab1="@/assets/products/4Monitors/productImage/bar/1.jpg"
-        imageTab2="@/assets/products/4Monitors/productImage/bar/2.jpg"
-        imageTab3="@/assets/products/4Monitors/productImage/bar/3.jpg"
-        imageTab4="@/assets/products/4Monitors/productImage/bar/4.jpg"
-        imageTab5="@/assets/products/4Monitors/productImage/bar/5.jpg"
-        backgroundSrc="@/assets/products/4Monitors/productImage/1.jpg"
-        imageLocateSrc="@/assets/products/4Monitors/productImage/"
+        imageTab1="assets/products/4Monitors/productImage/bar/1.jpg"
+        imageTab2="assets/products/4Monitors/productImage/bar/2.jpg"
+        imageTab3="assets/products/4Monitors/productImage/bar/3.jpg"
+        imageTab4="assets/products/4Monitors/productImage/bar/4.jpg"
+        imageTab5="assets/products/4Monitors/productImage/bar/5.jpg"
+        backgroundSrc="assets/products/4Monitors/productImage/1.jpg"
+        imageLocateSrc="assets/products/4Monitors/productImage/"
         :headerText="headerJson"
         :headerDes="desJson"
         :priceText="priceJson"
@@ -30,17 +30,16 @@
         :shippingDate="shipStatusJson"
         :buyingStatus="buttonJson"
         buyingAt="Also Available At"
-      /> -->
+      />
       <monitorRow1 />
       <headerAccessProduct
-        class="pb-5"
         title="PIXEL PERFECT"
         dis="A gaming monitor requires extreme performance with speed and clarity, so you can react in a split-second. It also needs to be able to display deep vibrant colors and a natural life-like image to create a sense of immersion. The Razer Raptor was created to be a true expression of this, and more—a no-compromise display that produces breathtaking image quality for your battlestation."
       />
       <monitorRow3 />
       <SideImgRowR
-        style="height: 51rem"
-        class="pr-5 pt-5"
+        style="height: 43rem"
+        class="text-left"
         bgimgRR="assets/monitor/raptor-update-dev_02-usp-light.jpg"
         title="LIGHTNING FAST
 144HZ PRECISION"
@@ -55,8 +54,8 @@
         bg="assets/monitor/raptor-update-dev_07-usp3.jpg"
       />
       <SideImgRowR
+        class="text-left"
         style="height: 39rem"
-        class="pr-5 pt-5"
         bgimgRR="assets/monitor/raptor-update-dev_08-usp4.jpg"
         title="SYNAPSE CONTROL"
         dis="Whether you're gaming, streaming, creating, or working the built-in profiles within the Razer Raptor 27 are optimized for each and every task. Change profiles on the fly and set the mood directly through your PC. Adjusting brightness and contrast has never been easier with a click of a mouse or push of a keyboard."
@@ -75,6 +74,7 @@
 </template>
 
 <script>
+const testingRow = () => import("@/components/monitor/testingRow.vue");
 const SideImgRowR = () => import("@/components/SideImgRowR.vue");
 // import testingRow from "@/components/monitor/testingRow.vue";
 const ProductSlot = () => import("@/components/ProductSlot.vue");
@@ -111,6 +111,8 @@ export default {
     SideImgRowR,
     imgRowC,
     imgRowCT,
+    testingRow,
+    ProductSlot,
   },
   data() {
     return {

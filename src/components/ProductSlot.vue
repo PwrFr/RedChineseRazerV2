@@ -8,7 +8,9 @@
         <div class="row p-0 mt-0 row-product">
           <div
             class="col-xl-10 col-md-12 col-img-full"
-            v-bind:style="{ backgroundImage: 'url(' + bgComponent + ')' }"
+            v-bind:style="{
+              backgroundImage: 'url(' + require('@/' + bgComponent) + ')',
+            }"
           >
             <div class="image-tab">
               <lable>
@@ -20,7 +22,10 @@
                     class="rdo_style"
                     checked
                   />
-                  <img :src="imageTab1" class="image-tab-border" />
+                  <img
+                    :src="require('@/' + imageTab1)"
+                    class="image-tab-border"
+                  />
                 </div>
               </lable>
               <lable>
@@ -31,7 +36,10 @@
                     @click="changeImage(2)"
                     class="rdo_style"
                   />
-                  <img :src="imageTab2" class="image-tab-border" />
+                  <img
+                    :src="require('@/' + imageTab2)"
+                    class="image-tab-border"
+                  />
                 </div>
               </lable>
               <lable>
@@ -42,14 +50,17 @@
                     @click="changeImage(3)"
                     class="rdo_style"
                   />
-                  <img :src="imageTab3" class="image-tab-border" />
+                  <img
+                    :src="require('@/' + imageTab3)"
+                    class="image-tab-border"
+                  />
                 </div>
               </lable>
               <lable>
                 <div class="image-tab-list">
                   <div v-if="4 - imageAmount > 0">
                     <img
-                      :src="imageTab4"
+                      :src="require('@/' + imageTab4)"
                       class="image-tab-border"
                       :style="hiddenBorder4"
                     />
@@ -61,7 +72,10 @@
                       @click="changeImage(4)"
                       class="rdo_style"
                     />
-                    <img :src="imageTab4" class="image-tab-border" />
+                    <img
+                      :src="require('@/' + imageTab4)"
+                      class="image-tab-border"
+                    />
                   </div>
                 </div>
               </lable>
@@ -69,7 +83,7 @@
                 <div class="image-tab-list">
                   <div v-if="5 - imageAmount > 0">
                     <img
-                      :src="imageTab5"
+                      :src="require('@/' + imageTab5)"
                       class="image-tab-border"
                       :style="hiddenBorder5"
                     />
@@ -81,27 +95,10 @@
                       @click="changeImage(5)"
                       class="rdo_style"
                     />
-                    <img :src="imageTab5" class="image-tab-border" />
-                  </div>
-                </div>
-              </lable>
-              <lable>
-                <div class="image-tab-list">
-                  <div v-if="6 - imageAmount > 0">
                     <img
-                      :src="imageTab6"
+                      :src="require('@/' + imageTab5)"
                       class="image-tab-border"
-                      :style="hiddenBorder6"
                     />
-                  </div>
-                  <div v-else>
-                    <input
-                      type="radio"
-                      name="test"
-                      @click="changeImage(6)"
-                      class="rdo_style"
-                    />
-                    <img :src="imageTab6" class="image-tab-border" />
                   </div>
                 </div>
               </lable>
