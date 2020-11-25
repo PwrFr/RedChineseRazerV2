@@ -1,7 +1,7 @@
 <template>
   <section>
     <div>
-      <div
+      <!-- <div
         class="container-fluid mt-5"
         style="padding: 0px; background-color: black"
       >
@@ -108,7 +108,6 @@
             </div>
           </div>
 
-          <!--leftside -->
 
           <div class="col right-box w-100 pr-5">
             <p class="header">{{ headerJson }}</p>
@@ -130,7 +129,6 @@
               </ul>
             </div>
 
-            <!-- boos here --->
             <div v-if="modelBoxDisappear == 0">
               <div class="model-box-div">
                 <div id="box" class="model-box">
@@ -215,7 +213,6 @@
                 </div>
               </div>
             </div>
-            <!-- end --->
 
             <p class="shipping-date">{{ shippingDate }}</p>
             <button class="order-button">{{ buyingStatus }}</button>
@@ -223,7 +220,7 @@
             <p class="product-status">{{ buyingAt }}</p>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <VideoSession />
 
@@ -283,13 +280,13 @@ export default {
       specSwitch: 1,
       onum: 0,
       hiddenBorder4: {
-        border: "0px",
+        border: "0px"
       },
       hiddenBorder5: {
-        border: "0px",
+        border: "0px"
       },
       hiddenBorder6: {
-        border: "0px",
+        border: "0px"
       },
       //imageTab1: "/src/assets/products/cases/bar/1.jpg",
       //imageTab2: "/src/assets/products/cases/bar/2.jpg",
@@ -327,7 +324,7 @@ export default {
       shippingDate: "Ships on December 03, 2020",
       buyingStatus: "PRE-ORDER",
       buyingAt: "Also Available At",
-      whiteSelecterText: "1",
+      whiteSelecterText: "1"
     };
   },
   mounted() {
@@ -344,7 +341,7 @@ export default {
     Row8,
     Row9,
     techSpecCase,
-    techSpecCaseMini,
+    techSpecCaseMini
   },
   methods: {
     firstSelecter() {
@@ -453,7 +450,7 @@ export default {
         this.nnum += 1;
       });
 
-      optionsList.forEach((o) => {
+      optionsList.forEach(o => {
         o.addEventListener("click", () => {
           selected.innerHTML = o.querySelector("label").innerHTML;
           optionsContainer.classList.remove("active");
@@ -516,7 +513,7 @@ export default {
       this.onum = this.nnum;
       // console.log(this.onum);
       // console.log(this.nnum);
-    },
-  },
+    }
+  }
 };
 </script>
