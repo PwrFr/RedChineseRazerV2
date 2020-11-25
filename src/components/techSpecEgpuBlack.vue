@@ -279,7 +279,7 @@ ul {
 }
 </style>
 <script>
-import datas from "../assets/data.json";
+import datas from "@/models/data.js";
 export default {
   name: "techSpecEgpuBlack",
   data() {
