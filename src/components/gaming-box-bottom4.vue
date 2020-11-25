@@ -3,6 +3,7 @@
     <div class="pt-3" style="background-color: #000">
       <div style="background-color: #100e13">
         <div
+          class="text-left"
           style="width: 100%; height: 25rem; margin-left: -13%"
           v-bind:style="{
             backgroundImage:
