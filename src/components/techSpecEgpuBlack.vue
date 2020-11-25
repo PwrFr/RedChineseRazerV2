@@ -240,6 +240,7 @@
   font-size: 0.875rem;
   text-align: left;
   font-size: 0.875rem;
+  display: contents;
 }
 .data {
   text-align: left;
@@ -311,7 +312,7 @@ export default {
       if (this.status == 0) {
         //when user press see More v
         var more = this.$refs.more;
-        more.style.display = "inline";
+        more.style.display = "contents";
         //bt seeMore hide
 
         this.text = "See less";
@@ -319,7 +320,7 @@ export default {
         arrow.style.transform = "rotate(0deg)";
 
         var btLess = this.$refs.seeless;
-        btLess.style.display = "inline";
+        btLess.style.display = "contents";
 
         this.status = 1;
       } else if (this.status == 1) {
