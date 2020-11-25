@@ -118,7 +118,11 @@
                 </p>
               </div>
               <div class="pt-4">
-                <img :src="require('@/' + data8.img ) " alt="" width="500" height="500" />
+                <img :src="require('@/' + data8.img) " alt="" height="500" /> 
+                <!-- <div style="width:500px; height:500px"
+                v-bind:style="{backgroudImage: 'url(' + require('@/' + data8.img) + ')',}">
+                </div> -->
+                <div></div>
               </div>
               <div class="data">
                 <b>GPU Type </b>
@@ -296,6 +300,8 @@ export default {
       data8:
         datas.eGPU[2].specs
           .GRAPHICS_CARDS_REQUIREMENTS_GRAPHICS_CARD_NOT_INCLUDED,
+      data8img: datas.eGPU[2].specs
+          .GRAPHICS_CARDS_REQUIREMENTS_GRAPHICS_CARD_NOT_INCLUDED.img,
       data9: datas.eGPU[2].specs.MACOS_COMPATIBLE_GRAPHICS_CHIPSETS[0],
       data10: datas.eGPU[2].specs.WINDOWS_10_COMPATIBLE_GRAPHICS_CHIPSETS,
     };

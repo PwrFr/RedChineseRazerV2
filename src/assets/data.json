@@ -106,7 +106,7 @@
                         ],
                         "1": "* Height measured from top of PCIe connector to the bottom of the locking pin ramps."
                     },
-                    "img": "/assets/products/2eGPUs/core-x-dimension.png",
+                    "img": "assets/products/2eGPUs/core-x-dimension.png",
                     "GPU_Type": [
                         "Up to 3-Slot wide, full-length, PCI-Express x16 graphics card.",
                         "Graphics cards use varied designs based around a common graphics chip. Please ensure the GPU selected meets all size, power, and additional requirements."
