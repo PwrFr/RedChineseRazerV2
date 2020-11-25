@@ -1,61 +1,60 @@
 <template>
   <section>
     <div>
-      <div class="container-fluid mt-5" style="padding: 0px; background-color: black">
+      <div class="container-fluid text-left" style="padding: 0px; background-color: black">
         <div class="row p-0 mt-0 row-product">
           <div
             class="col-xl-10 col-md-12 col-img-full"
-            v-bind:style="{ backgroundImage: 'url(' + bgComponent + ')' }"
+            v-bind:style="{
+              backgroundImage: 'url(' + require('@/' + bgComponent) + ')',
+            }"
           >
             <div class="image-tab">
               <lable>
                 <div class="image-tab-list">
                   <input type="radio" name="test" @click="changeImage(1)" class="rdo_style" checked />
-                  <img :src="imageTab1" class="image-tab-border" />
+                  <img :src="require('@/' + imageTab1)" class="image-tab-border" />
                 </div>
               </lable>
               <lable>
                 <div class="image-tab-list">
                   <input type="radio" name="test" @click="changeImage(2)" class="rdo_style" />
-                  <img :src="imageTab2" class="image-tab-border" />
+                  <img :src="require('@/' + imageTab2)" class="image-tab-border" />
                 </div>
               </lable>
               <lable>
                 <div class="image-tab-list">
                   <input type="radio" name="test" @click="changeImage(3)" class="rdo_style" />
-                  <img :src="imageTab3" class="image-tab-border" />
+                  <img :src="require('@/' + imageTab3)" class="image-tab-border" />
                 </div>
               </lable>
               <lable>
                 <div class="image-tab-list">
                   <div v-if="4 - imageAmount > 0">
-                    <img :src="imageTab4" class="image-tab-border" :style="hiddenBorder4" />
+                    <img
+                      :src="require('@/' + imageTab4)"
+                      class="image-tab-border"
+                      :style="hiddenBorder4"
+                    />
                   </div>
                   <div v-else>
                     <input type="radio" name="test" @click="changeImage(4)" class="rdo_style" />
-                    <img :src="imageTab4" class="image-tab-border" />
+                    <img :src="require('@/' + imageTab4)" class="image-tab-border" />
                   </div>
                 </div>
               </lable>
               <lable>
                 <div class="image-tab-list">
                   <div v-if="5 - imageAmount > 0">
-                    <img :src="imageTab5" class="image-tab-border" :style="hiddenBorder5" />
+                    <img
+                      :src="require('@/' + imageTab5)"
+                      class="image-tab-border"
+                      :style="hiddenBorder5"
+                    />
                   </div>
                   <div v-else>
                     <input type="radio" name="test" @click="changeImage(5)" class="rdo_style" />
-                    <img :src="imageTab5" class="image-tab-border" />
-                  </div>
-                </div>
-              </lable>
-              <lable>
-                <div class="image-tab-list">
-                  <div v-if="6 - imageAmount > 0">
-                    <img :src="imageTab6" class="image-tab-border" :style="hiddenBorder6" />
-                  </div>
-                  <div v-else>
-                    <input type="radio" name="test" @click="changeImage(6)" class="rdo_style" />
-                    <img :src="imageTab6" class="image-tab-border" />
+                    <img :src="require('@/' + imageTab5)" class="image-tab-border" />
                   </div>
                 </div>
               </lable>
@@ -80,7 +79,8 @@
                 <li v-if="10 <= detailAmountJson">{{ detailJson10 }}</li>
                 <li v-if="11 <= detailAmountJson">{{ detailJson11 }}</li>
               </ul>
-            </div>boos here
+            </div>
+
             <div v-if="modelBoxDisappear == 0">
               <div class="model-box-div">
                 <div id="box" class="model-box">
@@ -94,10 +94,18 @@
                           name="category"
                         />
                         <div v-if="whiteSelecterText == 0" style="color: white">
-                          <label id="1" for="Standard - Black">{{ modelItem1 }}</label>
+                          <label id="1" for="Standard - Black">
+                            {{
+                            modelItem1
+                            }}
+                          </label>
                         </div>
                         <div v-else>
-                          <label id="1" for="Standard - Black">{{ modelItem1 }}</label>
+                          <label id="1" for="Standard - Black">
+                            {{
+                            modelItem1
+                            }}
+                          </label>
                         </div>
                       </div>
 
@@ -109,10 +117,18 @@
                           name="category"
                         />
                         <div v-if="whiteSelecterText == 1" style="color: white">
-                          <label id="2" for="Standard - Black">{{ modelItem2 }}</label>
+                          <label id="2" for="Standard - Black">
+                            {{
+                            modelItem2
+                            }}
+                          </label>
                         </div>
                         <div v-else>
-                          <label id="2" for="Standard - Black">{{ modelItem2 }}</label>
+                          <label id="2" for="Standard - Black">
+                            {{
+                            modelItem2
+                            }}
+                          </label>
                         </div>
                       </div>
 
@@ -125,15 +141,31 @@
                           @click="thirdSelecter"
                         />
                         <div v-if="whiteSelecterText == 2" style="color: white">
-                          <label id="3" for="Standard - Black">{{ modelItem3 }}</label>
+                          <label id="3" for="Standard - Black">
+                            {{
+                            modelItem3
+                            }}
+                          </label>
                         </div>
                         <div v-else>
-                          <label id="3" for="Standard - Black">{{ modelItem3 }}</label>
+                          <label id="3" for="Standard - Black">
+                            {{
+                            modelItem3
+                            }}
+                          </label>
                         </div>
                       </div>
                     </div>
 
-                    <div class="selected">{{ modelFirstNameJson }}</div>
+                    <div
+                      class="selected"
+                      v-bind:style="{
+                        backgroundImage:
+                          'url(' +
+                          require('@/components/Custom-Select-Box-master/img/arrow-down.svg') +
+                          ')',
+                      }"
+                    >{{ modelFirstNameJson }}</div>
                   </div>
                 </div>
                 <div class="model-box-1" id="box1">
@@ -141,7 +173,6 @@
                 </div>
               </div>
             </div>
-
             <p class="shipping-date">{{ shippingDate }}</p>
             <button class="order-button">{{ buyingStatus }}</button>
 
@@ -225,12 +256,12 @@ export default {
       hiddenBorder6: {
         border: "0px"
       },
-      //imageTab1: "@/assets/products/cases/bar/1.jpg",
-      //imageTab2: "@/assets/products/cases/bar/2.jpg",
-      //imageTab3: "@/assets/products/cases/bar/3.jpg",
-      //imageTab4: "@/assets/products/cases/bar/4.jpg",
-      //imageTab5: "@/assets/products/cases/bar/5.jpg",
-      //wasd: "@/assets/products/cases/1.jpg"
+      //imageTab1: "assets/products/cases/bar/1.jpg",
+      //imageTab2: "assets/products/cases/bar/2.jpg",
+      //imageTab3: "assets/products/cases/bar/3.jpg",
+      //imageTab4: "assets/products/cases/bar/4.jpg",
+      //imageTab5: "assets/products/cases/bar/5.jpg",
+      //wasd: "assets/products/cases/1.jpg"
 
       headerJson: datas.PC_Acessories.ACCESSORIES.Product[0].name,
       desJson: "Ultra-Sleek Protection for the Razer Blade Stealth 13",
@@ -249,19 +280,18 @@ export default {
 
       imageAmount: "5",
       imageTab1:
-        "@/assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/1.jpg",
+        "assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/1.jpg",
       imageTab2:
-        "@/assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/2.jpg",
+        "assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/2.jpg",
       imageTab3:
-        "@/assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/3.jpg",
+        "assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/3.jpg",
       imageTab4:
-        "@/assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/4.jpg",
+        "assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/4.jpg",
       imageTab5:
-        "@/assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/5.jpg",
+        "assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/5.jpg",
       bgComponent:
-        "@/assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/1.jpg",
-      imageLocateSrc:
-        "@/assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/",
+        "assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/1.jpg",
+      imageLocateSrc: "assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/",
       modelBoxDisappear: "1",
       shippingDate: "Ships next business day",
       buyingStatus: "ADD TO CART",
@@ -294,14 +324,14 @@ export default {
       this.modelItem2 = datas.Cases[0].model[1];
       this.modelItem3 = datas.Cases[0].model[2];
       this.imageAmount = "5";
-      this.imageTab1 = "@/assets/products/3Cases/bar/1.jpg";
-      this.imageTab2 = "@/assets/products/3Cases/bar/2.jpg";
-      this.imageTab3 = "@/assets/products/3Cases/bar/3.jpg";
-      this.imageTab4 = "@/assets/products/3Cases/bar/4.jpg";
-      this.imageTab5 = "@/assets/products/3Cases/bar/5.jpg";
+      this.imageTab1 = "assets/products/3Cases/bar/1.jpg";
+      this.imageTab2 = "assets/products/3Cases/bar/2.jpg";
+      this.imageTab3 = "assets/products/3Cases/bar/3.jpg";
+      this.imageTab4 = "assets/products/3Cases/bar/4.jpg";
+      this.imageTab5 = "assets/products/3Cases/bar/5.jpg";
       this.imageTab6 = null;
-      this.bgComponent = "@/assets/products/3Cases/2.jpg";
-      this.imageLocateSrc = "@/assets/products/3Cases/";
+      this.bgComponent = "assets/products/3Cases/2.jpg";
+      this.imageLocateSrc = "assets/products/3Cases/";
       this.modelBoxDisappear = "0";
       this.shippingDate = "Ships on December 03, 2020";
       this.buyingStatus = "PRE-ORDER";
@@ -323,14 +353,14 @@ export default {
       this.modelItem2 = datas.Cases[1].model[1];
       this.modelItem3 = datas.Cases[1].model[2];
       this.imageAmount = "6";
-      this.imageTab1 = "@/assets/products/3Cases/ATX/bar/1.jpg";
-      this.imageTab2 = "@/assets/products/3Cases/ATX/bar/2.jpg";
-      this.imageTab3 = "@/assets/products/3Cases/ATX/bar/3.jpg";
-      this.imageTab4 = "@/assets/products/3Cases/ATX/bar/4.jpg";
-      this.imageTab5 = "@/assets/products/3Cases/ATX/bar/5.jpg";
-      this.imageTab6 = "@/assets/products/3Cases/ATX/bar/6.jpg";
-      this.bgComponent = "@/assets/products/3Cases/ATX/1.jpg";
-      this.imageLocateSrc = "@/assets/products/3Cases/";
+      this.imageTab1 = "assets/products/3Cases/ATX/bar/1.jpg";
+      this.imageTab2 = "assets/products/3Cases/ATX/bar/2.jpg";
+      this.imageTab3 = "assets/products/3Cases/ATX/bar/3.jpg";
+      this.imageTab4 = "assets/products/3Cases/ATX/bar/4.jpg";
+      this.imageTab5 = "assets/products/3Cases/ATX/bar/5.jpg";
+      this.imageTab6 = "assets/products/3Cases/ATX/bar/6.jpg";
+      this.bgComponent = "assets/products/3Cases/ATX/1.jpg";
+      this.imageLocateSrc = "assets/products/3Cases/";
       this.modelBoxDisappear = "0";
       this.shippingDate = "Ships on December 03, 2020";
       this.buyingStatus = "PRE-ORDER";
@@ -352,14 +382,14 @@ export default {
       this.modelItem2 = datas.Cases[1].model[1];
       this.modelItem3 = datas.Cases[1].model[2];
       this.imageAmount = "6";
-      this.imageTab1 = "@/assets/products/3Cases/ATX/bar/1.jpg";
-      this.imageTab2 = "@/assets/products/3Cases/ATX/bar/2.jpg";
-      this.imageTab3 = "@/assets/products/3Cases/ATX/bar/3.jpg";
-      this.imageTab4 = "@/assets/products/3Cases/ATX/bar/4.jpg";
-      this.imageTab5 = "@/assets/products/3Cases/ATX/bar/5.jpg";
-      this.imageTab6 = "@/assets/products/3Cases/ATX/bar/6.jpg";
-      this.bgComponent = "@/assets/products/3Cases/ATX/1.jpg";
-      this.imageLocateSrc = "@/assets/products/3Cases/";
+      this.imageTab1 = "assets/products/3Cases/ATX/bar/1.jpg";
+      this.imageTab2 = "assets/products/3Cases/ATX/bar/2.jpg";
+      this.imageTab3 = "assets/products/3Cases/ATX/bar/3.jpg";
+      this.imageTab4 = "assets/products/3Cases/ATX/bar/4.jpg";
+      this.imageTab5 = "assets/products/3Cases/ATX/bar/5.jpg";
+      this.imageTab6 = "assets/products/3Cases/ATX/bar/6.jpg";
+      this.bgComponent = "assets/products/3Cases/ATX/1.jpg";
+      this.imageLocateSrc = "assets/products/3Cases/";
       this.modelBoxDisappear = "0";
       this.shippingDate = "Ships on December 03, 2020";
       this.buyingStatus = "PRE-ORDER";
