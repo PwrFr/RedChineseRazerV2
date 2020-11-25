@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="access mt-5 pt-3">
+    <div class="access pt-3">
       <div class="text-center container pt-3 mt-4">
         <h1 class="text-light pc-title pt-1 mb-4 pb-1">PC</h1>
 
@@ -101,14 +101,16 @@
               <p
                 class="text-uppercase cursor-point font-weight-bold"
                 @click="
-                  isActive0 === key ? (isActive0 = false) : (isActive0 = key)
+                  isActive0 === index
+                    ? (isActive0 = false)
+                    : (isActive0 = index)
                 "
               >
                 {{ key }}
                 <svg
                   :class="{
-                    ['arrowUp']: isActive0 === key,
-                    ['arrowDown']: !isActive0,
+                    ['arrowUp']: isActive0 === index,
+                    ['arrowDown']: isActive0 !== index,
                   }"
                   class="arrow-access align-middle mr-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -124,8 +126,8 @@
               <div
                 :class="{
                   ['cursor-point']: true,
-                  ['active-faro']: !isActive0,
-                  ['distive-faro']: isActive0 === key,
+                  ['active-faro']: isActive0 !== index,
+                  ['distive-faro']: isActive0 === index,
                   ['null-faro']: isActive0 === null,
                 }"
                 v-for="(value, key) in value"
@@ -142,18 +144,18 @@
           <div v-if="select === 2">
             <div
               class="pl-3 fillter-pad"
-              v-for="(value, key, index) in json_obj.PC_Acessories.EGPUS.Filter"
+              v-for="(value, key) in json_obj.PC_Acessories.EGPUS.Filter"
               :key="key"
             >
               <p
                 class="text-uppercase cursor-point font-weight-bold"
-                @click="isActive1[index] = !isActive1[index]"
+                @click="!isActive1 ? (isActive1 = true) : (isActive1 = false)"
               >
                 {{ key }}
                 <svg
                   :class="{
-                    ['arrowUp']: isActive1[index] == true,
-                    ['arrowDown']: isActive1[index] == false,
+                    ['arrowUp']: isActive1,
+                    ['arrowDown']: !isActive1,
                   }"
                   class="arrow-access align-middle mr-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -168,9 +170,9 @@
               <div
                 :class="{
                   ['cursor-point']: true,
-                  ['active-faro']: isActive1[index] == false,
-                  ['distive-faro']: isActive1[index] == true,
-                  ['null-faro']: isActive1[index] == null,
+                  ['active-faro']: !isActive1,
+                  ['distive-faro']: isActive1,
+                  ['null-faro']: isActive1 === null,
                 }"
                 v-for="(value, key) in value"
                 :key="key"
@@ -186,8 +188,7 @@
           <div v-if="select === 3">
             <div
               class="pl-3 fillter-pad"
-              v-for="(value, key, index) in json_obj.PC_Acessories.ACCESSORIES
-                .Filter"
+              v-for="(value, key) in json_obj.PC_Acessories.ACCESSORIES.Filter"
               :key="key"
             >
               <p
@@ -231,19 +232,18 @@
           <div v-if="select === 4">
             <div
               class="pl-3 fillter-pad"
-              v-for="(value, key, index) in json_obj.PC_Acessories.MONITORS
-                .Filter"
+              v-for="(value, key) in json_obj.PC_Acessories.MONITORS.Filter"
               :key="key"
             >
               <p
                 class="text-uppercase cursor-point font-weight-bold"
-                @click="isActive3[index] = !isActive3[index]"
+                @click="!isActive3 ? (isActive3 = true) : (isActive3 = false)"
               >
                 {{ key }}
                 <svg
                   :class="{
-                    ['arrowUp']: isActive3[index] == true,
-                    ['arrowDown']: isActive3[index] == false,
+                    ['arrowUp']: isActive3,
+                    ['arrowDown']: !isActive3,
                   }"
                   class="arrow-access align-middle mr-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -258,9 +258,9 @@
               <div
                 :class="{
                   ['cursor-point']: true,
-                  ['active-faro']: isActive3[index] == false,
-                  ['distive-faro']: isActive3[index] == true,
-                  ['null-faro']: isActive3[index] == null,
+                  ['active-faro']: !isActive3,
+                  ['distive-faro']: isActive3,
+                  ['null-faro']: isActive3 === null,
                 }"
                 v-for="(value, key) in value"
                 :key="key"
@@ -327,7 +327,7 @@
               </svg>
               <!-- boos here --->
               <div>
-                <div class="model-box-div-faro mt-2 ml-3 mr-3">
+                <div class="model-box-div-faro mt-2 ml-3 mr-3 text-left">
                   <div id="box" class="model-box-fff">
                     <div class="select-box" @click="onClickColor()">
                       <div class="model-options-container" ref="here">
@@ -451,9 +451,9 @@ export default {
       select: 3,
       json_obj: datas,
       isActive0: false,
-      isActive1: [null],
-      isActive2: false,
-      isActive3: [null],
+      isActive1: null,
+      isActive2: null,
+      isActive3: null,
       product_select: 0,
     };
   },

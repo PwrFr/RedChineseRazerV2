@@ -752,7 +752,6 @@ module.exports =
                     "img": "assets/img/PC_Acessories/Accessories/RazerNeopreneSleeveV2-For13.3”Notebooks.jpg",
                     "tag": "green",
                     "tagTitle": "NEW",
-                    "link": "access1.html",
                     "header_des": "Ultra-Sleek Protection for the Razer Blade Stealth 13",
                     "imgbar": [
                         "assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/1.jpg",
@@ -781,7 +780,6 @@ module.exports =
                     "img": "assets/img/PC_Acessories/Accessories/RazerProtectiveV2-13.3.png",
                     "tag": "green",
                     "tagTitle": "NEW",
-                    "link": "access2.html",
                     "header_des": "Ultra-Sleek Protection for the Razer Blade Laptops",
                     "model": [
                         "13.3\" Sleeve",
@@ -814,7 +812,6 @@ module.exports =
                     "add_to_card_bnt": "ADD TO CART",
                     "img": "assets/img/PC_Acessories/Accessories/RazerProtectiveSleeveV2-For15.6.png",
                     "tag": "green",
-                    "link": "access3.html",
                     "tagTitle": "NEW",
                     "header_des": "Ultra-Sleek Protection for the Razer Blade Laptops",
                     "model": [
@@ -849,7 +846,6 @@ module.exports =
                     "img": "assets/img/PC_Acessories/Accessories/RazerProtectiveSleeveV2-For17.3.png",
                     "tag": "green",
                     "tagTitle": "NEW",
-                    "link": "access3.html",
                     "header_des": "Ultra-Sleek Protection for the Razer Blade Laptops",
                     "model": [
                         "13.3\" Sleeve",
@@ -916,7 +912,6 @@ module.exports =
                     ],
                     "add_to_card_bnt": "ADD TO CART",
                     "img": "assets/img/PC_Acessories/Monitor/RazerRaptor27.png",
-                    "link": "monitor.html"
                 }
             ]
         }
