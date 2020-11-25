@@ -8,18 +8,16 @@
           <h4 id="headerText">TECH SPECS</h4>
         </tr>
         <!-- row 1 -->
-        <tr class="dataRow trDisplays ">
+        <tr class="dataRow trDisplays">
           <th class="col-lg-3 p-0">
             <b>Input & Output</b>
           </th>
           <ul class="col-lg-9 data px-4 dataBul">
-            <li v-for="row01 in data1" :key="row01">
-              {{ row01 }}
-            </li>
+            <li v-for="row01 in data1" :key="row01">{{ row01 }}</li>
           </ul>
         </tr>
         <!-- row 2 -->
-        <tr class="dataRow trDisplays ">
+        <tr class="dataRow trDisplays">
           <th class="col-lg-3 p-0">
             <b>Internal Power Supply</b>
           </th>
@@ -33,7 +31,7 @@
           <td class="col-lg-9 data dataSingle p-2">{{ data3 }}</td>
         </tr>
         <!-- row 4 -->
-        <tr class="dataRow trDisplays ">
+        <tr class="dataRow trDisplays">
           <th class="col-lg-3 p-0">
             <b>Thunderbolt™ 3 cable length</b>
           </th>
@@ -41,7 +39,7 @@
         </tr>
         <!-- row 4 -->
         <span id="more" ref="more">
-          <tr class="dataRow trDisplays ">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>Razer Core Approx. Size</b>
             </th>
@@ -56,7 +54,7 @@
             <th class="col-lg-3 p-0">
               <b>Weight</b>
             </th>
-            <td class="col-lg-9 data   p-2">{{ data6 }}</td>
+            <td class="col-lg-9 data p-2">{{ data6 }}</td>
           </tr>
 
           <!-- row 6 -->
@@ -66,7 +64,9 @@
             </th>
             <td class="col-lg-9">
               <div class="pb-1">
-                <u class="data"><b>Connection to system</b> </u>
+                <u class="data">
+                  <b>Connection to system</b>
+                </u>
               </div>
 
               <p class="data">{{ data7.Connection_to_system }}</p>
@@ -74,26 +74,20 @@
                 <p class="data">{{ data7.test }}</p>
               </div>
               <div class="data pt-3">
-                <u class="pb-2"><b> macOS Systems Requirements </b> </u>
+                <u class="pb-2">
+                  <b>macOS Systems Requirements</b>
+                </u>
                 <ul class="px-2">
-                  <li
-                    v-for="row6c in data7.macOS_Systems_Requirements"
-                    :key="row6c"
-                  >
-                    {{ row6c }}
-                  </li>
+                  <li v-for="row6c in data7.macOS_Systems_Requirements" :key="row6c">{{ row6c }}</li>
                 </ul>
               </div>
 
               <div class="data pt-3">
-                <u class="pb-2"><b> Windows System Requirements</b> </u>
+                <u class="pb-2">
+                  <b>Windows System Requirements</b>
+                </u>
                 <ul class="px-2">
-                  <li
-                    v-for="row7c in data7.Windows_System_Requirements"
-                    :key="row7c"
-                  >
-                    {{ row7c }}
-                  </li>
+                  <li v-for="row7c in data7.Windows_System_Requirements" :key="row7c">{{ row7c }}</li>
                 </ul>
               </div>
             </td>
@@ -105,12 +99,15 @@
             </th>
             <td class="col-lg-9 data">
               <div class="data">
-                <u><b>Max inner dimensions</b></u>
+                <u>
+                  <b>Max inner dimensions</b>
+                </u>
               </div>
               <div class="data">
                 <p>
-                  Length : 12.99” 330 mm <br />Height*: 6.29” / 160 mm<br />
-                  Width : 2.24” / 57 mm
+                  Length : 12.99” 330 mm
+                  <br />Height*: 6.29” / 160 mm
+                  <br />Width : 2.24” / 57 mm
                 </p>
                 <p>
                   * Height measured from top of PCIe connector to the bottom of
@@ -118,17 +115,24 @@
                 </p>
               </div>
               <div class="pt-4">
-                <img :src="require('@/' + data8.img ) " alt="" width="500" height="500" />
+                <img
+                  :src="require('@/assets/products/2eGPUs/core-x-dimension.png' ) "
+                  alt
+                  width="500"
+                  height="500"
+                />
               </div>
               <div class="data">
-                <b>GPU Type </b>
+                <b>GPU Type</b>
                 <p>{{ data8.GPU_Type[0] }}</p>
 
                 <div class="pt-4">
                   <p>{{ data8.GPU_Type[1] }}</p>
                 </div>
                 <div class="pt-4">
-                  <u><b> GPU Max Power Support </b></u>
+                  <u>
+                    <b>GPU Max Power Support</b>
+                  </u>
                   <p>{{ data8.GPU_Max_Power_Support }}</p>
                 </div>
               </div>
@@ -147,41 +151,43 @@
             </td>
           </tr>
           <!-- row 9-->
-          <tr class="dataRow trDisplays ">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>Windows 10 Compatible Graphics Chipsets</b>
             </th>
             <td class="col-lg-9 dataBul">
               <ul class="data p-2">
-                <u><b>Qualified NVIDIA ® GeForce ® graphics chipsets</b></u>
+                <u>
+                  <b>Qualified NVIDIA ® GeForce ® graphics chipsets</b>
+                </u>
                 <p
                   v-for="row9c in data10.Qualified_NVIDIA_GeForce_graphics_chipsets"
                   :key="row9c"
-                >
-                  {{ row9c }}
-                </p>
+                >{{ row9c }}</p>
               </ul>
               <div class="data pt-4">
-                <b><u>Qualified NVIDIA ® Quadro ® graphics chipsets</u></b>
+                <b>
+                  <u>Qualified NVIDIA ® Quadro ® graphics chipsets</u>
+                </b>
                 <p
                   v-for="row9c1 in data10.Qualified_NVIDIA_Quadro_graphics_chipsets"
                   :key="row9c1"
-                >
-                  {{ row9c1 }}
-                </p>
+                >{{ row9c1 }}</p>
               </div>
               <div class="data pt-4">
-                <b><u>Qualified AMD Radeon™ graphics chipsets</u></b>
+                <b>
+                  <u>Qualified AMD Radeon™ graphics chipsets</u>
+                </b>
                 <p
                   class="data"
                   v-for="row9c2 in data10.Qualified_AMD_Radeon_graphics_chipsets"
                   :key="row9c2"
-                >
-                  {{ row9c2 }}
-                </p>
+                >{{ row9c2 }}</p>
               </div>
               <div class="data pt-4">
-                <u><b>Graphics Output</b></u>
+                <u>
+                  <b>Graphics Output</b>
+                </u>
                 <p>Based on capabilities of installed graphics</p>
                 <p class="data pb-3 pt-4">*Not an exhaustive list</p>
               </div>
@@ -297,7 +303,7 @@ export default {
         datas.eGPU[2].specs
           .GRAPHICS_CARDS_REQUIREMENTS_GRAPHICS_CARD_NOT_INCLUDED,
       data9: datas.eGPU[2].specs.MACOS_COMPATIBLE_GRAPHICS_CHIPSETS[0],
-      data10: datas.eGPU[2].specs.WINDOWS_10_COMPATIBLE_GRAPHICS_CHIPSETS,
+      data10: datas.eGPU[2].specs.WINDOWS_10_COMPATIBLE_GRAPHICS_CHIPSETS
     };
   },
   // created(){
@@ -334,11 +340,11 @@ export default {
         this.status = 0;
       }
       console.log(this.status);
-    },
+    }
   },
   created() {
     this.text = "See More";
     console.log(this.data8.img);
-  },
+  }
 };
 </script>
