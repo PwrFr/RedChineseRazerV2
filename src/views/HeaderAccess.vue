@@ -141,7 +141,7 @@
               </div>
             </div>
           </div>
-          <div v-if="select === 2">
+          <div v-else-if="select === 2">
             <div
               class="pl-3 fillter-pad"
               v-for="(value, key) in json_obj.PC_Acessories.EGPUS.Filter"
@@ -185,7 +185,7 @@
               </div>
             </div>
           </div>
-          <div v-if="select === 3">
+          <div v-else-if="select === 3">
             <div
               class="pl-3 fillter-pad"
               v-for="(value, key) in json_obj.PC_Acessories.ACCESSORIES.Filter"
@@ -229,7 +229,7 @@
               </div>
             </div>
           </div>
-          <div v-if="select === 4">
+          <div v-else-if="select === 4">
             <div
               class="pl-3 fillter-pad"
               v-for="(value, key) in json_obj.PC_Acessories.MONITORS.Filter"
@@ -428,7 +428,7 @@
               :refs="index"
             />
           </div>
-          <div v-else class="row mt-3 row-product-faro">
+          <div v-else-if="select === 4" class="row mt-3 row-product-faro">
             <card
               v-for="(i, index) in json_obj.PC_Acessories.MONITORS.Product"
               :key="index"
