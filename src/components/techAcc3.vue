@@ -97,6 +97,6 @@ ul {
 </style>
 <script>
 export default {
-  name: "techAcc",
+  name: "techAcc3",
 };
 </script>
