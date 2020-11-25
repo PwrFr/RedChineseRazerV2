@@ -16,13 +16,13 @@ const routes = [
     component: () => import('../views/gamingLabtop.vue')
   },
   {
-    path: '/egpupage',
-    name: 'egpupage',
+    path: '/egpu',
+    name: 'egpu',
     component: () => import('../views/EgpuPage.vue')
   },
   {
-    path: '/headeraccess',
-    name: 'headeraccess',
+    path: '/pcaccess',
+    name: 'pcaccess',
     component: () => import('../views/HeaderAccess.vue')
   },
   {
