@@ -3,7 +3,7 @@
   <div class="container-fluid techSpecsBox p-0">
     <div class="container techSpecs">
       <!-- <h4 id="headerText">TECH SPECS</h4> -->
-      <table class="container-fluid">
+      <table class="container-fluid ">
         <tr>
           <h4 id="headerText">TECH SPECS</h4>
         </tr>
@@ -268,7 +268,7 @@ ul {
   display: none;
 }
 #seeLess {
-  display: inline;
+  display: contents;
 }
 #arrow {
   transform: rotate(180deg);
