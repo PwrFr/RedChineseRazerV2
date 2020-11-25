@@ -2,7 +2,7 @@
   <div id="app">
     <menu-bar />
     <router-view />
-    <Footer />
+    <Footer style="background-color: #222222" />
   </div>
 </template>
 <script>

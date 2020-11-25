@@ -27,11 +27,19 @@
                 markdown=""
                 style="margin: auto; margin-top: 40px; width: 850px"
               >
-                <img src="@/assets/products/2eGPUs/quote-open.png" alt="" class="quote-open-close"/>
+                <img
+                  src="@/assets/products/2eGPUs/quote-open.png"
+                  alt=""
+                  class="quote-open-close"
+                />
                 The Core X emerges as the go-to single I/O Thunderbolt 3 eGPU
                 enclosure that can pair with almost all graphics cards and
                 Thunderbolt 3 laptops.
-                <img src="@/assets/products/2eGPUs/quote-close.png" alt="" class="quote-open-close"/>
+                <img
+                  src="@/assets/products/2eGPUs/quote-close.png"
+                  alt=""
+                  class="quote-open-close"
+                />
               </h2>
               <p class="content_text_2 ng-star-inserted">
                 <a

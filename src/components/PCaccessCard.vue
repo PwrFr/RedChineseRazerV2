@@ -20,14 +20,14 @@
     </div>
 
     <div class="card-product">
-      <a :href="item.link || ''" class="img-crop cursor-point">
+      <router-link to="item.link || ''" class="img-crop cursor-point">
         <img
           class="w-100"
           :src="require('@/' + item.img)"
           alt=""
           style="background-color: #111111"
         />
-      </a>
+      </router-link>
       <div
         v-if="number == 1 || number == 2"
         class="compare pl-3 pt-2 d-flex align-items-center"
@@ -39,9 +39,9 @@
         </label>
       </div>
       <div class="card-body-access p-3 pr-4 pl-3">
-        <a :href="item.link || ''" class="title-product">
+        <router-link to="item.link || ''" class="title-product">
           {{ item.name }}
-        </a>
+        </router-link>
         <div class="detail-product">
           <ul class="pl-3 pt-2">
             <li v-for="(i, index) in item.detail" :key="index">
@@ -49,8 +49,8 @@
             </li>
           </ul>
         </div>
-        <a :href="item.link || ''" class="view-detail pl-1 pt-2"
-          >View details ></a
+        <router-link to="item.link || ''" class="view-detail pl-1 pt-2"
+          >View details ></router-link
         >
         <div class="setBottom">
           <div class="price-access">{{ item.price }}</div>
