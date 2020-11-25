@@ -2,20 +2,21 @@
   <section>
     <div
       style="
-     
-      height: 53rem;
-      width: 150%;
-      max-width: 150%;
-      margin-left: -12.5rem;
-      padding-top: 20rem;
-    "
+        height: 53rem;
+        width: 150%;
+        max-width: 150%;
+        margin-left: -12.5rem;
+        padding-top: 20rem;
+      "
       v-bind:style="{
         backgroundImage:
           'url(' + require('@/assets/products/2eGPUs/10.jpg') + ')',
       }"
     >
-      <div class="container" style="margin-left: 22rem">
-        <h2 style="font-size: 1.75rem; font-weight: 200; color: #44d62c">JUST PLUG AND PLAY</h2>
+      <div class="container text-left" style="margin-left: 22rem">
+        <h2 style="font-size: 1.75rem; font-weight: 200; color: #44d62c">
+          JUST PLUG AND PLAY
+        </h2>
 
         <p style="color: white; font-size: 1.15 rem; font-family: Razerf5">
           After setup is completed with your laptop, the Razer Core X
