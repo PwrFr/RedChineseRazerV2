@@ -255,10 +255,12 @@ ul {
 .dataBul {
   padding-top: 1rem;
   padding-bottom: 0;
+  display: contents;
 }
 .dataSingle {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  display: contents;
 }
 
 #more {
