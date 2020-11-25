@@ -254,17 +254,16 @@
 </template>
 
 <script>
-import datas from "./assets/data.json";
-import eGPU2 from "./components/eGPUsPage/eGPU2.vue";
-import eGPU3 from "./components/eGPUsPage/eGPU3.vue";
-import eGPU4 from "./components/eGPUsPage/eGPU4.vue";
-import eGPU5 from "./components/eGPUsPage/eGPU5.vue";
-import eGPU6 from "./components/eGPUsPage/eGPU6.vue";
-import eGPU7 from "./components/eGPUsPage/eGPU7.vue";
-import techSpecEgpu from "./components/techSpecEgpuChroma.vue";
-import techSpecEgpuBlack from "./components/techSpecEgpuBlack.vue";
+import eGPU2 from "@/components/eGPUsPage/eGPU2.vue";
+import eGPU3 from "@/components/eGPUsPage/eGPU3.vue";
+import eGPU4 from "@/components/eGPUsPage/eGPU4.vue";
+import eGPU5 from "@/components/eGPUsPage/eGPU5.vue";
+import eGPU6 from "@/components/eGPUsPage/eGPU6.vue";
+import eGPU7 from "@/components/eGPUsPage/eGPU7.vue";
+import techSpecEgpu from "@/components/techSpecEgpuChroma.vue";
+import techSpecEgpuBlack from "@/components/techSpecEgpuBlack.vue";
 
-import eGPUbottom from "./components/eGPUsPage/eGPUbottom.vue";
+import eGPUbottom from "@/components/eGPUsPage/eGPUbottom.vue";
 import datas from "@/models /data.js";
 const EGPU1 = () => import("@/components/eGPUsPage/eGPU1");
 

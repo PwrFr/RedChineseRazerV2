@@ -24,6 +24,11 @@ const routes = [
     path: '/egpupage',
     name: 'egpupage',
     component: () => import('../views/EgpuPage.vue')
+  },
+  {
+    path: '/headeraccess',
+    name: 'headeraccess',
+    component: () => import('../views/HeaderAccess.vue')
   }
 ]
 
