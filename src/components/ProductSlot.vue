@@ -1,225 +1,230 @@
 <template>
-  <div>
-    <div class="container-fluid" style="padding: 0px; background-color: black">
-      <div class="row p-0 mt-0 row-product">
-        <div
-          class="col-xl-10 col-md-12 col-img-full"
-          v-bind:style="{ backgroundImage: 'url(' + bgComponent + ')' }"
-        >
-          <div class="image-tab">
-            <lable>
-              <div class="image-tab-list">
-                <input
-                  type="radio"
-                  name="test"
-                  @click="changeImage(1)"
-                  class="rdo_style"
-                  checked
-                />
-                <img :src="imageTab1" class="image-tab-border" />
-              </div>
-            </lable>
-            <lable>
-              <div class="image-tab-list">
-                <input
-                  type="radio"
-                  name="test"
-                  @click="changeImage(2)"
-                  class="rdo_style"
-                />
-                <img :src="imageTab2" class="image-tab-border" />
-              </div>
-            </lable>
-            <lable>
-              <div class="image-tab-list">
-                <input
-                  type="radio"
-                  name="test"
-                  @click="changeImage(3)"
-                  class="rdo_style"
-                />
-                <img :src="imageTab3" class="image-tab-border" />
-              </div>
-            </lable>
-            <lable>
-              <div class="image-tab-list">
-                <div v-if="4 - imageAmount > 0">
-                  <img
-                    :src="imageTab4"
-                    class="image-tab-border"
-                    :style="hiddenBorder4"
-                  />
-                </div>
-                <div v-else>
+  <section>
+    <div>
+      <div
+        class="container-fluid"
+        style="padding: 0px; background-color: black"
+      >
+        <div class="row p-0 mt-0 row-product">
+          <div
+            class="col-xl-10 col-md-12 col-img-full"
+            v-bind:style="{ backgroundImage: 'url(' + bgComponent + ')' }"
+          >
+            <div class="image-tab">
+              <lable>
+                <div class="image-tab-list">
                   <input
                     type="radio"
                     name="test"
-                    @click="changeImage(4)"
+                    @click="changeImage(1)"
                     class="rdo_style"
+                    checked
                   />
-                  <img :src="imageTab4" class="image-tab-border" />
+                  <img :src="imageTab1" class="image-tab-border" />
                 </div>
-              </div>
-            </lable>
-            <lable>
-              <div class="image-tab-list">
-                <div v-if="5 - imageAmount > 0">
-                  <img
-                    :src="imageTab5"
-                    class="image-tab-border"
-                    :style="hiddenBorder5"
-                  />
-                </div>
-                <div v-else>
+              </lable>
+              <lable>
+                <div class="image-tab-list">
                   <input
                     type="radio"
                     name="test"
-                    @click="changeImage(5)"
+                    @click="changeImage(2)"
                     class="rdo_style"
                   />
-                  <img :src="imageTab5" class="image-tab-border" />
+                  <img :src="imageTab2" class="image-tab-border" />
                 </div>
-              </div>
-            </lable>
-            <lable>
-              <div class="image-tab-list">
-                <div v-if="6 - imageAmount > 0">
-                  <img
-                    :src="imageTab6"
-                    class="image-tab-border"
-                    :style="hiddenBorder6"
-                  />
-                </div>
-                <div v-else>
+              </lable>
+              <lable>
+                <div class="image-tab-list">
                   <input
                     type="radio"
                     name="test"
-                    @click="changeImage(6)"
+                    @click="changeImage(3)"
                     class="rdo_style"
                   />
-                  <img :src="imageTab6" class="image-tab-border" />
+                  <img :src="imageTab3" class="image-tab-border" />
                 </div>
-              </div>
-            </lable>
-          </div>
-        </div>
-
-        <!--leftside -->
-
-        <div class="col right-box w-100 pr-5">
-          <p class="header">{{ headerText }}</p>
-          <p class="head-description">{{ headerDes }}</p>
-          <p class="head-price">{{ priceText }}</p>
-          <div class="ul-session">
-            <ul>
-              <li>{{ description1 }}</li>
-              <li v-if="2 <= desAmount">{{ description2 }}</li>
-              <li v-if="3 <= desAmount">{{ description3 }}</li>
-              <li v-if="4 <= desAmount">{{ description4 }}</li>
-              <li v-if="5 <= desAmount">{{ description5 }}</li>
-              <li v-if="6 <= desAmount">{{ description6 }}</li>
-              <li v-if="7 <= desAmount">{{ description7 }}</li>
-              <li v-if="8 <= desAmount">{{ description8 }}</li>
-              <li v-if="9 <= desAmount">{{ description9 }}</li>
-              <li v-if="10 <= desAmount">{{ description10 }}</li>
-              <li v-if="11 <= desAmount">{{ description11 }}</li>
-            </ul>
-          </div>
-
-          <!-- boos here --->
-          <div v-if="modelBoxDisappear == 0">
-            <div class="model-box-div">
-              <div id="box" class="model-box">
-                <div class="select-box" @click="onClickColor()">
-                  <div class="model-options-container" ref="here">
-                    <div
-                      @click="testfuck()"
-                      class="box-option"
-                      v-if="1 <= modelAmount"
-                    >
-                      <input
-                        type="radio"
-                        class="model-radio"
-                        id="Standard - Black"
-                        name="category"
-                      />
-                      <div v-if="whiteSelecterText == 0" style="color: white">
-                        <label id="1" for="Standard - Black">{{
-                          modelName1
-                        }}</label>
-                      </div>
-                      <div v-else>
-                        <label id="1" for="Standard - Black">{{
-                          modelName1
-                        }}</label>
-                      </div>
-                    </div>
-
-                    <div
-                      @click="myFunction('2', '1', '3')"
-                      class="box-option"
-                      v-if="2 <= modelAmount"
-                    >
-                      <input
-                        type="radio"
-                        class="model-radio"
-                        id="Standard - Mercury"
-                        name="category"
-                      />
-                      <div v-if="whiteSelecterText == 1" style="color: white">
-                        <label id="2" for="Standard - Black">{{
-                          modelName2
-                        }}</label>
-                      </div>
-                      <div v-else>
-                        <label id="2" for="Standard - Black">{{
-                          modelName2
-                        }}</label>
-                      </div>
-                    </div>
-
-                    <div
-                      @click="myFunction('3', '1', '2')"
-                      class="box-option"
-                      v-if="3 <= modelAmount"
-                    >
-                      <input
-                        type="radio"
-                        class="model-radio"
-                        id="Chroma"
-                        name="category"
-                      />
-                      <div v-if="whiteSelecterText == 2" style="color: white">
-                        <label id="3" for="Standard - Black">{{
-                          modelName3
-                        }}</label>
-                      </div>
-                      <div v-else>
-                        <label id="3" for="Standard - Black">{{
-                          modelName3
-                        }}</label>
-                      </div>
-                    </div>
+              </lable>
+              <lable>
+                <div class="image-tab-list">
+                  <div v-if="4 - imageAmount > 0">
+                    <img
+                      :src="imageTab4"
+                      class="image-tab-border"
+                      :style="hiddenBorder4"
+                    />
                   </div>
-
-                  <div class="selected">{{ modelFirstItem }}</div>
+                  <div v-else>
+                    <input
+                      type="radio"
+                      name="test"
+                      @click="changeImage(4)"
+                      class="rdo_style"
+                    />
+                    <img :src="imageTab4" class="image-tab-border" />
+                  </div>
                 </div>
-              </div>
-              <div class="model-box-1" id="box1">
-                <b>Model</b>
-              </div>
+              </lable>
+              <lable>
+                <div class="image-tab-list">
+                  <div v-if="5 - imageAmount > 0">
+                    <img
+                      :src="imageTab5"
+                      class="image-tab-border"
+                      :style="hiddenBorder5"
+                    />
+                  </div>
+                  <div v-else>
+                    <input
+                      type="radio"
+                      name="test"
+                      @click="changeImage(5)"
+                      class="rdo_style"
+                    />
+                    <img :src="imageTab5" class="image-tab-border" />
+                  </div>
+                </div>
+              </lable>
+              <lable>
+                <div class="image-tab-list">
+                  <div v-if="6 - imageAmount > 0">
+                    <img
+                      :src="imageTab6"
+                      class="image-tab-border"
+                      :style="hiddenBorder6"
+                    />
+                  </div>
+                  <div v-else>
+                    <input
+                      type="radio"
+                      name="test"
+                      @click="changeImage(6)"
+                      class="rdo_style"
+                    />
+                    <img :src="imageTab6" class="image-tab-border" />
+                  </div>
+                </div>
+              </lable>
             </div>
           </div>
-          <!-- end --->
 
-          <p class="shipping-date">{{ shippingDate }}</p>
-          <button class="order-button">{{ buyingStatus }}</button>
+          <!--leftside -->
 
-          <p class="product-status">{{ buyingAt }}</p>
+          <div class="col right-box w-100 pr-5">
+            <p class="header">{{ headerText }}</p>
+            <p class="head-description">{{ headerDes }}</p>
+            <p class="head-price">{{ priceText }}</p>
+            <div class="ul-session">
+              <ul>
+                <li>{{ description1 }}</li>
+                <li v-if="2 <= desAmount">{{ description2 }}</li>
+                <li v-if="3 <= desAmount">{{ description3 }}</li>
+                <li v-if="4 <= desAmount">{{ description4 }}</li>
+                <li v-if="5 <= desAmount">{{ description5 }}</li>
+                <li v-if="6 <= desAmount">{{ description6 }}</li>
+                <li v-if="7 <= desAmount">{{ description7 }}</li>
+                <li v-if="8 <= desAmount">{{ description8 }}</li>
+                <li v-if="9 <= desAmount">{{ description9 }}</li>
+                <li v-if="10 <= desAmount">{{ description10 }}</li>
+                <li v-if="11 <= desAmount">{{ description11 }}</li>
+              </ul>
+            </div>
+
+            <!-- boos here --->
+            <div v-if="modelBoxDisappear == 0">
+              <div class="model-box-div">
+                <div id="box" class="model-box">
+                  <div class="select-box" @click="onClickColor()">
+                    <div class="model-options-container" ref="here">
+                      <div
+                        @click="testfuck()"
+                        class="box-option"
+                        v-if="1 <= modelAmount"
+                      >
+                        <input
+                          type="radio"
+                          class="model-radio"
+                          id="Standard - Black"
+                          name="category"
+                        />
+                        <div v-if="whiteSelecterText == 0" style="color: white">
+                          <label id="1" for="Standard - Black">{{
+                            modelName1
+                          }}</label>
+                        </div>
+                        <div v-else>
+                          <label id="1" for="Standard - Black">{{
+                            modelName1
+                          }}</label>
+                        </div>
+                      </div>
+
+                      <div
+                        @click="myFunction('2', '1', '3')"
+                        class="box-option"
+                        v-if="2 <= modelAmount"
+                      >
+                        <input
+                          type="radio"
+                          class="model-radio"
+                          id="Standard - Mercury"
+                          name="category"
+                        />
+                        <div v-if="whiteSelecterText == 1" style="color: white">
+                          <label id="2" for="Standard - Black">{{
+                            modelName2
+                          }}</label>
+                        </div>
+                        <div v-else>
+                          <label id="2" for="Standard - Black">{{
+                            modelName2
+                          }}</label>
+                        </div>
+                      </div>
+
+                      <div
+                        @click="myFunction('3', '1', '2')"
+                        class="box-option"
+                        v-if="3 <= modelAmount"
+                      >
+                        <input
+                          type="radio"
+                          class="model-radio"
+                          id="Chroma"
+                          name="category"
+                        />
+                        <div v-if="whiteSelecterText == 2" style="color: white">
+                          <label id="3" for="Standard - Black">{{
+                            modelName3
+                          }}</label>
+                        </div>
+                        <div v-else>
+                          <label id="3" for="Standard - Black">{{
+                            modelName3
+                          }}</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="selected">{{ modelFirstItem }}</div>
+                  </div>
+                </div>
+                <div class="model-box-1" id="box1">
+                  <b>Model</b>
+                </div>
+              </div>
+            </div>
+            <!-- end --->
+
+            <p class="shipping-date">{{ shippingDate }}</p>
+            <button class="order-button">{{ buyingStatus }}</button>
+
+            <p class="product-status">{{ buyingAt }}</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style>
@@ -234,7 +239,7 @@ export const global = {
 };
 export default {
   components: {
-    new_case: () => import("/CasesPage.vue"),
+    new_case: () => import("../views/CasesPage.vue"),
   },
   props: {
     //Src of image

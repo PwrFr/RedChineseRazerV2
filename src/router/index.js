@@ -30,6 +30,12 @@ const routes = [
     name: 'casespage',
     component: () => import('../views/CasesPage.vue')
   }
+  ,
+  {
+    path: '/monitor',
+    name: 'monitor',
+    component: () => import('../views/MonitorPage.vue')
+  }
 ]
 
 const router = new VueRouter({

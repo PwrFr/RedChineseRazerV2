@@ -2,15 +2,18 @@
   <section>
     <div
       class="cases-row3-full"
-      v-bind:style="{ backgroundImage: 'url(' + casesRow3Img + ')',
-     paddingTop: paddingTopInput + 'rem',
-     height: heightRow3Input + 'px' }"
+      v-bind:style="{
+        backgroundImage: 'url(' + require(casesRow3Img) + ')',
+        paddingTop: paddingTopInput + 'rem',
+        height: heightRow3Input + 'px',
+      }"
     >
-      <div class="row" v-bind:style=" {}">
+      }" >
+      <div class="row" v-bind:style="{}">
         <div class="col-7"></div>
         <div class="col cases-row3-text-range">
-          <div class="row cases-row3-header">{{casesRow3Header}}</div>
-          <div class="row cases-row3-des">{{casesRow3Des}}</div>
+          <div class="row cases-row3-header">{{ casesRow3Header }}</div>
+          <div class="row cases-row3-des">{{ casesRow3Des }}</div>
         </div>
       </div>
     </div>
@@ -57,7 +60,7 @@ export default {
     casesRow3Header: String,
     casesRow3Des: String,
     paddingTopInput: Number,
-    heightRow3Input: Number
-  }
+    heightRow3Input: Number,
+  },
 };
 </script>

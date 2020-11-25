@@ -230,7 +230,7 @@
       <Row1 />
       <Row2 />
       <Row3
-        casesRow3Img="/src/assets/products/3Cases/row3.jpg"
+        casesRow3Img="@/assets/products/3Cases/row3.jpg"
         casesRow3Header="DUAL-SIDED TEMPERED GLASS SWIVEL DOORS"
         casesRow3Des="Installing new parts has never been this convenient or straightforward, with forward-opening doors that can also be detached for more room to focus on your build. Made of tough, tempered glass, they offer the perfect protection while showing off the power and performance of Chroma-enabled hardware within."
         paddingTopInput="10"
@@ -238,7 +238,7 @@
       />
       <Row4 />
       <Row3
-        casesRow3Img="/src/assets/products/3Cases/row5.jpg"
+        casesRow3Img="@/assets/products/3Cases/row5.jpg"
         casesRow3Header="FRONT PANEL CONNECTIVITY"
         casesRow3Des="The Razer Tomahawk’s front panel is designed for convenient setup, sporting the latest USB 3.2 Gen 2 Type-C port for faster connection with the latest devices, a dedicated mic port for streamers, a mic/headphone combo port, and 2 standard USB Type-A ports."
         paddingTopInput="11.8"
@@ -261,7 +261,7 @@
 <script>
 const Row1 = () => import("@/components/CasesPage/casesRow1");
 const Row2 = () => import("@/components/CasesPage/casesRow2");
-const VideoSession = () => import("@/components/CasesPage/VideoSession");
+const VideoSession = () => import("@/components/CasesPage/casesVideo");
 import datas from "@/models/data.js";
 const Row3 = () => import("@/components/CasesPage/casesRow3");
 const Row4 = () => import("@/components/CasesPage/casesRow4");
