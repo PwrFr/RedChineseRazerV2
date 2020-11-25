@@ -229,7 +229,7 @@
       <Row1 />
       <Row2 />
       <Row3
-        casesRow3Img="@/assets/products/3Cases/row3.jpg"
+        casesRow3Img="assets/products/3Cases/row3.jpg"
         casesRow3Header="DUAL-SIDED TEMPERED GLASS SWIVEL DOORS"
         casesRow3Des="Installing new parts has never been this convenient or straightforward, with forward-opening doors that can also be detached for more room to focus on your build. Made of tough, tempered glass, they offer the perfect protection while showing off the power and performance of Chroma-enabled hardware within."
         paddingTopInput="10"
@@ -237,7 +237,7 @@
       />
       <Row4 />
       <Row3
-        casesRow3Img="@/assets/products/3Cases/row5.jpg"
+        casesRow3Img="assets/products/3Cases/row5.jpg"
         casesRow3Header="FRONT PANEL CONNECTIVITY"
         casesRow3Des="The Razer Tomahawk’s front panel is designed for convenient setup, sporting the latest USB 3.2 Gen 2 Type-C port for faster connection with the latest devices, a dedicated mic port for streamers, a mic/headphone combo port, and 2 standard USB Type-A ports."
         paddingTopInput="11.8"
@@ -282,13 +282,13 @@ export default {
       specSwitch: 1,
       onum: 0,
       hiddenBorder4: {
-        border: "0px"
+        border: "0px",
       },
       hiddenBorder5: {
-        border: "0px"
+        border: "0px",
       },
       hiddenBorder6: {
-        border: "0px"
+        border: "0px",
       },
       //imageTab1: "/src/assets/products/cases/bar/1.jpg",
       //imageTab2: "/src/assets/products/cases/bar/2.jpg",
@@ -326,7 +326,7 @@ export default {
       shippingDate: "Ships on December 03, 2020",
       buyingStatus: "PRE-ORDER",
       buyingAt: "Also Available At",
-      whiteSelecterText: "1"
+      whiteSelecterText: "1",
     };
   },
   mounted() {
@@ -343,7 +343,7 @@ export default {
     Row8,
     Row9,
     techSpecCase,
-    techSpecCaseMini
+    techSpecCaseMini,
   },
   methods: {
     firstSelecter() {
@@ -452,7 +452,7 @@ export default {
         this.nnum += 1;
       });
 
-      optionsList.forEach(o => {
+      optionsList.forEach((o) => {
         o.addEventListener("click", () => {
           selected.innerHTML = o.querySelector("label").innerHTML;
           optionsContainer.classList.remove("active");
@@ -515,7 +515,7 @@ export default {
       this.onum = this.nnum;
       // console.log(this.onum);
       // console.log(this.nnum);
-    }
-  }
+    },
+  },
 };
 </script>
