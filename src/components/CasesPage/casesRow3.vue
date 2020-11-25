@@ -8,7 +8,6 @@
         height: heightRow3Input + 'px',
       }"
     >
-      }" >
       <div class="row">
         <div class="col-7"></div>
         <div class="col cases-row3-text-range">
@@ -60,7 +59,7 @@ export default {
     casesRow3Header: String,
     casesRow3Des: String,
     paddingTopInput: Number,
-    heightRow3Input: Number,
-  },
+    heightRow3Input: Number
+  }
 };
 </script>
