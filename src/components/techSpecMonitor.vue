@@ -1,29 +1,57 @@
 <template>
-  <div class="container techSpecsBox">
+<section>
+  <div class="techSpecsBox justify-content-center data-golf">
     <!-- <h4 id="headerText">TECH SPECS</h4> -->
-    <div class="row">
+    <div class="row mt-4">
       <h4 id="headerText">TECH SPECS</h4>
     </div>
     <div class="row line-tech">
-      <div class="col-lg-3 text-center-tech">Display</div>
-      <div class="col-lg-5 text-center-tech">
-        <li>{{data1}}</li>
-        <li>{{data2}}</li>
+      <div class="col-lg-3 text-center-tech data-golf-data upHead">Display</div>
+      <div class="col-lg-5 text-center-tech data-golf-data">
+        <li>{{ data1 }}</li>
+        <li>{{ data2 }}</li>
       </div>
     </div>
     <div class="row line-tech">
-      <div class="col-lg-3 text-center-tech">Refresh rate</div>
-      <div class="col-lg-5 text-center-tech">
-        {{data3}}
+      <div class="col-lg-3 text-center-tech data-golf-data upHead">Refresh rate</div>
+      <div class="col-lg-5 text-center-tech data-golf-data">
+        {{ data3 }}
+      </div>
+    </div>
+    <div class="row line-tech">
+      <div class="col-lg-3 text-center-tech data-golf-data upHead">Graphics</div>
+      <div class="col-lg-5 text-center-tech data-golf-data">
+        <li>{{ data4 }}</li>
+        <li>{{ data5 }}</li>
+      </div>
+    </div>
+    <div class="row line-tech">
+      <div class="col-lg-3 text-center-tech data-golf-data upHead">Contrast Ratio</div>
+      <div class="col-lg-5 text-center-tech data-golf-data">
+        {{ data6 }}
       </div>
     </div>
     <!-- row 3-->
-    <span id="more" ref="more"> </span>
+    <span id="more" ref="more">
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">Contrast Ratio</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{ data6 }}
+        </div>
+      </div>
+      <div class="row line-tech">
+        <div class="col-lg-3 text-center-tech data-golf-data upHead">Bezels</div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{ data7 }}
+        </div>
+      </div>
+    </span>
   </div>
-  <!-- <div id="seeLess" ref="seeless" class="m-0">
+
+  <div id="seeLess" ref="seeless" class="m-0">
       <p @click="test()" class="seeBox pt-2" ref="text">
-        {{ text
-        }}<svg
+        {{ text }}
+        <svg
           ref="arrowGreen"
           id="arrow"
           width="2em"
@@ -41,39 +69,44 @@
         </svg>
       </p>
     </div>
-  </div> -->
+    </section>
 </template>
+
 <style>
 @font-face {
   font-family: myFirstFont;
   src: url("../assets/font/razerf5-thin.otf");
 }
 
-
-
-
 .techSpecsBox {
-  background-color: #333;
+  background-color:#252525;
   color: white;
 }
 .line-tech {
   border-bottom: solid 1px #999;
   color: white;
 }
-.text-center-tech{
-    text-align: left;
+.text-center-tech {
+  text-align: left;
+}
+.data-golf{
+  padding-left: 10rem;
+  padding-right:10rem ;
+}
+.data-golf-data{
+
+  padding: 1rem;
+  color: gray;
+}
+.upHead{
+ text-transform: uppercase;
+ font-weight: bold;
+ color: #fff;
 }
 
 
 
 
-
-
-
-.techSpecsBox {
-  background-color: #252525;
-  color: white;
-}
 .techSpecs {
   color: white;
 }
@@ -98,9 +131,6 @@
 .data {
   text-align: left;
   color: #999;
-}
-ul {
-  padding: 0px;
 }
 .trDisplay {
   border-bottom: solid 1px #999;
