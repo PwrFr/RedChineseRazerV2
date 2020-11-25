@@ -211,15 +211,6 @@
         disC="Soft to the touch, snag-free Velcro strips along the flap and mouth of the sleeve keep the laptop securely in place without collecting unwanted material or catching on your clothes."
         disR="Equipped with a sleek silhouette, the sleeve’s slim form factor feels great in your hands, and fits snugly into similarly sized backpacks and briefcases, making portability a breeze."
       />
-
-      <div v-if="specSwitch == 0">
-        <!-- spec 1 here -->
-      </div>
-      <div v-if="specSwitch == 1">
-        <!-- spec 2 here -->
-      </div>
-      <div v-if="specSwitch == 2">
-        <!-- spec 3 here -->
       </div>
       <tectAcc2 />
     </div>

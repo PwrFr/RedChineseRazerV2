@@ -214,14 +214,6 @@
         disC="For complete weather protection, the sleeve comes with waterproof zipper tapes to keep your notebook fully insulated from the elements."
         disR="Unzip the sleeve with ease with a striking, detachable woven strap that proudly shows where your loyalties lie."
       />
-      <div v-if="specSwitch == 0">
-        <!-- spec 1 here -->
-      </div>
-      <div v-if="specSwitch == 1">
-        <!-- spec 2 here -->
-      </div>
-      <div v-if="specSwitch == 2">
-        <!-- spec 3 here -->
       </div>
       <tectAcc />
     </div>
