@@ -272,13 +272,15 @@
 </template>
 
 <script>
-import headerAccessProduct from "./components/headerAccesssProduct.vue";
+const headerAccessProduct = () =>
+  import("@/components/headerAccesssProduct.vue");
 
-import SideImgRowL from "./components/SideImgRowL.vue";
-import SideImgRowR from "./components/SideImgRowR.vue";
-import ColAccessProduct from "./components/ColAccessProduct.vue";
-// import datas from "./assets/data.json";
-import tectAcc from "./components/techAcc.vue";
+const SideImgRowL = () => import("@/components/SideImgRowL.vue");
+const SideImgRowR = () => import("@/components/SideImgRowR.vue");
+const ColAccessProduct = () => import("@/components/ColAccessProduct.vue");
+import datas from "@/models/data.js";
+
+const tectAcc = () => import("@/components/techAcc.vue");
 
 export default {
   created() {},
@@ -525,5 +527,4 @@ export default {
 };
 </script>
 <style>
-@import "./index.css";
 </style>
