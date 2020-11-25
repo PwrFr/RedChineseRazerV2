@@ -8,55 +8,55 @@
           <h4 id="headerText">TECH SPECS</h4>
         </tr>
         <!-- row 1 -->
-        <tr class="dataRow trDisplays dataBul">
+        <tr class="dataRow trDisplays ">
           <th class="col-lg-3 p-0">
             <b>Input & Output</b>
           </th>
-          <ul class="col-lg-9 data px-4">
+          <ul class="col-lg-9 data px-4 dataBul">
             <li v-for="row01 in data1" :key="row01">
               {{ row01 }}
             </li>
           </ul>
         </tr>
         <!-- row 2 -->
-        <tr class="dataRow trDisplays dataSingle">
+        <tr class="dataRow trDisplays ">
           <th class="col-lg-3 p-0">
             <b>Internal Power Supply</b>
           </th>
-          <td class="col-lg-9 data">{{ data2 }}</td>
+          <td class="col-lg-9 data dataSingle p-2">{{ data2 }}</td>
         </tr>
         <!-- row 3 -->
         <tr class="dataRow trDisplays dataSingle">
           <th class="col-lg-3 p-0">
             <b>Laptop Power Delivery</b>
           </th>
-          <td class="col-lg-9 data">{{ data3 }}</td>
+          <td class="col-lg-9 data dataSingle p-2">{{ data3 }}</td>
         </tr>
         <!-- row 4 -->
-        <tr class="dataRow trDisplays dataSingle">
+        <tr class="dataRow trDisplays ">
           <th class="col-lg-3 p-0">
             <b>Thunderbolt™ 3 cable length</b>
           </th>
-          <td class="col-lg-9 data">{{ data4 }}</td>
+          <td class="col-lg-9 data dataSingle p-2">{{ data4 }}</td>
         </tr>
         <!-- row 4 -->
         <span id="more" ref="more">
-          <tr class="dataRow trDisplays dataBul">
+          <tr class="dataRow trDisplays ">
             <th class="col-lg-3 p-0">
               <b>Razer Core Approx. Size</b>
             </th>
             <td class="col-lg-9">
-              <ul class="data p-2">
+              <ul class="data p-2 dataBul">
                 <li v-for="row4 in data5" :key="row4">{{ row4 }}</li>
               </ul>
             </td>
           </tr>
           <!-- row 5 -->
-          <tr class="dataRow trDisplays dataSingle">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>Weight</b>
             </th>
-            <td class="col-lg-9 data">{{ data6 }}</td>
+            <td class="col-lg-9 data   p-2">{{ data6 }}</td>
           </tr>
 
           <!-- row 6 -->
@@ -118,7 +118,7 @@
                 </p>
               </div>
               <div class="pt-4">
-                <img :src="data8.img" alt="" width="500" height="500" />
+                <img :src="require('@/' + data8.img ) " alt="" width="500" height="500" />
               </div>
               <div class="data">
                 <b>GPU Type </b>
@@ -135,11 +135,11 @@
             </td>
           </tr>
           <!-- row 8 -->
-          <tr class="dataRow trDisplays dataBul">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>macOS Compatible Graphics Chipsets</b>
             </th>
-            <td class="col-lg-9">
+            <td class="col-lg-9 dataBul">
               <ul class="data p-2">
                 <p v-for="row8c in data9" :key="row8c">{{ row8c }}</p>
               </ul>
@@ -147,11 +147,11 @@
             </td>
           </tr>
           <!-- row 9-->
-          <tr class="dataRow trDisplays dataBul">
+          <tr class="dataRow trDisplays ">
             <th class="col-lg-3 p-0">
               <b>Windows 10 Compatible Graphics Chipsets</b>
             </th>
-            <td class="col-lg-9">
+            <td class="col-lg-9 dataBul">
               <ul class="data p-2">
                 <u><b>Qualified NVIDIA ® GeForce ® graphics chipsets</b></u>
                 <p
@@ -310,7 +310,7 @@ export default {
       if (this.status == 0) {
         //when user press see More v
         var more = this.$refs.more;
-        more.style.display = "inline";
+        more.style.display = "contents";
         //bt seeMore hide
 
         this.text = "See less";
@@ -318,7 +318,7 @@ export default {
         arrow.style.transform = "rotate(0deg)";
 
         var btLess = this.$refs.seeless;
-        btLess.style.display = "inline";
+        btLess.style.display = "contents";
 
         this.status = 1;
       } else if (this.status == 1) {

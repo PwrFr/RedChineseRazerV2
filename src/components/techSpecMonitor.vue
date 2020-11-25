@@ -22,7 +22,7 @@
           <th class="col-lg-3 p-0">
             <b>REFRESH RATE</b>
           </th>
-          <td class="col-lg-9 p-0 data p-3">
+          <td class="col-lg-9 data dataSingle">
             {{ data3 }}
           </td>
         </tr>
