@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GTCoding</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body  onload="myFunction('3','1','2')" onclick="onClickColor()">
+    <div class="container">
+      <div id="box" class="box">
+      <div  class="select-box">
+        <div  class="options-container">
+
+          <div onclick="myFunction('1','2','3')" class="option">
+            <input type="radio" class="radio" id="Standard - Black" name="category" />
+            <label  id="1" for="Standard - Black">Standard - Black</label>
+          </div>
+
+          <div onclick="myFunction('2','1','3')" class="option">
+            <input type="radio" class="radio" id="Standard - Mercury" name="category" />
+            <label id="2" for="Standard - Mercury">Standard - Mercury</label>
+          </div>
+
+          <div onclick="myFunction('3','1','2')" class="option">
+            <input type="radio" class="radio" id="Chroma" name="category" />
+            <label id="3" for="Chroma">Chroma</label>
+          </div>
+
+        </div>
+
+        <div class="selected">
+            Chroma
+        </div>
+     
+      </div>
+    </div>
+</div>
+    <script src="main.js"></script>
+      
+    <div class="box1" id="box1">
+       <b> Model</b>
+    </div>
+  </body>
+</html>

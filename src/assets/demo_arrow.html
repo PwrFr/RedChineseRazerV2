@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+   
+
+.arrow {
+    margin: auto;
+     position: relative;
+     height: 15px;
+     width: 15px;
+     color:#44d62c;
+}
+ .arrow::before, .arrow::after {
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     width: 0.2rem;
+     height: 100%;
+
+}
+ .arrow::before {
+     left: -5px;
+     transform: rotate(45deg);
+     background-color: #44d62c;
+}
+ .arrow::after {
+     left: 5px;
+     transform: rotate(-45deg);
+     background-color: #44d62c;
+}
+ .open .arrow::before {
+     left: -5px;
+     transform: rotate(-50deg);
+}
+ .open .arrow::after {
+     left: 5px;
+     transform: rotate(50deg);
+}
+</style>
+
+<body>
+    <div class="custom-select-wrapper">
+        <div class="arrow"></div>
+    </div>
+
+    <script>
+        document.querySelector('.custom-select-wrapper').addEventListener('click', function()
+         {this.classList.toggle('open');})
+    </script>
+</body>
+</html>

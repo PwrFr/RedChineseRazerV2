@@ -1,0 +1,1035 @@
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 47px;
+}
+body {
+  overflow-x: hidden;
+}
+.colimgProduct {
+  height: 20rem;
+  background-size: cover;
+}
+.text-grey {
+  color: #999999;
+}
+.text-razer {
+  color: #44d62c;
+}
+.razerf5 {
+  font-family: Razerf5;
+}
+.text-black {
+  color: #000000;
+}
+.w-headerproduct {
+  width: 62%;
+}
+.bgRL {
+  background-position-x: -13rem;
+  height: 43rem;
+}
+.product-access-title {
+  color: #44d62c;
+}
+body {
+  background-color: #222222;
+}
+.menu-bg {
+  background-color: #222222;
+}
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: #999999;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  left: 12rem;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+a:hover {
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+.product-size {
+  background-position-x: -13rem;
+  height: 31rem;
+}
+.col-item {
+  font-size: 1rem;
+  color: #999999;
+}
+.col-item:hover {
+  color: lime;
+}
+.bg-dropdown {
+  background-color: black;
+}
+.img-row {
+  background-position-x: center;
+  height: 44rem;
+  background-repeat: no-repeat;
+}
+.title {
+  font-family: Razerf5;
+  color: #999999;
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.discrip {
+  font-family: Razerf5;
+  font-size: 1.15rem;
+  font-weight: bolder;
+  color: white;
+  letter-spacing: 0.07rem;
+}
+.arrow {
+  transform: rotate(0deg);
+  transform: scale(0.5);
+  fill: lime;
+}
+.arrow-access {
+  transform: scale(0.8);
+  transform: rotate(90deg);
+  float: right;
+  fill: lime;
+}
+.titleC {
+  font-family: Razerf5;
+  color: #999999;
+  line-height: 1.8rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  padding: 1% 21% 0%;
+}
+.discripC {
+  font-size: 0.9rem;
+}
+.img-col {
+  height: 36rem;
+  background-position: center;
+}
+.footer-text {
+  color: #999999;
+}
+.footer-menu {
+  color: #999999;
+}
+.footer-menu:hover {
+  color: white;
+}
+.company {
+  font-size: 0.88rem;
+}
+/* .catalog {
+} */
+.access-body {
+  color: #999999;
+}
+.access {
+  background-color: black;
+}
+.pc-title {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+  font-family: Razerf5;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.btnC {
+  font-family: Razerf5;
+  font-weight: bolder;
+  font-size: 0.85rem;
+  color: #999999;
+  -webkit-text-stroke-width: 0.4px;
+  background-color: black;
+  margin: 0rem 1rem 0rem 1rem;
+  border: none;
+  padding: 0rem 0rem 0.4rem 0rem;
+  border-bottom: solid black 2.3px;
+  cursor: pointer;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.access-faro {
+  border-bottom: solid lime 2.3px;
+  color: #44d62c;
+}
+
+.fillter {
+  font-family: Robo-reg;
+  font-size: 0.86rem;
+  -webkit-text-stroke-width: 0.4px;
+}
+.fillter-pad {
+  padding: 1.36rem 0rem;
+  font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif,
+    apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-size: 0.86rem;
+}
+button:focus {
+  outline: 0;
+}
+.underline-faro {
+  border-bottom: solid #999999 1px;
+}
+
+.hide {
+  display: none;
+}
+.access-footer {
+  padding: 8.5rem 0rem;
+  padding-top: 12.7rem;
+}
+.cursor-point {
+  cursor: pointer;
+}
+
+.active-faro {
+  animation: CloseM 0.2s;
+  height: 0;
+  overflow: hidden;
+}
+.null-faro {
+  height: 0;
+  overflow: hidden;
+}
+.distive-faro {
+  animation: OpenM 0.2s;
+  overflow: hidden;
+  height: 1.1rem;
+  margin-top: 1.5rem;
+}
+@keyframes CloseM {
+  0% {
+    height: 1.1rem;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes OpenM {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 1.1rem;
+  }
+}
+.arrowUp {
+  animation: spinDown 0.2s;
+  transform: rotate(270deg);
+}
+.arrowDown {
+  animation: spinUp 0.2s;
+  transform: rotate(90deg);
+}
+@keyframes spinUp {
+  0% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes spinDown {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.wrap-checkbox {
+  display: block;
+  position: relative;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding-left: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.wrap-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0.1rem;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  border: solid 1px #999999;
+  border-radius: 0.3rem;
+}
+
+/* On mouse-over, add a grey background color */
+.wrap-checkbox:hover input ~ .checkmark {
+  border: solid 1px lime;
+}
+
+/* When the checkbox is checked, add a blue background */
+.wrap-checkbox input:checked ~ .checkmark {
+  background-color: lime;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.wrap-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.wrap-checkbox .checkmark:after {
+  top: 0.1rem;
+  left: 0.3rem;
+  width: 5px;
+  height: 10px;
+  border: solid 3px #222222;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@font-face {
+  font-family: Robo-light;
+  src: url("../font/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: Robo-reg;
+  src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
+.card-product {
+  font-family: Robo-reg;
+  height: 38.8rem;
+
+  background-color: #000000;
+}
+.compare {
+  background-color: #161616;
+}
+.compare-text:hover {
+  color: white;
+}
+.img-crop {
+  height: 15.5rem;
+  overflow: hidden;
+}
+.title-product {
+  font-size: 0.855rem;
+  color: white;
+  cursor: pointer;
+}
+.title-product:hover {
+  text-decoration: underline;
+  color: white;
+}
+.detail-product {
+  line-height: 1rem;
+  font-size: 0.86rem;
+}
+.view-detail {
+  font-size: 0.7rem;
+  cursor: pointer;
+  color: lime;
+}
+.view-detail:hover {
+  text-decoration: underline;
+}
+.amount-products {
+  font-size: 0.9rem;
+}
+.price-access {
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+.btn-razer {
+  letter-spacing: 0.05rem;
+  color: black;
+  font-size: 0.8rem;
+  -webkit-text-stroke-width: 0.08rem;
+  -webkit-text-stroke-color: black;
+  font-family: Razerf5;
+  background-color: #44d62c;
+  padding: 0.5rem 1.5rem;
+}
+.btn-razer:hover {
+  background-color: #73e161;
+}
+.setBottom {
+  position: absolute;
+  bottom: 1.5rem;
+}
+.tag-yellow {
+  margin-top: 1.1rem;
+  left: 0.4rem;
+  padding: 0.2rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+  background-color: #ffc107;
+  position: absolute;
+}
+.tag-small-yellow {
+  position: absolute;
+  margin-top: 1rem;
+  background-color: #b38807;
+  height: 1rem;
+  width: 1rem;
+  left: 0.2rem;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.tag-green {
+  margin-top: 1.1rem;
+  left: 0.4rem;
+  padding: 0.2rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+  background-color: #44d62c;
+  position: absolute;
+}
+.tag-small-green {
+  position: absolute;
+  margin-top: 1rem;
+  background-color: #008900;
+  height: 1rem;
+  width: 1rem;
+  left: 0.2rem;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.tag-orange {
+  margin-top: 1.1rem;
+  left: 0.4rem;
+  padding: 0.2rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+  background-color: #ff9c07;
+  position: absolute;
+}
+.tag-small-orange {
+  position: absolute;
+  margin-top: 1rem;
+  background-color: #c37703;
+  height: 1rem;
+  width: 1rem;
+  left: 0.2rem;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.tag-blue {
+  margin-top: 1.1rem;
+  left: 0.4rem;
+  padding: 0.2rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+  background-color: #28aadc;
+  position: absolute;
+}
+.tag-small-blue {
+  position: absolute;
+  margin-top: 1rem;
+  background-color: #065f82;
+  height: 1rem;
+  width: 1rem;
+  left: 0.2rem;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.icon-list {
+  fill: #999999;
+  margin-left: 1.5rem;
+  transform: rotate(0deg);
+}
+.icon-layout {
+  fill: #999999;
+}
+.icon-select {
+  fill: #44d62c;
+}
+.icon-row {
+  right: 0rem;
+  position: absolute;
+}
+.arrow-menu0 {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  background-color: black;
+  top: -0.5rem;
+  left: 9.5rem;
+  transform: rotate(45deg);
+}
+.arrow-menu1 {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  background-color: black;
+  top: -0.5rem;
+  left: 18rem;
+  transform: rotate(45deg);
+}
+.arrow-menu2 {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  background-color: black;
+  top: -0.5rem;
+  left: 27rem;
+  transform: rotate(45deg);
+}
+.arrow-menu3 {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  background-color: black;
+  top: -0.5rem;
+  left: 37rem;
+  transform: rotate(45deg);
+}
+.arrow-menu4 {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  background-color: black;
+  top: -0.5rem;
+  left: 44rem;
+  transform: rotate(45deg);
+}
+.top_box_gaming {
+  color: #ffffff;
+  background: #333333;
+  margin-top: 60px;
+  padding: 0.3rem 0;
+  font-weight: 300;
+  font-size: 1.06rem;
+  text-align: center;
+}
+
+.buttom_box_gaming {
+  color: #ffffff;
+  background: #111111;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.card-gaming,
+.card-img-top {
+  border-radius: 0px;
+  padding: 0px;
+  border: 0px;
+  background: #111111;
+  position: relative;
+}
+.topboxtag {
+  padding-left: 0.7rem;
+  font-size: 0.5rem;
+  color: #000;
+  background-color: #ff9c07;
+  width: 6rem;
+  line-height: 0.8rem;
+}
+.topboxtaggreen {
+  font-size: 0.9rem;
+  color: #000;
+  text-align: center;
+  background-color: #44d62c;
+  width: 5.5rem;
+}
+.card-gaming {
+  height: 33.5625rem;
+  border-bottom: 1px solid #44d62c;
+}
+.size-small {
+  height: 43rem;
+}
+.size-big {
+  height: 54rem;
+}
+.bigimg-gaming {
+  background-size: cover;
+  background-position-x: center;
+  border-bottom: solid 1px lime;
+}
+.img-gaming {
+  border-radius: 0px;
+  margin: 0;
+}
+
+@font-face {
+  font-family: RazerF5-Reg;
+  src: url("../font/RazerF5-Reg.otf");
+}
+@font-face {
+  font-family: RazerBold;
+  src: url("../font/Razer/RazerF5Bold.woff");
+}
+.model-box-div {
+  margin-bottom: 75px;
+  padding-top: 10px;
+}
+.model-box-div-faro {
+  padding-bottom: 2.1rem;
+}
+.select-box {
+  display: flex;
+  /* width: 400px; */
+  flex-direction: column;
+}
+
+/* option property */
+.select-box .model-options-container {
+  background: #2f3640;
+  color: #8d8d8d;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: -6px;
+  margin-top: -10px;
+  order: 1;
+}
+
+.selected {
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #f5f6fa;
+  position: relative;
+  order: 0;
+}
+
+.selected::after {
+  content: "";
+  background: url("/components/Custom-Select-Box-master/img/arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 8px;
+  transition: all 0.12s;
+}
+
+.select-box .model-options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+  border: 1px inset #333;
+  border-radius: 3px;
+  z-index: 5;
+}
+
+.select-box .model-options-container.active + .selected::after {
+  transform: rotateX(180deg);
+  top: -11px;
+}
+
+.select-box .model-options-container::-webkit-scrollbar {
+  width: 0.1px;
+  background: #111111;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .model-options-container::-webkit-scrollbar-thumb {
+  background: #525861;
+  border-radius: 0 8px 8px 0;
+}
+
+/* option property */
+.box-option {
+  background-color: #111111;
+  border: #111111 1px solid;
+  height: 32px;
+  font-size: 13.9px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.selected {
+  cursor: pointer;
+  font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif,
+    apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-size: 0.875rem;
+  min-height: 3rem;
+  padding: 0.875rem 0.75rem;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.select-box .box-option:hover {
+  background: #555;
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .box-option .model-radio {
+  display: none;
+}
+/* border */
+.model-box {
+  border: 1px solid #999999;
+  border-radius: 4px;
+  height: 48px;
+  width: 15rem;
+}
+.model-box-fff {
+  border: 1px solid #999999;
+  border-radius: 4px;
+  height: 48px;
+  width: 11.5rem;
+}
+/* model word*/
+.model-box-1 {
+  color: rgba(255, 255, 255, 0.7);
+  background: #000;
+  font-size: 13px;
+  margin-bottom: -10px;
+  width: 43px;
+  text-align: center;
+  margin-top: -57px;
+  margin-left: 11px;
+  font-family: Calibri;
+}
+.model-box-1-faro {
+  color: rgba(255, 255, 255, 0.7);
+  background: #222222;
+  font-size: 13px;
+  margin-bottom: -10px;
+  width: 43px;
+  text-align: center;
+  margin-top: -57px;
+  margin-left: 11px;
+  font-family: Calibri;
+}
+
+select {
+  background-color: black;
+  color: aliceblue;
+  /* border: 1px solid #999999; */
+  /* margin-top: 15px;
+    margin-left: 10px; */
+  border-style: none;
+  margin-top: 10px;
+  margin-left: 2px;
+  height: 35px;
+  width: 220px;
+  border-radius: 4px;
+  z-index: -100;
+}
+
+.model-box:hover {
+  border-color: white !important;
+}
+
+.row-product {
+  height: 100vh;
+}
+
+.image-tab {
+  display: flex;
+  flex-direction: column;
+  left: 3.9rem;
+  position: absolute;
+  top: 3.23rem;
+}
+
+.image-tab-list {
+  height: 5rem;
+  width: 5rem;
+  margin-bottom: 10px;
+}
+
+.image-tab-border {
+  border: 1px solid #999;
+}
+
+.right-box {
+  background-color: black;
+  padding-left: 40px;
+}
+
+.header {
+  margin: 0px;
+  padding-top: 52px;
+  font-family: RazerF5-Reg;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.1em;
+
+  color: #44d62c;
+  display: block;
+  margin: 0 !important;
+  line-height: 1.1em;
+}
+
+.head-description {
+  display: block;
+  margin: 0px;
+  margin-top: 4px;
+  line-height: 1px;
+  font-size: 14px;
+  color: #fff !important;
+  line-height: 1.2;
+}
+
+.head-price {
+  font-family: RazerF5-Reg;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 21px;
+  padding-top: 0.5rem;
+  color: #fff !important;
+}
+
+.ul-session {
+  padding-left: 15px;
+  line-height: 1.4;
+  font-size: 14px;
+  margin-top: 2.1875rem;
+  list-style: disc;
+  color: #999;
+  font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif,
+    apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-weight: 400;
+  margin-bottom: 2.75rem;
+}
+ul {
+  text-align: left;
+  padding-left: 0rem;
+}
+
+.select-session select {
+  align-items: center;
+  background: 0 0;
+  border: 1px solid #999;
+  border-radius: 0.25rem;
+  color: #999;
+  display: flex;
+  font-family: RazerF5-Reg;
+  font-size: 0.875rem;
+  min-height: 3rem;
+  min-width: var(--dropdown-custom-min-width, 14.0625rem);
+  padding: 0.875rem 0.75rem;
+  position: relative;
+  flex: auto;
+  width: 180px;
+  cursor: pointer;
+  /* background-image: ; */
+}
+option {
+  font-family: RazerF5-Reg;
+  background-color: #44d62c;
+  font-size: inherit;
+  line-height: 3em;
+  color: #999;
+  font-weight: 400;
+  height: 2rem !important;
+}
+
+.shipping-date {
+  color: #999;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-family: Roboto, helvetica neue, Arial, noto sans, sans-serif,
+    apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+.order-button {
+  border-radius: 0.1875rem;
+  color: #000;
+  font-family: RazerBold;
+  font-size: 14px;
+  font-weight: bolder;
+  height: 2.5rem;
+  line-height: 1.4em;
+  max-height: none;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #44d62c;
+  border: 0;
+  transition: 0.3s;
+  margin-top: 0.9375rem;
+  width: 100%;
+  max-width: 19.375rem;
+}
+.order-button:hover {
+  background-color: #73e161;
+  transition: 0.3s;
+}
+
+.product-status {
+  background: 0 0 !important;
+  border-radius: 2px !important;
+  color: #44d62c !important;
+  cursor: pointer !important;
+  font: normal normal normal 14px/17px Roboto, sans-serif !important;
+  margin: 5px !important;
+  padding: 8px 12px !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  visibility: visible !important;
+  text-align: center;
+  margin-top: 1rem;
+  max-width: 19.375rem;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.rdo_style[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  border: 1px solid #999;
+}
+.rdo_style[type="radio"]:hover + img {
+  border-color: #44d62c;
+  border: 1px solid #44d62c;
+}
+
+.rdo_style[type="radio"] + img {
+}
+
+.rdo_style[type="radio"]:checked + img {
+  border-color: #44d62c;
+  border: 1px solid #44d62c;
+}
+.col-img-full {
+  vertical-align: middle;
+  object-fit: cover;
+
+  background-size: 100%;
+
+  background-repeat: no-repeat;
+}
+.col-xl-10 {
+  /* 78.7 */
+  max-width: 73.4%;
+}
+.card-text {
+  bottom: 0;
+}
+
+.card-text-bottom {
+  position: absolute;
+  bottom: 0.625rem;
+}
+
+.imgBoxBottom {
+  height: 100%;
+}
+
+.gamingBoxButton {
+  height: 14.8rem;
+}
+
+.container-gaming {
+  width: 100%;
+  height: 50rem;
+  background: #000;
+}
+
+.gaming-description-bottom {
+  font-size: 1.1rem;
+  font-family: "Razerf5", Sans-Serif;
+  color: #888888;
+  font-weight: bold;
+  line-height: 0rem;
+
+  padding: 0 0 0 1.875rem;
+}
+
+.card-gpu-bottom,
+.co-3 {
+  border-radius: 0rem;
+  border: 0rem solid;
+  padding: 0rem;
+}
+
+.no-padding {
+  padding: 0rem;
+}
+
+.no-border {
+  border: 0px solid;
+}
+
+.card-gpu {
+  background-color: #000;
+  display: inline-block;
+  height: 36.375rem;
+}
+
+.text-head-bottom {
+  color: #44d62c;
+  margin-top: 0.625rem;
+  margin-bottom: 0.5rem;
+}
+.text-description {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5em;
+}
