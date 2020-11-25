@@ -752,6 +752,7 @@ module.exports =
                     "img": "assets/img/PC_Acessories/Accessories/RazerNeopreneSleeveV2-For13.3”Notebooks.jpg",
                     "tag": "green",
                     "tagTitle": "NEW",
+                    "link": "",
                     "header_des": "Ultra-Sleek Protection for the Razer Blade Stealth 13",
                     "imgbar": [
                         "assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/1.jpg",

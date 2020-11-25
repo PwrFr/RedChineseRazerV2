@@ -751,7 +751,6 @@
                     "img": "src/assets/img/PC_Acessories/Accessories/RazerNeopreneSleeveV2-For13.3”Notebooks.jpg",
                     "tag": "green",
                     "tagTitle": "NEW",
-                    "link": "access1.html",
                     "header_des": "Ultra-Sleek Protection for the Razer Blade Stealth 13",
                     "imgbar": [
                         "src/assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/1.jpg",
@@ -836,40 +835,40 @@
                         "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/5.jpg"
                     ]
                 },
-                    {
-                        "name": "Razer Protective Sleeve V2 - For 17.3\" Notebooks",
-                        "price": "US$49.99",
-                        "detail": [
-                            "Tough water-resistant material",
-                            " Smooth interior surface with built-in mouse mat",
-                            " Custom fit for our Razer Blade laptops"
-                        ],
-                        "add_to_card_bnt": "ADD TO CART",
-                        "img": "src/assets/img/PC_Acessories/Accessories/RazerProtectiveSleeveV2-For17.3.png",
-                        "tag": "green",
-                        "tagTitle": "NEW",
-                        "link": "access3.html",
-                        "header_des": "Ultra-Sleek Protection for the Razer Blade Laptops",
-                        "model": [
-                            "13.3\" Sleeve",
-                            "15.6\" Sleeve",
-                            "17.3\" Sleeve"
-                        ],
-                        "imgbar": [
-                            "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/1.jpg",
-                            "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/2.jpg",
-                            "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/3.jpg",
-                            "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/4.jpg",
-                            "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/5.jpg"
-                        ],
-                        "imgbig": [
-                            "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/1.jpg",
-                            "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/2.jpg",
-                            "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/3.jpg",
-                            "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/4.jpg",
-                            "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/5.jpg"
-                        ]
-                    },
+                {
+                    "name": "Razer Protective Sleeve V2 - For 17.3\" Notebooks",
+                    "price": "US$49.99",
+                    "detail": [
+                        "Tough water-resistant material",
+                        " Smooth interior surface with built-in mouse mat",
+                        " Custom fit for our Razer Blade laptops"
+                    ],
+                    "add_to_card_bnt": "ADD TO CART",
+                    "img": "src/assets/img/PC_Acessories/Accessories/RazerProtectiveSleeveV2-For17.3.png",
+                    "tag": "green",
+                    "tagTitle": "NEW",
+                    "link": "access3.html",
+                    "header_des": "Ultra-Sleek Protection for the Razer Blade Laptops",
+                    "model": [
+                        "13.3\" Sleeve",
+                        "15.6\" Sleeve",
+                        "17.3\" Sleeve"
+                    ],
+                    "imgbar": [
+                        "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/1.jpg",
+                        "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/2.jpg",
+                        "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/3.jpg",
+                        "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/4.jpg",
+                        "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/bar/5.jpg"
+                    ],
+                    "imgbig": [
+                        "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/1.jpg",
+                        "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/2.jpg",
+                        "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/3.jpg",
+                        "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/4.jpg",
+                        "src/assets/img/PC_Acessories/Accessories/ProtectiveSleeveV2/big/5.jpg"
+                    ]
+                },
                 {
                     "name": "Razer Chroma Addressable RGB Controller",
                     "price": "US$39.99",
@@ -915,7 +914,7 @@
                     ],
                     "add_to_card_bnt": "ADD TO CART",
                     "img": "src/assets/img/PC_Acessories/Monitor/RazerRaptor27.png",
-                    "link":"monitor.html"
+                    "link": "monitor.html"
                 }
             ]
         }
