@@ -4,7 +4,7 @@
       class="navbar navbar-expand-lg navbar-light menu-bg pt-1 pb-2 pl-2 font-weight-normal fixed-top"
     >
       <div
-        class="collapse navbar-collapse container p-0"
+        class="collapse navbar-collapse container p-0 mt-0"
         id="navbarNavAltMarkup"
       >
         <div class="navbar-nav">

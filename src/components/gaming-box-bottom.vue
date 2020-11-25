@@ -2,7 +2,7 @@
   <section>
     <div class="">.</div>
     <div
-      class="gamingBoxButton container pd-5 text-left"
+      class="gamingBoxButton container mt-0 text-left"
       v-bind:style="{
         backgroundImage:
           'url(' + require('@/assets/products/1Laptops/bg5.jpg') + ')',
