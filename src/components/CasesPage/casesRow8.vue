@@ -3,14 +3,16 @@
     <div class="cases-row8-full">
       <div class="row">
         <div class="col-5"></div>
-        <div class="col cases-row8-text-range">
+        <div class="col cases-row8-text-range text-left">
           <div class="row cases-row8-header">WE’VE GOT YOU COVERED</div>
           <div class="row cases-row8-des">
-            Get up to 1 year of warranty and access reliable tech&nbsp
+            Get up to 1 year of warranty and access reliable tech
             <a
               href="https://support.razer.com/?_ga=2.50578473.1429717921.1605446468-43062418.1602568658"
               class="cases-row8-href"
-            >support</a>. Purchase directly from RazerStore and get 14 days risk-free returns.
+              >support</a
+            >. Purchase directly from RazerStore and get 14 days risk-free
+            returns.
           </div>
         </div>
       </div>

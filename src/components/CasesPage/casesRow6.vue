@@ -14,7 +14,7 @@
             <div class="col-1" style="padding-top: 10px">
               <img src="@/assets/products/3Cases/row6-logo.png" alt />
             </div>
-            <div class="col cases-row6-text">
+            <div class="col cases-row6-text text-left">
               <div class="row cases-row6-header">
                 POWERED BY RAZER CHROMA™ RGB
               </div>
