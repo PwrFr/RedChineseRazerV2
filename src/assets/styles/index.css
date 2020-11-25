@@ -25,6 +25,31 @@ body {
 .w-headerproduct {
   width: 62%;
 }
+.techSpecsBox {
+  background-color:#252525;
+  color: white;
+}
+.line-tech {
+  border-bottom: solid 1px #999;
+  color: white;
+}
+.text-center-tech {
+  text-align: left;
+}
+.data-golf{
+  padding-left: 10rem;
+  padding-right:10rem ;
+}
+.data-golf-data{
+
+  padding: 1rem;
+  color: gray;
+}
+.upHead{
+ text-transform: uppercase;
+ font-weight: bold;
+ color: #fff;
+}
 .bgRL {
   background-position-x: -13rem;
   height: 43rem;

@@ -1,195 +1,175 @@
 <template>
-  <!-- TechSpec Egpu Black-->
-  <div class="container-fluid techSpecsBox p-0">
-    <div class="container techSpecs">
+  <section>
+    <div class="techSpecsBox justify-content-center data-golf">
       <!-- <h4 id="headerText">TECH SPECS</h4> -->
-      <table class="container-fluid ">
-        <tr>
-          <h4 id="headerText">TECH SPECS</h4>
-        </tr>
-        <!-- row 1 -->
-        <tr class="dataRow trDisplays dataBul">
-          <th class="col-lg-3 p-0">
-            <b>Input & Output</b>
-          </th>
-          <ul class="col-lg-9 data px-3">
-            {{
-              data1[0]
-            }}
-          </ul>
-        </tr>
-        <!-- row 2 -->
-        <tr class="dataRow trDisplays dataSingle">
-          <th class="col-lg-3 p-0">
-            <b>Internal Power Supply</b>
-          </th>
-          <td class="col-lg-9 data">{{ data2 }}</td>
-        </tr>
-        <!-- row 3 -->
-        <tr class="dataRow trDisplays dataSingle">
-          <th class="col-lg-3 p-0">
-            <b>Laptop Power Delivery</b>
-          </th>
-          <td class="col-lg-9 data">{{ data3 }}</td>
-        </tr>
-        <!-- row 4 -->
-        <tr class="dataRow trDisplays dataSingle">
-          <th class="col-lg-3 p-0">
-            <b>Thunderbolt™ 3 cable length</b>
-          </th>
-          <td class="col-lg-9 data">{{ data4 }}</td>
-        </tr>
-        <!-- row 4 -->
-        <span id="more" ref="more">
-          <tr class="dataRow trDisplays dataBul">
-            <th class="col-lg-3 p-0">
-              <b>Razer Core Approx. Size</b>
-            </th>
-            <td class="col-lg-9">
-              <ul class="data p-2">
-                <li v-for="row4b in data5" :key="row4b">{{ row4b }}</li>
-              </ul>
-            </td>
-          </tr>
-          <!-- row 5 -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>Weight</b>
-            </th>
-            <td class="col-lg-9 data">{{ data6 }}</td>
-          </tr>
+      <div class="row pt-4">
+        <h4 id="headerText">TECH SPECS</h4>
+      </div>
+      <div class="row line-tech">
+        <div class="col-lg-4 text-center-tech data-golf-data upHead">
+          Input & Output
+        </div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          <li v-for="row01 in data1" :key="row01">{{ row01 }}</li>
+        </div>
+      </div>
+      <div class="row line-tech">
+        <div class="col-lg-4 text-center-tech data-golf-data upHead">
+          Internal Power Supply
+        </div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          650 W
+        </div>
+      </div>
+      <div class="row line-tech">
+        <div class="col-lg-4 text-center-tech data-golf-data upHead">
+          Laptop Power Delivery
+        </div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{ data3 }}
+        </div>
+      </div>
+      <div class="row line-tech">
+        <div class="col-lg-4 text-center-tech data-golf-data upHead">
+          Thunderbolt™ 3 cable length
+        </div>
+        <div class="col-lg-5 text-center-tech data-golf-data">
+          {{ data4 }}
+        </div>
+      </div>
+      <!-- row 3-->
+      <span id="more" ref="more">
+        <div class="row line-tech">
+          <div class="col-lg-4 text-center-tech data-golf-data upHead">
+            Razer Core Approx. Size
+          </div>
+          <div class="col-lg-5 text-center-tech data-golf-data">
+            <li v-for="row4 in data5" :key="row4">{{ row4 }}</li>
+          </div>
+        </div>
+        <div class="row line-tech">
+          <div class="col-lg-4 text-center-tech data-golf-data upHead">
+            Weight
+          </div>
+          <div class="col-lg-5 text-center-tech data-golf-data">
+            {{ data6 }}
+          </div>
+        </div>
+        <div class="row line-tech">
+          <div class="col-lg-4 text-center-tech data-golf-data upHead">
+            Laptop Requirements (Laptop not included)
+          </div>
+          <div class="col-lg-5 text-center-tech data-golf-data">
+            <b>Connection to system</b>
+            <p>
+              Systems require a Thunderbolt™ 3 port with external graphics
+              support. Please check with your laptop manufacture to confirm if
+              your laptop supports Thunderbolt 3 external graphics.
+            </p>
+            <p>
+              Please also ensure your laptop has the latest BIOS, firmware,
+              Thunderbolt software, and other applicable updates before
+              connecting toRazer Core X Chroma.
+            </p>
+            <u> macOS Systems Requirements </u>
+            <li>
+              Thunderbolt™ 3 equipped Macs running macOS High Sierra 10.13.4 or
+              later.
+            </li>
+            <li>Compatible AMD graphics card sold separately.</li>
+            <li>Razer Synapse 3 software not available on macOS.</li>
 
-          <!-- row 6 -->
-          <tr class="dataRow trDisplays dataBul">
-            <th class="col-lg-3 p-0">
-              <b>Laptop Requirements (Laptop not included)</b>
-            </th>
-            <td class="col-lg-9">
-              <div class="pb-1">
-                <u class="data"><b>Connection to system</b> </u>
-              </div>
+            <u>Windows System Requirements</u>
+            <li>Windows 10 64bit RS5 or above with Thunderbolt™ 3 port.</li>
+            <li>Compatible NVIDIA or AMD graphics card sold separately.</li>
+          </div>
+        </div>
+        <div class="row line-tech">
+          <div class="col-lg-4 text-center-tech data-golf-data upHead">
+            Graphics Cards Requirements (Graphics card not included)
+          </div>
+          <div class="col-lg-5 text-center-tech data-golf-data">
+            <u>Max inner dimensions</u>
+            <p>
+              Max inner dimensions Length : 12.99”/ 330 mm <br />
+              Height*: 6.29” / 160 mm <br />
+              Width : 2.24” / 57 mm
+            </p>
+            <p>
+              * Height measured from top of PCIe connector to the bottom of the
+              locking pin ramps.
+            </p>
+            <img
+              :src="require('@/assets/products/2eGPUs/core-x-dimension.png')"
+              alt=""
+            />
+            <p>
+              <u>GPU Type</u> <br>
+             Up to 3-Slot wide, full-length, PCI-Express x16 graphics
+              card. Graphics cards <br> <br> use varied designs based around a common
+              graphics chip. Please ensure the GPU selected meets all size,
+              power, and additional requirements.  <br> <br> <u>GPU Max Power Support</u> <br> 500
+              Watts
+            </p>
+          </div>
+        </div>
+        <div class="row line-tech">
+          <div class="col-lg-3 text-center-tech data-golf-data upHead">
+                      macOS Compatible Graphics Chipsets
 
-              <p class="data">{{ data7.Connection_to_system }}</p>
-              <div class="pt-1">
-                <p class="data">{{ data7.test }}</p>
-              </div>
-              <div class="data pt-3">
-                <u class="pb-2"><b> macOS Systems Requirements </b> </u>
-                <ul class="px-2">
-                  <li
-                    v-for="row6c in data7.macOS_Systems_Requirements"
-                    :key="row6c"
-                  >
-                    {{ row6c }}
-                  </li>
-                </ul>
-              </div>
-
-              <div class="data pt-3">
-                <u class="pb-2"><b> Windows System Requirements</b> </u>
-                <ul class="px-2">
-                  <li
-                    v-for="row7c in data7.Windows_System_Requirements"
-                    :key="row7c"
-                  >
-                    {{ row7c }}
-                  </li>
-                </ul>
-              </div>
-            </td>
-          </tr>
-          <!-- row 12  -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>Graphics Cards Requirements (Graphics card not included)</b>
-            </th>
-            <td class="col-lg-9 data">
-              <div class="data">
-                <u><b>Max inner dimensions</b></u>
-              </div>
-              <div class="data">
-                <p>
-                  Length : 12.99” 330 mm <br />Height*: 6.29” / 160 mm<br />
-                  Width : 2.36” / 60 mm
-                </p>
-                <p>
-                  * Height measured from top of PCIe connector to the bottom of
-                  the locking pin ramps.
-                </p>
-              </div>
-              <div class="pt-4">
-                <img :src="data8.img" alt="" width="500" height="500" />
-              </div>
-              <div class="data">
-                <b>GPU Type </b>
-                <p>{{ data8.GPU_Type[0] }}</p>
-
-                <div class="pt-4">
-                  <p>{{ data8.GPU_Type[1] }}</p>
-                </div>
-                <div class="pt-4">
-                  <u><b> GPU Max Power Support </b></u>
-                  <p>{{ data8.GPU_Max_Power_Support }}</p>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <!-- row 8 -->
-          <tr class="dataRow trDisplays dataBul">
-            <th class="col-lg-3 p-0">
-              <b>macOS Compatible Graphics Chipsets</b>
-            </th>
-            <td class="col-lg-9">
-              <ul class="data p-2">
-                <p v-for="row8c in data9" :key="row8c">{{ row8c }}</p>
-              </ul>
-              <p class="data pb-3">*Not an exhaustive list</p>
-            </td>
-          </tr>
-          <!-- row 9-->
-          <tr class="dataRow trDisplays dataBul">
-            <th class="col-lg-3 p-0">
-              <b>Windows 10 Compatible Graphics Chipsets</b>
-            </th>
-            <td class="col-lg-9">
-              <ul class="data p-2">
-                <u><b>Qualified NVIDIA ® GeForce ® graphics chipsets</b></u>
+          </div>
+          <div class="col-lg-5 text-center-tech data-golf-data">
+            <u>Compatible AMD graphics chipsets: </u>
+              <p v-for="row8c in data9" :key="row8c">{{ row8c }}</p>
+          </div>
+        </div>
+        <div class="row line-tech">
+          <div class="col-lg-3 text-center-tech data-golf-data upHead">
+            Windows 10 Compatible Graphics Chipsets
+          </div>
+          <div class="col-lg-5 text-center-tech data-golf-data">
+            <b>Qualified NVIDIA ® GeForce ® graphics chipsets</b>
+              
                 <p
                   v-for="row9c in data10.Qualified_NVIDIA_GeForce_graphics_chipsets"
                   :key="row9c"
-                >
-                  {{ row9c }}
-                </p>
-              </ul>
+                >{{ row9c }}</p>
               <div class="data pt-4">
-                <b><u>Qualified NVIDIA ® Quadro ® graphics chipsets</u></b>
+                <b>
+                  <u>Qualified NVIDIA ® Quadro ® graphics chipsets</u>
+                </b>
                 <p
                   v-for="row9c1 in data10.Qualified_NVIDIA_Quadro_graphics_chipsets"
                   :key="row9c1"
-                >
-                  {{ row9c1 }}
-                </p>
+                >{{ row9c1 }}</p>
               </div>
               <div class="data pt-4">
-                <b><u>Qualified AMD Radeon™ graphics chipsets</u></b>
+                <b>
+                  <u>Qualified AMD Radeon™ graphics chipsets</u>
+                </b>
                 <p
                   class="data"
                   v-for="row9c2 in data10.Qualified_AMD_Radeon_graphics_chipsets"
                   :key="row9c2"
-                >
-                  {{ row9c2 }}
-                </p>
-              </div>
-              <div class="data pt-4">
-                <u><b>Graphics Output</b></u>
-                <p>Based on capabilities of installed graphics</p>
-                <p class="data pb-3 pt-4">*Not an exhaustive list</p>
-              </div>
-            </td>
-          </tr>
-        </span>
-      </table>
+                >{{ row9c2 }}</p>
+
+          </div>
+          </div>
+        </div>
+        <div class="row line-tech">
+          <div class="col-lg-3 text-center-tech data-golf-data upHead">
+            Input & Output
+          </div>
+          <div class="col-lg-5 text-center-tech data-golf-data">
+            <li>{{ data13 }}</li>
+            <li>{{ data14 }}</li>
+            <li>{{ data15 }}</li>
+            <li>{{ data16 }}</li>
+          </div>
+        </div>
+      </span>
     </div>
+
     <div id="seeLess" ref="seeless" class="m-0">
       <p @click="test()" class="seeBox pt-2" ref="text">
         {{ text }}
@@ -211,9 +191,14 @@
         </svg>
       </p>
     </div>
-  </div>
+  </section>
 </template>
 <style>
+.data-golf-data2 {
+  padding-left: 0.5rem;
+  color: gray;
+}
+
 .techSpecsBox {
   margin: 10px;
   background-color: #252525;
@@ -240,7 +225,6 @@
   font-size: 0.875rem;
   text-align: left;
   font-size: 0.875rem;
-  display: contents;
 }
 .data {
   text-align: left;
@@ -255,20 +239,17 @@ ul {
 .dataBul {
   padding-top: 1rem;
   padding-bottom: 0;
-  display: contents;
 }
 .dataSingle {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  display: contents;
 }
-
 #more {
   /* display: inline; */
   display: none;
 }
 #seeLess {
-  display: contents;
+  display: inline;
 }
 #arrow {
   transform: rotate(180deg);
@@ -290,18 +271,21 @@ export default {
       text: "",
       status: 0,
       ty: {},
-      data1: datas.eGPU[0].specs.InputOutput,
-      data2: datas.eGPU[1].specs.Internal_Power_Supply,
-      data3: datas.eGPU[1].specs.Laptop_Power_Delivery,
-      data4: datas.eGPU[1].specs.Thunderbolt_3_cable_length,
+      data1: datas.eGPU[2].specs.InputOutput,
+      data2: datas.eGPU[2].specs.Internal_Power_Supply,
+      data3: datas.eGPU[2].specs.Laptop_Power_Delivery,
+      data4: datas.eGPU[2].specs.Thunderbolt_3_cable_length,
       data5: datas.eGPU[2].specs.Razer_Core_Approx_Size,
-      data6: datas.eGPU[1].specs.Weight,
+      data6: datas.eGPU[2].specs.Weight,
       data7: datas.eGPU[2].specs.Laptop_Requirements_Laptop_not_included,
       data8:
-        datas.eGPU[0].specs
+        datas.eGPU[2].specs
           .GRAPHICS_CARDS_REQUIREMENTS_GRAPHICS_CARD_NOT_INCLUDED,
-      data9: datas.eGPU[0].specs.MACOS_COMPATIBLE_GRAPHICS_CHIPSETS[0],
-      data10: datas.eGPU[0].specs.WINDOWS_10_COMPATIBLE_GRAPHICS_CHIPSETS,
+      data8img:
+        datas.eGPU[2].specs
+          .GRAPHICS_CARDS_REQUIREMENTS_GRAPHICS_CARD_NOT_INCLUDED.img,
+      data9: datas.eGPU[2].specs.MACOS_COMPATIBLE_GRAPHICS_CHIPSETS[0],
+      data10: datas.eGPU[2].specs.WINDOWS_10_COMPATIBLE_GRAPHICS_CHIPSETS,
     };
   },
   // created(){
@@ -342,6 +326,7 @@ export default {
   },
   created() {
     this.text = "See More";
+    console.log(this.data8.img);
   },
 };
 </script>
