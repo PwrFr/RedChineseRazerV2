@@ -1,163 +1,157 @@
 <template>
-  <!-- techSpecCase CaseMini -->
-  <div class="container-fluid techSpecsBox p-0">
-    <div class="container techSpecs">
-      <!-- <h4 id="headerText">TECH SPECS </h4> -->
-      <table class="container-fluid">
-        <tr>
-          <h4 id="headerText">TECH SPECS</h4>
-        </tr>
-        <tr class="dataRow trDisplay dataSingle">
-          <th class="col-lg-3 p-0">
-            <b>MODEL</b>
-          </th>
-          <td class="col-lg-9 data">{{ data1 }}</td>
-        </tr>
-        <!-- row 2-->
-        <tr class="dataRow trDisplay dataSingle">
-          <th class="col-lg-3 p-0">
-            <b>PRODUCT NUMBER</b>
-          </th>
-          <td class="col-lg-9 data">{{ data2 }}</td>
-        </tr>
-        <!-- row 2 -->
-        <tr class="dataRow trDisplay dataSingle">
-          <th class="col-lg-3 p-0">
-            <b>CHASSIS FORM FACTOR</b>
-          </th>
-          <td class="col-lg-9 data">
-            {{ data3 }}
-          </td>
-        </tr>
-        <!-- row 3-->
+  <section>
+    <!-- techSpecCase CaseMini -->
+    <div class="container-fluid techSpecsBox p-0">
+      <div class="container techSpecs">
+        <!-- <h4 id="headerText">TECH SPECS </h4> -->
+        <table class="container-fluid">
+          <tr>
+            <h4 id="headerText">TECH SPECS</h4>
+          </tr>
+          <tr class="dataRow trDisplay dataSingle">
+            <th class="col-lg-3 p-0">
+              <b>MODEL</b>
+            </th>
+            <td class="col-lg-9 data">{{ data1 }}</td>
+          </tr>
+          <!-- row 2-->
+          <tr class="dataRow trDisplay dataSingle">
+            <th class="col-lg-3 p-0">
+              <b>PRODUCT NUMBER</b>
+            </th>
+            <td class="col-lg-9 data">{{ data2 }}</td>
+          </tr>
+          <!-- row 2 -->
+          <tr class="dataRow trDisplay dataSingle">
+            <th class="col-lg-3 p-0">
+              <b>CHASSIS FORM FACTOR</b>
+            </th>
+            <td class="col-lg-9 data">{{ data3 }}</td>
+          </tr>
+          <!-- row 3-->
 
-        <tr class="dataRow trDisplays dataSingle">
-          <th class="col-lg-3 p-0">
-            <b>Supported Motherboards</b>
-          </th>
-          <td class="col-lg-9 data">{{ data4 }}</td>
-        </tr>
-        <!-- row 4 -->
-        <span id="more" ref="more">
           <tr class="dataRow trDisplays dataSingle">
             <th class="col-lg-3 p-0">
-              <b>Case Material</b>
+              <b>Supported Motherboards</b>
             </th>
-            <td class="col-lg-9 data">{{ data5 }}</td>
+            <td class="col-lg-9 data">{{ data4 }}</td>
           </tr>
-          <!-- row 5 -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b># of Expansion Slots</b>
-            </th>
-            <td class="col-lg-9 data">
-              {{ data6 }}
-            </td>
-          </tr>
-          <!-- row 6 -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b># of Supported Drives</b>
-            </th>
-            <td class="col-lg-9 data">
-              {{ data7 }}
-            </td>
-          </tr>
-          <!-- row 7 -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>Radiator Compatibility</b>
-            </th>
-            <td class="col-lg-9 data">{{ data9 }}</td>
-          </tr>
-          <!-- row 8 -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>Maximum CPU Cooler Height</b>
-            </th>
-            <td class="col-lg-9 data">{{ data10 }}</td>
-          </tr>
+          <!-- row 4 -->
+          <span id="more" ref="more">
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b>Case Material</b>
+              </th>
+              <td class="col-lg-9 data">{{ data5 }}</td>
+            </tr>
+            <!-- row 5 -->
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b># of Expansion Slots</b>
+              </th>
+              <td class="col-lg-9 data">{{ data6 }}</td>
+            </tr>
+            <!-- row 6 -->
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b># of Supported Drives</b>
+              </th>
+              <td class="col-lg-9 data">{{ data7 }}</td>
+            </tr>
+            <!-- row 7 -->
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b>Radiator Compatibility</b>
+              </th>
+              <td class="col-lg-9 data">{{ data9 }}</td>
+            </tr>
+            <!-- row 8 -->
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b>Maximum CPU Cooler Height</b>
+              </th>
+              <td class="col-lg-9 data">{{ data10 }}</td>
+            </tr>
 
-          <!-- row 9 -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>Maximum GPU Length</b>
-            </th>
-            <td class="col-lg-9 data">{{ data11 }}</td>
-          </tr>
-          <!-- row 10 -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>Maximum PSU Length</b>
-            </th>
-            <td class="col-lg-9 data">{{ data12 }}</td>
-          </tr>
-          <!-- row 11 -->
-          <tr class="dataRow trDisplays dataBul">
-            <th class="col-lg-3 p-0">
-              <b>FRONT PANEL I/O</b>
-            </th>
-            <td class="col-lg-9">
-              <ul class="data p-2">
-                <li v-for="item_two in data13" :key="item_two">
-                  {{ item_two }}
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <!-- row 12  -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>RAZER Chroma™ Support</b>
-            </th>
-            <td class="col-lg-9 data">{{ data14 }}</td>
-          </tr>
-          <!-- row 13 -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>Warranty</b>
-            </th>
-            <td class="col-lg-9 data">{{ data15 }}</td>
-          </tr>
-          <!-- row 14 -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>Case Dimensions</b>
-            </th>
-            <td class="col-lg-9 data">{{ data16 }}</td>
-          </tr>
-          <!-- row 15 -->
-          <tr class="dataRow trDisplays dataSingle">
-            <th class="col-lg-3 p-0">
-              <b>Weight</b>
-            </th>
-            <td class="col-lg-9 data">{{ data17 }}</td>
-          </tr>
-        </span>
-      </table>
+            <!-- row 9 -->
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b>Maximum GPU Length</b>
+              </th>
+              <td class="col-lg-9 data">{{ data11 }}</td>
+            </tr>
+            <!-- row 10 -->
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b>Maximum PSU Length</b>
+              </th>
+              <td class="col-lg-9 data">{{ data12 }}</td>
+            </tr>
+            <!-- row 11 -->
+            <tr class="dataRow trDisplays dataBul">
+              <th class="col-lg-3 p-0">
+                <b>FRONT PANEL I/O</b>
+              </th>
+              <td class="col-lg-9">
+                <ul class="data p-2">
+                  <li v-for="item_two in data13" :key="item_two">{{ item_two }}</li>
+                </ul>
+              </td>
+            </tr>
+            <!-- row 12  -->
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b>RAZER Chroma™ Support</b>
+              </th>
+              <td class="col-lg-9 data">{{ data14 }}</td>
+            </tr>
+            <!-- row 13 -->
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b>Warranty</b>
+              </th>
+              <td class="col-lg-9 data">{{ data15 }}</td>
+            </tr>
+            <!-- row 14 -->
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b>Case Dimensions</b>
+              </th>
+              <td class="col-lg-9 data">{{ data16 }}</td>
+            </tr>
+            <!-- row 15 -->
+            <tr class="dataRow trDisplays dataSingle">
+              <th class="col-lg-3 p-0">
+                <b>Weight</b>
+              </th>
+              <td class="col-lg-9 data">{{ data17 }}</td>
+            </tr>
+          </span>
+        </table>
+      </div>
+      <div id="seeLess" ref="seeless" class="m-0">
+        <p @click="test()" class="seeBox pt-2" ref="text">
+          {{ text }}
+          <svg
+            ref="arrowGreen"
+            id="arrow"
+            width="2em"
+            height="1em"
+            border="20px"
+            viewBox="0 0 16 16"
+            class="bi bi-chevron-up arrow"
+            fill="#45D52C"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+            />
+          </svg>
+        </p>
+      </div>
     </div>
-    <div id="seeLess" ref="seeless" class="m-0">
-      <p @click="test()" class="seeBox pt-2" ref="text">
-        {{ text }}
-        <svg
-          ref="arrowGreen"
-          id="arrow"
-          width="2em"
-          height="1em"
-          border="20px"
-          viewBox="0 0 16 16"
-          class="bi bi-chevron-up arrow"
-          fill="#45D52C"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-          />
-        </svg>
-      </p>
-    </div>
-  </div>
+  </section>
 </template>
 <style>
 .techSpecsBox {
@@ -251,7 +245,7 @@ export default {
       data14: datas.Cases[0].specs.RAZER_CHROMA_SUPPORT,
       data15: datas.Cases[0].specs.WARRANTY,
       data16: datas.Cases[0].specs.CASE_DIMENSIONS,
-      data17: datas.Cases[0].specs.WEIGHT,
+      data17: datas.Cases[0].specs.WEIGHT
     };
   },
   // created(){
@@ -288,10 +282,10 @@ export default {
         this.status = 0;
       }
       console.log(this.status);
-    },
+    }
   },
   created() {
     this.text = "See More";
-  },
+  }
 };
 </script>

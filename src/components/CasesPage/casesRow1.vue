@@ -1,4 +1,5 @@
 <template>
+<section>
   <div class="cases-all-row1 row">
     <div class="col">
       <div class="row">
@@ -12,6 +13,7 @@
       </div>
     </div>
   </div>
+</section>
 </template>
 <style >
 

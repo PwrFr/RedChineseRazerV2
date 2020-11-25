@@ -1,18 +1,20 @@
 <template>
-  <div class="cases-row9-full">
-    <div class="row cases-row9-header">
-      <div class="col-12 text-center">FAQ</div>
-    </div>
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col cases-row9-box">
-        <div class="row cases-row9-header-box">Are the glass panels detachable?</div>
-        <div
-          class="row cases-row9-des-box"
-        >Yes, they can be removed for easy access to install the motherboard into the chassis.</div>
+  <section>
+    <div class="cases-row9-full">
+      <div class="row cases-row9-header">
+        <div class="col-12 text-center">FAQ</div>
+      </div>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col cases-row9-box">
+          <div class="row cases-row9-header-box">Are the glass panels detachable?</div>
+          <div
+            class="row cases-row9-des-box"
+          >Yes, they can be removed for easy access to install the motherboard into the chassis.</div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <style>
 .cases-row9-box {

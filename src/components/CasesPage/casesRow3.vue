@@ -1,24 +1,22 @@
 <template>
-  <div
-    class="cases-row3-full"
-    v-bind:style="{ backgroundImage: 'url(' + casesRow3Img + ')',
+  <section>
+    <div
+      class="cases-row3-full"
+      v-bind:style="{ backgroundImage: 'url(' + casesRow3Img + ')',
      paddingTop: paddingTopInput + 'rem',
      height: heightRow3Input + 'px' }"
-  >
-    <div class="row" v-bind:style=" {}">
-      <div class="col-7"></div>
-      <div class="col cases-row3-text-range">
-        <div class="row cases-row3-header">{{casesRow3Header}}</div>
-        <div class="row cases-row3-des">{{casesRow3Des}}</div>
+    >
+      <div class="row" v-bind:style=" {}">
+        <div class="col-7"></div>
+        <div class="col cases-row3-text-range">
+          <div class="row cases-row3-header">{{casesRow3Header}}</div>
+          <div class="row cases-row3-des">{{casesRow3Des}}</div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <style>
-@font-face {
-  font-family: Roba;
-  src: url("../../assets/font/Roboto/Roboto-Light.ttf");
-}
 .cases-row3-full {
   background-color: #222;
   background-position: center;

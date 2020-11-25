@@ -1,22 +1,24 @@
 <template>
-  <div class="cases-row6-full">
-    <div class="row">
-      <div class="col-3"></div>
-      <div class="col cases-row6-text-range">
-        <div class="row cases-row6-margin">
-          <div class="col-1" style="padding-top: 10px;">
-            <img src="../../assets/products/3Cases/row6-logo.png" alt />
-          </div>
-          <div class="col cases-row6-text">
-            <div class="row cases-row6-header">POWERED BY RAZER CHROMA™ RGB</div>
-            <div
-              class="row cases-row6-des"
-            >To complement the Chroma-enabled hardware inside, both our mini-ITX and mid-tower ATX gaming cases have a sleek underglow integrated into their engineering. With 16.8 million colors and a suite of effects, sync it up with the rest of your battlestation and enjoy greater immersion as it dynamically reacts with over 150 integrated games.</div>
+  <section>
+    <div class="cases-row6-full">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col cases-row6-text-range">
+          <div class="row cases-row6-margin">
+            <div class="col-1" style="padding-top: 10px;">
+              <img src="@/../assets/products/3Cases/row6-logo.png" alt />
+            </div>
+            <div class="col cases-row6-text">
+              <div class="row cases-row6-header">POWERED BY RAZER CHROMA™ RGB</div>
+              <div
+                class="row cases-row6-des"
+              >To complement the Chroma-enabled hardware inside, both our mini-ITX and mid-tower ATX gaming cases have a sleek underglow integrated into their engineering. With 16.8 million colors and a suite of effects, sync it up with the rest of your battlestation and enjoy greater immersion as it dynamically reacts with over 150 integrated games.</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <style>
 @font-face {
