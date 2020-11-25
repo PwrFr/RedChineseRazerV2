@@ -27,11 +27,11 @@
                 markdown=""
                 style="margin: auto; margin-top: 40px; width: 850px"
               >
-                <span class="quote-open"></span>
+                <img src="@/assets/products/2eGPUs/quote-open.png" alt="" class="quote-open-close"/>
                 The Core X emerges as the go-to single I/O Thunderbolt 3 eGPU
                 enclosure that can pair with almost all graphics cards and
                 Thunderbolt 3 laptops.
-                <span class="quote-close"></span>
+                <img src="@/assets/products/2eGPUs/quote-close.png" alt="" class="quote-open-close"/>
               </h2>
               <p class="content_text_2 ng-star-inserted">
                 <a
@@ -62,23 +62,13 @@ export default {};
 </script>
 
 <style>
-.quote-open {
-  display: none;
+.quote-open-close {
   height: 20px;
-  margin-right: 7px;
   width: 24px;
-}
-
-.quote-close {
-  background: url(/src/assets/products/2eGPUs/quote-close.png) no-repeat;
-  display: inline-block;
-  height: 20px;
-  margin-left: 7px;
-  width: 24px;
+  margin-bottom: 1%;
 }
 
 .quotes .quote_container .boos-h2 {
-  background: url(/src/assets/products/2eGPUs/quote-open.png) 0 4px no-repeat;
   color: #fff;
   font-family: RazerF5, Arial, sans-serif;
   font-size: 24px;
