@@ -1,7 +1,7 @@
 <template>
   <section>
     <div>
-      <div class="container-fluid mt-5" style="padding: 0px; background-color: black">
+      <!--    <div class="container-fluid mt-5" style="padding: 0px; background-color: black">
         <div class="row p-0 mt-0 row-product">
           <div
             class="col-xl-10 col-md-12 col-img-full"
@@ -64,9 +64,9 @@
             </div>
           </div>
 
-          <!--leftside -->
+      <!--leftside-->
 
-          <div class="col right-box w-100 pr-5">
+      <!-- <div class="col right-box w-100 pr-5">
             <p class="header">{{ headerJson }}</p>
             <p class="head-description">{{ desJson }}</p>
             <p class="head-price">{{ priceJson }}</p>
@@ -86,7 +86,7 @@
               </ul>
             </div>
 
-            <!-- boos here --->
+            boos here -
             <div v-if="modelBoxDisappear == 0">
               <div class="model-box-div">
                 <div id="box" class="model-box">
@@ -147,15 +147,15 @@
                 </div>
               </div>
             </div>
-            <!-- end --->
-
+      <!-- end --->
+      <!-- 
             <p class="shipping-date">{{ shippingDate }}</p>
             <button class="order-button">{{ buyingStatus }}</button>
 
             <p class="product-status">{{ buyingAt }}</p>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <!-- black and Mercury is same spce -->
       <EGPU1 />
