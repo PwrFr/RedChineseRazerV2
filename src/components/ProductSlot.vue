@@ -234,7 +234,7 @@ export const global = {
 };
 export default {
   components: {
-    new_case: () => import("../CasesPage.vue"),
+    new_case: () => import("/CasesPage.vue"),
   },
   props: {
     //Src of image

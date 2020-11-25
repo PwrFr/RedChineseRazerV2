@@ -256,9 +256,6 @@
 </template>
 
 <script>
-import MenuBar from "./components/MenuBar.vue";
-
-import Footer from "./components/Footer.vue";
 import datas from "./assets/data.json";
 import VideoSession from "./components/CasesPage/casesVideo.vue";
 import Row1 from "./components/CasesPage/casesRow1.vue";
@@ -332,7 +329,6 @@ export default {
     this.test();
   },
   components: {
-    MenuBar,
     VideoSession,
     Row1,
     Row2,
@@ -344,7 +340,6 @@ export default {
     Row9,
     techSpecCase,
     techSpecCaseMini,
-    Footer,
   },
   methods: {
     firstSelecter() {

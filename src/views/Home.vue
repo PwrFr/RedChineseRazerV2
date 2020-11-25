@@ -4,7 +4,7 @@
       bgImgRow="1.jpg"
       title="PERFORMANCE MEETS PRODUCTIVITY."
       discription="Shop The New Razer Book 13"
-    />
+    />asdsadasfasf
     <imageRow
       bgImgRow="2.jpg"
       title="GET A HEAD START ON HOLIDAY SHOPPING"
