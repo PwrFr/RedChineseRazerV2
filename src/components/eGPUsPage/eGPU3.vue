@@ -32,15 +32,15 @@
           <div style="cases-row7-full">
             <table class="cases-row7-table-body" style="width: 689.6px;">
               <thead style="color: white;" class="razerf5">
-                <tr style="padding-bottom: 10px;">
-                  <th class="cases-row7-table-left boos-th" style="width: 40%;"></th>
+                <tr>
+                  <th class="boos-th" style="width: 40%;"></th>
                   <th
-                    class="cases-row7-table-middle boos-th"
-                    style="text-align: left; padding-left: 3%; width: 27%;"
+                    class="boos-th"
+                    style="width: 27%; padding-left: 3%;"
                   >Razer Core X</th>
                   <th
-                    class="cases-row7-table-right boos-th"
-                    style="width: 33%;"
+                    class="boos-th"
+                    style="width: 33%; padding-left: 5%;"
                   >Razer Core X Chroma™</th>
                 </tr>
               </thead>
@@ -131,11 +131,11 @@ export default {};
 }
 
 .boos-th {
-  border: 0;
-  text-align: center;
+  text-align: left;
   font-weight: 300;
   font-size: 1.125em;
   table-layout: auto;
+  padding-bottom: 10px;
 }
 
 .boos-td {
@@ -145,5 +145,34 @@ export default {};
   vertical-align: inherit;
   table-layout: auto;
   padding: 10px 20px !important;
+}
+
+.cases-row7-table-body {
+  font-size: 16px;
+  font-family: "Robo-reg", sans-serif;
+  color: #888888;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.cases-row7-table-left {
+  width: 234px;
+  text-align: left;
+  border: 1px solid rgb(68, 68, 68);
+  border-left: 0;
+}
+.cases-row7-table-middle {
+  width: 273px;
+  text-align: center;
+  border: 1px solid rgb(68, 68, 68);
+}
+.cases-row7-table-right {
+  width: 273px;
+  text-align: center;
+  border: 1px solid rgb(68, 68, 68);
+  border-right: 0;
+}
+
+table.cases-row7-table-body tbody tr td {
+  padding: 5px 10px;
 }
 </style>
