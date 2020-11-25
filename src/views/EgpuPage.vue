@@ -194,7 +194,7 @@ const techSpecEgpu = () => import("@/components/techSpecEgpuChroma.vue");
 const techSpecEgpuBlack = () => import("@/components/techSpecEgpuBlack.vue");
 
 const eGPUbottom = () => import("@/components/eGPUsPage/eGPUbottom.vue");
-const datas = () => import("@/models /data.js");
+import datas from "@/models/data.js";
 const EGPU1 = () => import("@/components/eGPUsPage/eGPU1");
 
 export default {

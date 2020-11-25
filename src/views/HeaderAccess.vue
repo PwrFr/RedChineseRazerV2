@@ -86,7 +86,7 @@
 
     <div class="container access-body mt-3 p-0">
       <div class="row">
-        <div class="col-3 pr-1 pt-4">
+        <div class="col-3 pr-1 pt-4 text-left">
           <h4 class="fillter mb-4 pb-3">FILTER BY</h4>
           <div v-if="select === 1">
             <div
@@ -100,13 +100,15 @@
             >
               <p
                 class="text-uppercase cursor-point font-weight-bold"
-                @click="isActive0[index] = !isActive0[index]"
+                @click="
+                  isActive0 === key ? (isActive0 = false) : (isActive0 = key)
+                "
               >
                 {{ key }}
                 <svg
                   :class="{
-                    ['arrowUp']: isActive0[index] == true,
-                    ['arrowDown']: isActive0[index] == false,
+                    ['arrowUp']: isActive0 === key,
+                    ['arrowDown']: !isActive0,
                   }"
                   class="arrow-access align-middle mr-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -122,9 +124,9 @@
               <div
                 :class="{
                   ['cursor-point']: true,
-                  ['active-faro']: isActive0[index] == false,
-                  ['distive-faro']: isActive0[index] == true,
-                  ['null-faro']: isActive0[index] == null,
+                  ['active-faro']: !isActive0,
+                  ['distive-faro']: isActive0 === key,
+                  ['null-faro']: isActive0 === null,
                 }"
                 v-for="(value, key) in value"
                 :key="key"
@@ -190,13 +192,13 @@
             >
               <p
                 class="text-uppercase cursor-point font-weight-bold"
-                @click="isActive2[index] = !isActive2[index]"
+                @click="!isActive2 ? (isActive2 = true) : (isActive2 = false)"
               >
                 {{ key }}
                 <svg
                   :class="{
-                    ['arrowUp']: isActive2[index] == true,
-                    ['arrowDown']: isActive2[index] == false,
+                    ['arrowUp']: isActive2,
+                    ['arrowDown']: !isActive2,
                   }"
                   class="arrow-access align-middle mr-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -211,9 +213,9 @@
               <div
                 :class="{
                   ['cursor-point']: true,
-                  ['active-faro']: isActive2[index] == false,
-                  ['distive-faro']: isActive2[index] == true,
-                  ['null-faro']: isActive2[index] == null,
+                  ['active-faro']: !isActive2,
+                  ['distive-faro']: isActive2,
+                  ['null-faro']: isActive2 === null,
                 }"
                 v-for="(value, key) in value"
                 :key="key"
@@ -448,9 +450,9 @@ export default {
       icon_select: 1,
       select: 3,
       json_obj: datas,
-      isActive0: [null, null, null, null, null, null, null, null, null, null],
+      isActive0: false,
       isActive1: [null],
-      isActive2: [null],
+      isActive2: false,
       isActive3: [null],
       product_select: 0,
     };

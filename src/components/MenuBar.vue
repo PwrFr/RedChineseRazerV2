@@ -169,7 +169,7 @@
                   >
                   <router-link
                     class="pt-1 pb-1 d-block text-decoration-none col-item"
-                    to="/cases"
+                    to="/casespage"
                     >Cases</router-link
                   >
                   <router-link

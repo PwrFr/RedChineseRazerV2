@@ -8,7 +8,9 @@
         <div class="row p-0 mt-0 row-product">
           <div
             class="col-xl-10 col-md-12 col-img-full"
-            v-bind:style="{ backgroundImage: 'url(' + bgComponent + ')' }"
+            v-bind:style="{
+              backgroundImage: 'url(' + require(bgComponent) + ')',
+            }"
           >
             <div class="image-tab">
               <lable>
@@ -309,14 +311,14 @@ export default {
       modelItem3: datas.Cases[1].model[2],
 
       imageAmount: "6",
-      imageTab1: "/src/assets/products/3Cases/ATX/bar/1.jpg",
-      imageTab2: "/src/assets/products/3Cases/ATX/bar/2.jpg",
-      imageTab3: "/src/assets/products/3Cases/ATX/bar/3.jpg",
-      imageTab4: "/src/assets/products/3Cases/ATX/bar/4.jpg",
-      imageTab5: "/src/assets/products/3Cases/ATX/bar/5.jpg",
-      imageTab6: "/src/assets/products/3Cases/ATX/bar/6.jpg",
-      bgComponent: "/src/assets/products/3Cases/ATX/1.jpg",
-      imageLocateSrc: "/src/assets/products/3Cases/ATX/",
+      imageTab1: "@/assets/products/3Cases/ATX/bar/1.jpg",
+      imageTab2: "@/assets/products/3Cases/ATX/bar/2.jpg",
+      imageTab3: "@/assets/products/3Cases/ATX/bar/3.jpg",
+      imageTab4: "@/assets/products/3Cases/ATX/bar/4.jpg",
+      imageTab5: "@/assets/products/3Cases/ATX/bar/5.jpg",
+      imageTab6: "@/assets/products/3Cases/ATX/bar/6.jpg",
+      bgComponent: "@/assets/products/3Cases/ATX/1.jpg",
+      imageLocateSrc: "@/assets/products/3Cases/ATX/",
       modelBoxDisappear: "0",
       modelLink1: "https://fb.com",
       modelLink2: "https://www.youtube.com/watch?v=-m4ge-XdCiA",
@@ -358,14 +360,14 @@ export default {
       this.modelItem2 = datas.Cases[0].model[1];
       this.modelItem3 = datas.Cases[0].model[2];
       this.imageAmount = "5";
-      this.imageTab1 = "/src/assets/products/3Cases/bar/1.jpg";
-      this.imageTab2 = "/src/assets/products/3Cases/bar/2.jpg";
-      this.imageTab3 = "/src/assets/products/3Cases/bar/3.jpg";
-      this.imageTab4 = "/src/assets/products/3Cases/bar/4.jpg";
-      this.imageTab5 = "/src/assets/products/3Cases/bar/5.jpg";
+      this.imageTab1 = "@/assets/products/3Cases/bar/1.jpg";
+      this.imageTab2 = "@/assets/products/3Cases/bar/2.jpg";
+      this.imageTab3 = "@/assets/products/3Cases/bar/3.jpg";
+      this.imageTab4 = "@/assets/products/3Cases/bar/4.jpg";
+      this.imageTab5 = "@/assets/products/3Cases/bar/5.jpg";
       this.imageTab6 = null;
-      this.bgComponent = "/src/assets/products/3Cases/2.jpg";
-      this.imageLocateSrc = "/src/assets/products/3Cases/";
+      this.bgComponent = "@/assets/products/3Cases/2.jpg";
+      this.imageLocateSrc = "@/assets/products/3Cases/";
       this.modelBoxDisappear = "0";
       this.shippingDate = "Ships on December 03, 2020";
       this.buyingStatus = "PRE-ORDER";
@@ -387,14 +389,14 @@ export default {
       this.modelItem2 = datas.Cases[1].model[1];
       this.modelItem3 = datas.Cases[1].model[2];
       this.imageAmount = "6";
-      this.imageTab1 = "/src/assets/products/3Cases/ATX/bar/1.jpg";
-      this.imageTab2 = "/src/assets/products/3Cases/ATX/bar/2.jpg";
-      this.imageTab3 = "/src/assets/products/3Cases/ATX/bar/3.jpg";
-      this.imageTab4 = "/src/assets/products/3Cases/ATX/bar/4.jpg";
-      this.imageTab5 = "/src/assets/products/3Cases/ATX/bar/5.jpg";
-      this.imageTab6 = "/src/assets/products/3Cases/ATX/bar/6.jpg";
-      this.bgComponent = "/src/assets/products/3Cases/ATX/1.jpg";
-      this.imageLocateSrc = "/src/assets/products/3Cases/";
+      this.imageTab1 = "@/assets/products/3Cases/ATX/bar/1.jpg";
+      this.imageTab2 = "@/assets/products/3Cases/ATX/bar/2.jpg";
+      this.imageTab3 = "@/assets/products/3Cases/ATX/bar/3.jpg";
+      this.imageTab4 = "@/assets/products/3Cases/ATX/bar/4.jpg";
+      this.imageTab5 = "@/assets/products/3Cases/ATX/bar/5.jpg";
+      this.imageTab6 = "@/assets/products/3Cases/ATX/bar/6.jpg";
+      this.bgComponent = "@/assets/products/3Cases/ATX/1.jpg";
+      this.imageLocateSrc = "@/assets/products/3Cases/";
       this.modelBoxDisappear = "0";
       this.shippingDate = "Ships on December 03, 2020";
       this.buyingStatus = "PRE-ORDER";
@@ -416,14 +418,14 @@ export default {
       this.modelItem2 = datas.Cases[1].model[1];
       this.modelItem3 = datas.Cases[1].model[2];
       this.imageAmount = "6";
-      this.imageTab1 = "/src/assets/products/3Cases/ATX/bar/1.jpg";
-      this.imageTab2 = "/src/assets/products/3Cases/ATX/bar/2.jpg";
-      this.imageTab3 = "/src/assets/products/3Cases/ATX/bar/3.jpg";
-      this.imageTab4 = "/src/assets/products/3Cases/ATX/bar/4.jpg";
-      this.imageTab5 = "/src/assets/products/3Cases/ATX/bar/5.jpg";
-      this.imageTab6 = "/src/assets/products/3Cases/ATX/bar/6.jpg";
-      this.bgComponent = "/src/assets/products/3Cases/ATX/1.jpg";
-      this.imageLocateSrc = "/src/assets/products/3Cases/";
+      this.imageTab1 = "@/assets/products/3Cases/ATX/bar/1.jpg";
+      this.imageTab2 = "@/assets/products/3Cases/ATX/bar/2.jpg";
+      this.imageTab3 = "@/assets/products/3Cases/ATX/bar/3.jpg";
+      this.imageTab4 = "@/assets/products/3Cases/ATX/bar/4.jpg";
+      this.imageTab5 = "@/assets/products/3Cases/ATX/bar/5.jpg";
+      this.imageTab6 = "@/assets/products/3Cases/ATX/bar/6.jpg";
+      this.bgComponent = "@/assets/products/3Cases/ATX/1.jpg";
+      this.imageLocateSrc = "@/assets/products/3Cases/";
       this.modelBoxDisappear = "0";
       this.shippingDate = "Ships on December 03, 2020";
       this.buyingStatus = "PRE-ORDER";

@@ -78,7 +78,7 @@
 const SideImgRowR = () => import("@/components/SideImgRowR.vue");
 import testingRow from "@/components/monitor/testingRow.vue";
 const ProductSlot = () => import("@/components/ProductSlot.vue");
-import datas from "@/models /data.js";
+import datas from "@/models/data.js";
 
 import headerAccessProduct from "@/components/headerAccesssProduct.vue";
 import imgRowC from "@/components/monitor/imgRowC.vue";
