@@ -752,7 +752,7 @@ module.exports =
                     "img": "assets/img/PC_Acessories/Accessories/RazerNeopreneSleeveV2-For13.3”Notebooks.jpg",
                     "tag": "green",
                     "tagTitle": "NEW",
-                    "link": "/ac1",
+                    "link": "access1",
                     "header_des": "Ultra-Sleek Protection for the Razer Blade Stealth 13",
                     "imgbar": [
                         "assets/img/PC_Acessories/Accessories/NeopreneSleeveV2/bar/1.jpg",
@@ -781,7 +781,7 @@ module.exports =
                     "img": "assets/img/PC_Acessories/Accessories/RazerProtectiveV2-13.3.png",
                     "tag": "green",
                     "tagTitle": "NEW",
-                    "link": "/ac2",
+                    "link": "access2",
 
                     "header_des": "Ultra-Sleek Protection for the Razer Blade Laptops",
                     "model": [
@@ -816,7 +816,7 @@ module.exports =
                     "img": "assets/img/PC_Acessories/Accessories/RazerProtectiveSleeveV2-For15.6.png",
                     "tag": "green",
                     "tagTitle": "NEW",
-                    "link": "/ac3",
+                    "link": "access3",
 
                     "header_des": "Ultra-Sleek Protection for the Razer Blade Laptops",
                     "model": [
@@ -851,7 +851,7 @@ module.exports =
                     "img": "assets/img/PC_Acessories/Accessories/RazerProtectiveSleeveV2-For17.3.png",
                     "tag": "green",
                     "tagTitle": "NEW",
-                    "link": "/ac3",
+                    "link": "access3",
 
                     "header_des": "Ultra-Sleek Protection for the Razer Blade Laptops",
                     "model": [
@@ -912,7 +912,7 @@ module.exports =
                 {
                     "name": "Razer Raptor 27",
                     "price": "US$699.99",
-                    "link": "/monitor",
+                    "link": "monitor",
                     "detail": [
                         "27\" Non-Glare WQHD IPS Display",
                         "Fast 144Hz Refresh Rate and wide color gamut with HDR support",

@@ -159,12 +159,7 @@
 
                     <div
                       class="selected"
-                      v-bind:style="{
-                        backgroundImage:
-                          'url(' +
-                          require('@/components/Custom-Select-Box-master/img/arrow-down.svg') +
-                          ')',
-                      }"
+                      
                     >{{ modelFirstNameJson }}</div>
                   </div>
                 </div>
@@ -236,13 +231,13 @@ export default {
       specSwitch: 0,
       onum: 0,
       hiddenBorder4: {
-        border: "0px"
+        border: "0px",
       },
       hiddenBorder5: {
-        border: "0px"
+        border: "0px",
       },
       hiddenBorder6: {
-        border: "0px"
+        border: "0px",
       },
       //imageTab1: "assets/products/cases/bar/1.jpg",
       //imageTab2: "assets/products/cases/bar/2.jpg",
@@ -285,7 +280,7 @@ export default {
       shippingDate: "Ships next business day",
       buyingStatus: "ADD TO CART",
       buyingAt: "",
-      whiteSelecterText: "0"
+      whiteSelecterText: "0",
     };
   },
   mounted() {
@@ -297,7 +292,7 @@ export default {
     headerAccessProduct,
     ColAccessProduct,
     productSize,
-    tectAcc2
+    tectAcc2,
   },
   methods: {
     firstSelecter() {
@@ -337,7 +332,7 @@ export default {
         this.nnum += 1;
       });
 
-      optionsList.forEach(o => {
+      optionsList.forEach((o) => {
         o.addEventListener("click", () => {
           selected.innerHTML = o.querySelector("label").innerHTML;
           optionsContainer.classList.remove("active");
@@ -399,8 +394,8 @@ export default {
       this.onum = this.nnum;
       // console.log(this.onum);
       // console.log(this.nnum);
-    }
-  }
+    },
+  },
 };
 </script>
 <style>
