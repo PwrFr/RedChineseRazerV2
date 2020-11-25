@@ -62,8 +62,6 @@
             </div>
           </div>
 
-          <!--leftside -->
-
           <div class="col right-box w-100 pr-5">
             <p class="header">{{ headerJson }}</p>
             <p class="head-description">{{ desJson }}</p>
@@ -84,7 +82,6 @@
               </ul>
             </div>
 
-            <!-- boos here --->
             <div v-if="modelBoxDisappear == 0">
               <div class="model-box-div">
                 <div id="box" class="model-box">
@@ -145,7 +142,6 @@
                 </div>
               </div>
             </div>
-            <!-- end --->
 
             <p class="shipping-date">{{ shippingDate }}</p>
             <button class="order-button">{{ buyingStatus }}</button>
@@ -155,7 +151,7 @@
         </div>
       </div>
       <productSize
-        proSize="@/assets/AC2/razer-protective-sleeves-v2-usp0-desktop.jpg"
+        proSize="assets/AC2/razer-protective-sleeves-v2-usp0-desktop.jpg"
         title="AVAILABLE IN"
         dis="13.3″ | 15.6″ | 17.3″"
       />
@@ -165,19 +161,19 @@
       />
 
       <SideImgRowL
-        bgimgRL="@/assets/AC2/razer-protective-sleeves-v2-usp2-desktop.jpg"
+        bgimgRL="assets/AC2/razer-protective-sleeves-v2-usp2-desktop.jpg"
         title="SMOOTH INTERIOR SURFACE WITH BUILT-IN MOUSE MAT"
         dis="Designed for dual usage, the sleeve’s interior features the same surface found on our mobile gaming mats, providing an ultra-slim layer of protection that transforms into a workstation."
       />
       <SideImgRowR
-        bgimgRR="@/assets/AC2/razer-protective-sleeves-v2-usp3-desktop.jpg"
+        bgimgRR="assets/AC2/razer-protective-sleeves-v2-usp3-desktop.jpg"
         title="CUSTOM FIT FOR OUR RAZER BLADE LAPTOPS"
         dis="Made to measure, the Razer Protective Sleeve V2 is designed to perfectly accommodate all variants of our Razer Blade laptop, so you can carry the winning edge wherever you go."
       />
       <ColAccessProduct
-        colimgProduct0="@/assets/AC2/chromatic-wordmark.jpg"
-        colimgProduct1="@/assets/AC2/snag-free-velcro.jpg"
-        colimgProduct2="@/assets/AC2/slim-design.jpg"
+        colimgProduct0="assets/AC2/chromatic-wordmark.jpg"
+        colimgProduct1="assets/AC2/snag-free-velcro.jpg"
+        colimgProduct2="assets/AC2/slim-design.jpg"
         titleL="CHROMATIC WORDMARK"
         titleC="SNAG-FREE VELCRO"
         titleR="SLIM PROFILE DESIGN"
@@ -275,7 +271,6 @@ export default {
     this.test();
   },
   components: {
-    MenuBar,
     SideImgRowL,
     SideImgRowR,
     headerAccessProduct,

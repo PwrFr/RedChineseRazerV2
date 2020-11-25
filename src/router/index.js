@@ -37,17 +37,17 @@ const routes = [
     component: () => import('../views/MonitorPage.vue')
   },
   {
-    path: '/Razer Neoprene Sleeve V2 - For 13.3” Notebooks',
+    path: '/ac1',
     name: 'Razer Neoprene Sleeve V2 - For 13.3” Notebooks',
     component: () => import('../views/access1.vue')
   },
   {
-    path: '/Razer Protective Sleeve V2 - For 13.3" Notebooks',
+    path: '/ac2',
     name: 'Razer Protective Sleeve V2 - For 13.3" Notebooks',
     component: () => import('../views/access2.vue')
   },
   {
-    path: '/Razer Protective Sleeve V2 - For 17.3" Notebooks',
+    path: '/ac3',
     name: 'Razer Protective Sleeve V2 - For 17.3" Notebooks',
     component: () => import('../views/access3.vue')
   }

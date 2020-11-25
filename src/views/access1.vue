@@ -62,8 +62,6 @@
             </div>
           </div>
 
-          <!--leftside -->
-
           <div class="col right-box w-100 pr-5">
             <p class="header">{{ headerJson }}</p>
             <p class="head-description">{{ desJson }}</p>
@@ -82,9 +80,7 @@
                 <li v-if="10 <= detailAmountJson">{{ detailJson10 }}</li>
                 <li v-if="11 <= detailAmountJson">{{ detailJson11 }}</li>
               </ul>
-            </div>
-
-            <!-- boos here --->
+            </div>boos here
             <div v-if="modelBoxDisappear == 0">
               <div class="model-box-div">
                 <div id="box" class="model-box">
@@ -145,7 +141,6 @@
                 </div>
               </div>
             </div>
-            <!-- end --->
 
             <p class="shipping-date">{{ shippingDate }}</p>
             <button class="order-button">{{ buyingStatus }}</button>
@@ -154,6 +149,7 @@
           </div>
         </div>
       </div>
+
       <headerAccessProduct
         title="CARRY THE WINNING EDGE"
         dis="Weather any storm with the Razer Neoprene Sleeve V2 – For 13.3”
@@ -162,24 +158,24 @@
       what the game brings."
       />
       <SideImgRowL
-        bgimgRL="@/assets/AC1/neoprene-sleeve-v2-protective.jpg"
+        bgimgRL="assets/AC1/neoprene-sleeve-v2-protective.jpg"
         title="PROTECTIVE EXTERIOR AND PADDED INTERIOR"
         dis="Made of tough, water-resistant Neoprene, the sleeve protects your notebook from damage caused by impact or abrasion, while keeping your investment safe from the elements."
       />
       <SideImgRowR
-        bgimgRR="@/assets/AC1/neoprene-sleeve-v2-custom-fit.jpg"
+        bgimgRR="assets/AC1/neoprene-sleeve-v2-custom-fit.jpg"
         title="CUSTOM FIT FOR THE RAZER BLADE STEALTH 13"
         dis="Made to measure, every inch of the sleeve is designed to perfectly accommodate your Razer Blade Stealth 13, so you can carry the winning edge wherever you go."
       />
       <SideImgRowL
-        bgimgRL="@/assets/AC1/neoprene-sleeve-v2-ultra-slim.jpg"
+        bgimgRL="assets/AC1/neoprene-sleeve-v2-ultra-slim.jpg"
         title="ULTRA-SLIM PROFILE"
         dis="Equipped with a sleek silhouette, the sleeve fits notebooks up to 13.3” and fastens them in with a zipper closure that keeps your gear securely in place, no matter where you are."
       />
       <ColAccessProduct
-        colimgProduct0="@/assets/AC1/neoprene-sleeve-v2-panel-portable-design.jpg"
-        colimgProduct1="@/assets/AC1/neoprene-sleeve-v2-panel-waterpoof.jpg"
-        colimgProduct2="@/assets/AC1/neoprene-sleeve-v2-panel-detachable.jpg"
+        colimgProduct0="assets/AC1/neoprene-sleeve-v2-panel-portable-design.jpg"
+        colimgProduct1="assets/AC1/neoprene-sleeve-v2-panel-waterpoof.jpg"
+        colimgProduct2="assets/AC1/neoprene-sleeve-v2-panel-detachable.jpg"
         titleL="PORTABLE DESIGN"
         titleC="WATERPROOF ZIPPER TAPE"
         titleR="DETACHABLE WOVEN STRAP"
