@@ -11,11 +11,6 @@ const routes = [
     component: Home
   },
   {
-    path: '/cases',
-    name: 'cases',
-    component: () => import('../views/Cases.vue')
-  },
-  {
     path: '/gaminglabtop',
     name: 'gaminglabtop',
     component: () => import('../views/gamingLabtop.vue')
@@ -29,6 +24,11 @@ const routes = [
     path: '/headeraccess',
     name: 'headeraccess',
     component: () => import('../views/HeaderAccess.vue')
+  },
+  {
+    path: '/casespage',
+    name: 'casespage',
+    component: () => import('../views/CasesPage.vue')
   }
 ]
 
