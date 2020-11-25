@@ -1,7 +1,7 @@
 <template>
   <div
     class="bgRL d-flex align-items-center"
-    v-bind:style="{ backgroundImage: 'url(' + bgimgRL + ')' }"
+    v-bind:style="{ backgroundImage: 'url(' + require('@/' + bgimgRL) + ')', }"
   >
     <div class="container product-access-title pl-0">
       <div class="col-4 pr-1 pl-0 razerf5">
@@ -17,8 +17,8 @@ export default {
   props: {
     bgimgRL: String,
     title: String,
-    dis: String,
-  },
+    dis: String
+  }
 };
 </script>
 
