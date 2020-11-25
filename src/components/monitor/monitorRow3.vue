@@ -1,5 +1,11 @@
 <template>
-  <div class="container-fluid" id="bg-monitorRow3">
+  <div
+    class="container-fluid"
+    id="bg-monitorRow3"
+    v-bind:style="{
+      backgroundImage: 'url(' + require('@/' + bg) + ')',
+    }"
+  >
     <div class="row">
       <div class="col-lg-12">
         <h3 class="pb-2 mt-4" id="header-monitorRow3">

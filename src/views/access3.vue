@@ -277,7 +277,7 @@ import productSize from "./components/accessSize.vue";
 import SideImgRowL from "./components/SideImgRowL.vue";
 import SideImgRowR from "./components/SideImgRowR.vue";
 import ColAccessProduct from "./components/ColAccessProduct.vue";
-import datas from "./assets/data.json";
+// import datas from "./assets/data.json";
 import techAcc3 from "./components/techAcc3.vue";
 
 export default {
