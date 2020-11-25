@@ -3,9 +3,9 @@
     <div class="container techSpecs">
       <!-- <h4 id="headerText">TECH SPECS</h4> -->
       <table class="container-fluid">
-        <tr>
+        <div class="row">
           <h4 id="headerText">TECH SPECS</h4>
-        </tr>
+        </div>
         <tr class="dataRow trDisplay p-0">
           <th class="col-lg-3 p-0">
             <b>DISPLAY</b>
@@ -18,7 +18,7 @@
           </td>
         </tr>
         <!-- row 2-->
-        <tr class="dataRow trDisplay ">
+        <tr class="dataRow trDisplay">
           <th class="col-lg-3 p-0">
             <b>REFRESH RATE</b>
           </th>
@@ -44,7 +44,7 @@
         </tr>
         <!-- row 3-->
         <span id="more" ref="more">
-          <tr class="dataRow trDisplays ">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>CONTRAST RATIO</b>
             </th>
@@ -53,7 +53,7 @@
             </td>
           </tr>
           <!-- row 4 -->
-          <tr class="dataRow trDisplays ">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>BEZELS</b>
             </th>
@@ -62,7 +62,7 @@
             </td>
           </tr>
           <!-- row 5 -->
-          <tr class="dataRow trDisplays ">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>SYNC</b>
             </th>
@@ -74,7 +74,7 @@
             </td>
           </tr>
           <!-- row 6 -->
-          <tr class="dataRow trDisplays ">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>ROTATION</b>
             </th>
@@ -83,7 +83,7 @@
             </td>
           </tr>
           <!-- row 7 -->
-          <tr class="dataRow trDisplays ">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>CABLE MANAGEMENT</b>
             </th>
@@ -92,7 +92,7 @@
             </td>
           </tr>
           <!-- row 8 -->
-          <tr class="dataRow trDisplays ">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>Lighting</b>
             </th>
@@ -102,7 +102,7 @@
           </tr>
 
           <!-- row 9 -->
-          <tr class="dataRow trDisplays ">
+          <tr class="dataRow trDisplays">
             <th class="col-lg-3 p-0">
               <b>Input & Output</b>
             </th>
@@ -183,7 +183,7 @@ ul {
 .trDisplay {
   border-bottom: solid 1px #999;
 }
-.tr-test-monitor{
+.tr-test-monitor {
   padding: 3rem;
 }
 .dataBul {
