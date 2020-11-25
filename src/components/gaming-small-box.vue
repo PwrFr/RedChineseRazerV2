@@ -1,7 +1,11 @@
 <template>
   <div class="col-md-4">
     <div class="card-gaming">
-      <img class="img- card-img-top" :src="card.img" alt="product" />
+      <img
+        class="img- card-img-top"
+        :src="require('@/' + imgNew)"
+        alt="product"
+      />
 
       <div style="margin-bottom: 0rem" class="card-title">
         <h3
@@ -31,6 +35,20 @@
 <script>
 export default {
   props: ["card"],
+  data() {
+    return {
+      imgNew: "",
+    };
+  },
+  watch: {
+    card: {
+      handler(val, oldVal) {
+        this.imgNew = val.img;
+      },
+      immediate: true,
+      deep: true,
+    },
+  },
 };
 </script>
 

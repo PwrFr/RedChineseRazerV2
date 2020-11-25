@@ -1,46 +1,51 @@
 <template>
-  <div class="">.</div>
-  <div
-    class="gamingBoxButton container pd-5"
-    style="background-image: url('src/assets/products/1Laptops/bg7.jpg')"
-  >
+  <section>
+    <div class="">.</div>
     <div
-      style="
-        font-size: 1.6875rem;
-        font-family: Razerf5, Sans-Serif;
-        color: #44d62c;
-        font-weight: bold;
-        padding: 2rem 0 0 1.875rem;
-        text-transform: uppercase;
-      "
+      class="gamingBoxButton container pd- 5 text-left"
+      v-bind:style="{
+        backgroundImage:
+          'url(' + require('@/assets/products/1Laptops/bg7.jpg') + ')',
+      }"
     >
-      <!-- RAZER LAPTOP ACCESSORIES -->
-      {{ title }}
+      <div
+        style="
+          font-size: 1.6875rem;
+          font-family: Razerf5, Sans-Serif;
+          color: #44d62c;
+          font-weight: bold;
+          padding: 2rem 0 0 1.875rem;
+          text-transform: uppercase;
+        "
+      >
+        <!-- RAZER LAPTOP ACCESSORIES -->
+        {{ title }}
+      </div>
+
+      <div style="margin-top: 1rem" class="gaming-description-bottom">
+        {{ description1 }}
+      </div>
+      <br />
+      <div class="gaming-description-bottom">{{ description2 }}</div>
+      <br />
+      <div class="gaming-description-bottom">{{ description3 }}</div>
+
+      <a href="#"
+        ><p
+          style="
+            font-size: 1.05rem;
+            font-family: Razerf5, Sans-Serif;
+            color: #44d62c;
+            font-weight: bold;
+            padding: 2rem 0 0 1.875rem;
+          "
+        >
+          <!-- Learn More> -->
+          {{ bot }}
+        </p></a
+      >
     </div>
-
-    <div style="margin-top: 1rem" class="gaming-description-bottom">
-      {{ description1 }}
-    </div>
-    <br />
-    <div class="gaming-description-bottom">{{ description2 }}</div>
-    <br />
-    <div class="gaming-description-bottom">{{ description3 }}</div>
-
-
-<a href="#"><p
-      style="
-        font-size: 1.05rem;
-        font-family: Razerf5, Sans-Serif;
-        color: #44d62c;
-        font-weight: bold;
-        padding: 2rem 0 0 1.875rem;
-      "
-    >
-      <!-- Learn More> -->
-      {{ bot }}
-    </p></a>
-    
-  </div>
+  </section>
 </template>
 
 <script>

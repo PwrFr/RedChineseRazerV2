@@ -1,7 +1,9 @@
 <template>
   <div
     class="bigimg-gaming"
-    v-bind:style="{ backgroundImage: 'url(' + imgshow.img + ')' }"
+    v-bind:style="{
+      backgroundImage: 'url(' + require('@/' + imgshow.img) + ')',
+    }"
     :class="{
       'size-small': imgshow.size == 'small',
       'size-big': imgshow.size == 'big',

@@ -14,6 +14,16 @@ const routes = [
     path: '/cases',
     name: 'cases',
     component: () => import('../views/Cases.vue')
+  },
+  {
+    path: '/gaminglabtop',
+    name: 'gaminglabtop',
+    component: () => import('../views/gamingLabtop.vue')
+  },
+  {
+    path: '/egpupage',
+    name: 'egpupage',
+    component: () => import('../views/EgpuPage.vue')
   }
 ]
 
