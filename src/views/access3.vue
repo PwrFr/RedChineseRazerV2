@@ -226,12 +226,13 @@
 </template>
 
 <script>
-const headerAccessProduct = () => "@/components/headerAccesssProduct.vue";
-const productSize = () => "@/components/accessSize.vue";
-const SideImgRowL = () => "@/components/SideImgRowL.vue";
-const SideImgRowR = () => "@/components/SideImgRowR.vue";
-const ColAccessProduct = () => "@/components/ColAccessProduct.vue";
-const techAcc3 = () => "@/components/techAcc3.vue";
+const headerAccessProduct = () =>
+  import("@/components/headerAccesssProduct.vue");
+const productSize = () => import("@/components/accessSize.vue");
+const SideImgRowL = () => import("@/components/SideImgRowL.vue");
+const SideImgRowR = () => import("@/components/SideImgRowR.vue");
+const ColAccessProduct = () => import("@/components/ColAccessProduct.vue");
+const techAcc3 = () => import("@/components/techAcc3.vue");
 import datas from "@/models/data.js";
 
 export default {
